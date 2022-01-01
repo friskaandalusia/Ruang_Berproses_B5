@@ -82,7 +82,7 @@ if ($password_pengguna !== $password2){
 	// tambahkan user baru ke database
 	mysqli_query($conn, "INSERT INTO pengguna VALUES
     ('','$nama_pengguna','$username_pengguna','$password_pengguna',
-    '$email_pengguna','$nohp_pengguna', '')");
+    '$email_pengguna', '','','')");
 
 	return mysqli_affected_rows($conn);
 }
