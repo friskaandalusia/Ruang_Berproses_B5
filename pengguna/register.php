@@ -6,9 +6,9 @@ if(isset($_POST["register"])){
 	if(register($_POST) > 0){
 		echo "<script>
 		  alert('User berhasil ditambahkan!');
-			</script>"; 
+			</script>";
 		  header("Location: login.php");
-		  exit;  
+		  exit;
 	  } else {
 		echo mysqli_error($conn);
 	  }

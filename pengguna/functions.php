@@ -18,7 +18,7 @@ function query($query){
 function register($data){
 	global $conn;
 
-	
+
     $nama_pengguna = mysqli_real_escape_string($conn, $data["nama_pengguna"]);
 	$username_pengguna = strtolower(stripslashes($data["username_pengguna"]));
 	$password_pengguna = mysqli_real_escape_string($conn, $data["password_pengguna"]);
@@ -27,7 +27,7 @@ function register($data){
     //$nohp_pengguna = mysqli_real_escape_string($conn, $data["nohp_pengguna"]);
 	//$role = mysqli_real_escape_string($conn, $data["role"]);
 
-	$result = mysqli_query($conn, "SELECT username_pengguna FROM pengguna WHERE 
+	$result = mysqli_query($conn, "SELECT username_pengguna FROM pengguna WHERE
     username_pengguna = '$username_pengguna'");
 
 if(mysqli_fetch_assoc($result)){
@@ -40,7 +40,7 @@ if(mysqli_fetch_assoc($result)){
 if ($password_pengguna !== $password2){
 	echo "<script>
 				alert('password tidak sesuai');
-		  </script>";	  
+		  </script>";
 		  return false;
 }
 
@@ -48,9 +48,9 @@ if ($password_pengguna !== $password2){
 	//$nama_pengguna 			= $_POST['nama_pengguna'];
 	//$username_pengguna    	= $_POST['username_pengguna'];
 	//$password_pengguna      = $_POST['password_pengguna'];
-	
-	
-  
+
+
+
 	//if( mail( $nama_pengguna, $b='username_pengguna', $password_pengguna) ){
 	//echo 'Akun sudah terdaftar';
 
@@ -66,10 +66,10 @@ if ($password_pengguna !== $password2){
 			//'Akun Sudah Terdaftar!',
 			//'Anda sudah registrasi silahkan login',
 			//'error'
-		
+
 		//  )
-		//	  </script>";	  
-			 
+		//	  </script>";
+
 			 // return false;
 			 // header("Location: login.php");
 	//}

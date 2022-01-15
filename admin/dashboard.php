@@ -28,7 +28,8 @@ if (!isset($_SESSION["login"])) {
   <!-- Page plugins -->
   <!-- Argon CSS -->
   <link rel="stylesheet" href="assets/css/argon.css?v=1.2.0" type="text/css">
-</head>
+
+  </head>
 
 <body>
   <!-- Sidenav -->
@@ -51,6 +52,7 @@ if (!isset($_SESSION["login"])) {
                 <span class="nav-link-text">Dashboard</span>
               </a>
             </li>
+            
             <li class="nav-item">
               <a class="nav-link" href="profile.php">
                 <i class="ni ni-single-02 text-primary"></i>
@@ -141,8 +143,7 @@ if (!isset($_SESSION["login"])) {
             <li class="nav-item">
               <a class="nav-link pr-0" href="profile.php">
                 <div class="media align-items-center">
-                  
-                 
+
                 </div>
               </a>
             </li>
