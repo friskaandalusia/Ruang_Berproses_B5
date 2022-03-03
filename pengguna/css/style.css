@@ -220,3 +220,15 @@ a:hover{
 		justify-content: center;
 	}
 }
+
+@media screen and (max-width: 350px) {
+	.login-content{
+		justify-content: center;
+	}
+
+	.login-content h1{
+		margin-top: 1000px;
+		padding-top: 1000px;
+	}
+
+}
