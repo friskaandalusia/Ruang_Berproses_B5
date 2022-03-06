@@ -148,16 +148,30 @@ session_start();
                         <div class="timeline">
                             <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
                                 <div class="timeline-text">
-                                    <div class="timeline-date">July, 2020</div>
-                                    <h2>Berdirinya Ruang Berproses</h2>
-                                    <h4>Jakarta, Indonesia</h4>
+                                    <div class="timeline-date">Tahun Berdirinya Ruang Berproses</div>
+                                    <h2>Tahun Berdirinya Ruang Berproses</h2>
+                                    <h4>Ruang berproses didirikan oleh Yohana Sondang Activa Hutabarat, M.Psi pada Juli 2020. Ruang Berproses merupakan sebuah StartUp psikologi sekaligus media yang membantu teman-teman berproses bersama menuju versi terbaiknya dengan menjaga kesehatan mentalnya</h4>
                                 </div>
                             </div>
                             <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
                                 <div class="timeline-text">
-                                    <div class="timeline-date">2020 - Now</div>
-                                    <h2>Ruang Berproses</h2>
-                                    <h4>Jakarta, Indonesia</h4>
+                                    <div class="timeline-date">Sejarah Ruang Berproses</div>
+                                    <h2>Sejarah Ruang Berproses</h2>
+                                    <h4> RB adalah hasil dari kondisi yang tidak baik-baik saja secara mental yang founder alami di awal-awal pandemi. RB Memiliki beberapa layanan diantaranya Psytalk, IG Live, Virtual Peer Counseling, Virtual Support Grup dan kelas berproses</h4>
+                                </div>
+                            </div>
+                            <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
+                                <div class="timeline-text">
+                                    <div class="timeline-date">Cerita Unik</div>
+                                    <h2>Cerita Unik</h2>
+                                    <h4>Psytalk merupakan program pertama yang dimiliki oleh Ruang Berproses. Bermula sejak Founder memberanikan diri untuk membuat webinar dengan judul 'It's okay not to be okay' dan mengundang temannya seorang Psikolog yang berada di Thailand, Priska Sinaga. Dari webinar tersebut mendapatkan Banyak feedback positif dari peserta, dan request untuk sesi lanjutan.</h4>
+                                </div>
+                            </div>
+                            <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
+                                <div class="timeline-text">
+                                    <div class="timeline-date">Program RB lainnya</div>
+                                    <h2>Program RB lainnya</h2>
+                                    <h4>Ruang berproses sudah merekrut tim lebih dari 50 orang terhitung sudah di batch 6 dan tidak hanya itu RB membuat beberapa program kreatif seperti Campaign, Brand Ambassador dan sesekali berkolaborasi dengan StartUp Psikologi lainnya.</h4>
                                 </div>
                             </div>
                         </div>
@@ -304,7 +318,7 @@ session_start();
                                         <img class="imgPlaceholder" src="img/team/mei.jpg" alt="">
                                         <h>IG Live Team<h>
                                     </div>
-                                    <div class="associate-name">Meilinda</div>
+                                    <div class="associate-name">Meilinda Sadikin, B. Art</div>
                                 </div>
                                 <div class="item">
                                     <div class="shadow-effect">
@@ -319,6 +333,13 @@ session_start();
                                         <h>Head of Counseling<h>
                                     </div>
                                     <div class="associate-name">Luh Putu Lidya Sofhya Dewi</div>
+                                </div>
+                                <div class="item">
+                                    <div class="shadow-effect">
+                                        <img class="imgPlaceholder" src="img/team/rana.jpg" alt="">
+                                        <h>Head of Public Relation<h>
+                                    </div>
+                                    <div class="associate-name">Rana Fathina</div>
                                 </div>
                                 <div class="item">
                                     <div class="shadow-effect">
@@ -426,7 +447,7 @@ session_start();
                             </button>
                             <button class="accordionn">LinkedIn Specialist
                                 <hr>
-                                <p>Atikah</p>
+                                <p>Atikah Zahra</p>
                             </button>
                         </div>
                         <button class="accordion">Department Program & Creative</button>
@@ -489,7 +510,7 @@ session_start();
             <div class="container">
                 <div class="row">
                     <div class="footer-copyright">
-                        <p>Copyright &copy; 2021 Ruang Berproses. All Rights Reserved | Tim IT RB</p>
+                        <p>Copyright &copy; 2022 Ruang Berproses. All Rights Reserved | Tim IT RB</p>
                     </div>
                 </div>
             </div>

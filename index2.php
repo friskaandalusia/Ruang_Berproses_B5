@@ -145,7 +145,7 @@ session_start();
 						<img src="img/alur-pendaftaran/number2.png" class="card-img-top mx-auto" alt="Number 2">
 						<div class="card mt-3">
 							<div class="card-body">
-								<h5 class="card-title">Butuh saran/penjelasan lebih lanjut? Kontak kami melalui 081573499529 atau 081280077254</h5>
+								<h5 class="card-title">Butuh saran/penjelasan lebih lanjut? Kontak kami melalui 081573499529 atau 087719661951</h5>
 								<p class="card-text">Kamu bisa dapatkan info terkait program/layanan Ruang Berproses via sosmed Ruang Berproses (IG, Tiktok, Twitter, FB) atau website RB.</p>
 							</div>
 						</div>
@@ -366,7 +366,7 @@ session_start();
 			<div class="container">
 				<div class="row">
 					<div class="footer-copyright">
-						<p>Copyright &copy; 2021 Ruang Berproses. All Rights Reserved | Tim IT RB</p>
+						<p>Copyright &copy; 2022 Ruang Berproses. All Rights Reserved | Tim IT RB</p>
 					</div>
 				</div>
 			</div>

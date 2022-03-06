@@ -103,7 +103,7 @@ session_start();
 						<img src="img/layanan/layanan-konseling.jpg" alt="Hero Image" width="90%">
 					</div>
 					<div class="konseling col-lg-6 col-md-6 col-sm-6 col-12 my-auto text-md-left text-justify">
-						<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+						<p>Konseling atau penyuluhan adalah proses pemberian bantuan yang dilakukan oleh seorang yang ahli pada bidangnya kepada individu yang mengalami sesuatu masalah yang bermuara pada teratasinya masalah yang dihadapi klien.</p>
 						<h3 class="need">Tanda kamu butuh konseling</h3>
 						<ul>
 							<li>Contrary to popular belief, Lorem Ipsum is not simply random text</li>
@@ -223,7 +223,7 @@ session_start();
 			<div class="container">
 				<div class="row">
 					<div class="footer-copyright">
-						<p>Copyright &copy; 2021 Ruang Berproses. All Rights Reserved | Tim IT RB</p>
+						<p>Copyright &copy; 2022 Ruang Berproses. All Rights Reserved | Tim IT RB</p>
 					</div>
 				</div>
 			</div>

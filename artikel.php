@@ -98,10 +98,9 @@ session_start();
                         <div class="card" style="width: 18rem;">
                             <img class="card-img-top" src="img/psytalk52.jpg" alt="Card image cap">
                             <div class="card-body">
-                                <h5 class="card-title">Judul Artikel</h5>
+                                <h5 class="card-title"> Penyebab Permasalahan Mental pada Anak</h5>
                                 <div class="item">
-                                    <p>Berikut merupakan gambaran kecil artikel yang dipaparkan. Berikut merupakan gambaran kecil artikel yang dipaparkan. Berikut merupakan gambaran kecil artikel yang dipaparkan. Berikut merupakan gambaran kecil artikel yang dipaparkan.</p>
-
+                                    <p>Pertumbuhan dan perkembangan adalah fase penting dalam kehidupan individu yang mulai berlangsung sejak dari lahir. Anak-anak tumbuh dengan sangat cepat dan secara konsisten mengalami perubahan pada kemampuan sosial, emosional, dan mental.</p>
                                 </div>
                                 <div id="wrapper">
                                     <a href="artikel1.php" class="btn btn-primary">Selengkapnya</a>
@@ -111,9 +110,9 @@ session_start();
                         <div class="card" style="width: 18rem;">
                             <img class="card-img-top" src="img/psytalk52.jpg" alt="Card image cap">
                             <div class="card-body">
-                                <h5 class="card-title">Judul Artikel</h5>
+                                <h5 class="card-title">Kenali Karakteristik Codependent dalam Toxic Relationship</h5>
                                 <div class="item">
-                                    <p>Berikut merupakan gambaran kecil artikel yang dipaparkan. Berikut merupakan gambaran kecil artikel yang dipaparkan. Berikut merupakan gambaran kecil artikel yang dipaparkan. Berikut merupakan gambaran kecil artikel yang dipaparkan.</p>
+                                    <p> Akhir-akhir ini banyak masyarakat yang mulai aware akan toxic relationship dan dampaknya pada kesehatan mental, namun ciri-ciri yang sering dibahas adalah keberadaan gaslighting, kekerasan secara verbal atau fisik, dan lain-lain. Maka artikel ini akan membahas karakteristik lain yaitu “codependent”.</p>
                                 </div>
                                 <div id="wrapper">
                                     <a href="artikel2.php" class="btn btn-primary">Selengkapnya</a>
@@ -123,9 +122,10 @@ session_start();
                         <div class="card" style="width: 18rem;">
                             <img class="card-img-top" src="img/psytalk52.jpg" alt="Card image cap">
                             <div class="card-body">
-                                <h5 class="card-title">Judul Artikel</h5>
+                                <h5 class="card-title">Mental Orang Tua dalam Membangun Pola Asuh yang Sehat
+                                </h5>
                                 <div class="item">
-                                    <p>Berikut merupakan gambaran kecil artikel yang dipaparkan. Berikut merupakan gambaran kecil artikel yang dipaparkan. Berikut merupakan gambaran kecil artikel yang dipaparkan. Berikut merupakan gambaran kecil artikel yang dipaparkan.</p>
+                                    <p>Kesehatan mental merupakan kondisi dari kesejahteraan yang disadari individu, yang di dalamnya terdapat kemampuan-kemampuan untuk mengelola stres kehidupan yang wajar, untuk bekerja secara produktif dan menghasilkan karya serta ikut berperan di komunitasnya. </p>
                                 </div>
                                 <div id="wrapper">
                                     <a href="artikel3.php" class="btn btn-primary">Selengkapnya</a>
@@ -219,7 +219,7 @@ session_start();
             <div class="container">
                 <div class="row">
                     <div class="footer-copyright">
-                        <p>Copyright &copy; 2021 Ruang Berproses. All Rights Reserved | Tim IT RB</p>
+                        <p>Copyright &copy; 2022 Ruang Berproses. All Rights Reserved | Tim IT RB</p>
                     </div>
                 </div>
             </div>

@@ -367,7 +367,7 @@ session_start();
             <div class="container">
                 <div class="row">
                     <div class="footer-copyright">
-                        <p>Copyright &copy; 2021 Ruang Berproses. All Rights Reserved | Tim IT RB</p>
+                        <p>Copyright &copy; 2022 Ruang Berproses. All Rights Reserved | Tim IT RB</p>
                     </div>
                 </div>
             </div>
