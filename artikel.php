@@ -82,7 +82,7 @@ session_start();
                     <div class="container">
                         <div class="text-center text-md-center">
                             <h1 class="font-weight-600">Artikel Ruang Berproses</h1>
-                            <img class="lebar" src="img/hero/hero-artikel.png" alt="Hero Image">
+                            <img class="lebar" src="img/hero/hero-artikell.png" alt="Hero Image">
                             <!-- <a href="http://www.freepik.com">Designed by Freepik</a> -->
                         </div>
                     </div>

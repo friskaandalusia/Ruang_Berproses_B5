@@ -83,7 +83,7 @@ session_start();
                     <div class="container">
                         <div class="text-center text-md-center">
                             <h1 class="font-weight-600">Tentang Ruang Berproses</h1>
-                            <img class="lebar" src="img/hero/hero-tentang.png" alt="Hero Image">
+                            <img class="lebar" src="img/hero/hero-tentangg.png" alt="Hero Image">
                             <!-- <a href="http://www.freepik.com">Designed by Freepik</a> -->
                         </div>
                     </div>
@@ -117,7 +117,7 @@ session_start();
             <div class="container">
                 <div class="row justify-content-between">
                     <div class="col-lg-6 col-md-6 col-sm-6 col-12 text-center">
-                        <img src="img/tentang/tentang-visimisi.jpg" alt="Hero Image" width="90%">
+                        <img src="img/tentang/tentang-visimisi.png" alt="Hero Image" width="90%">
                         <!-- <a href="http://www.freepik.com">Designed by stories / Freepik</a> -->
                     </div>
                     <div class="col-lg-5 col-md-6 col-sm-6 col-12 my-auto text-md-left text-center">

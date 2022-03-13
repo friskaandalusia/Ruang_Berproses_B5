@@ -204,7 +204,7 @@ p {
 }
 h1 {
   font-size: 48px;
-  margin-top: 50px;
+  margin-top: 90px;
   margin-bottom:  30px;
   line-height: 1.2;
   font-weight: 500;
@@ -336,7 +336,8 @@ h4 {
 }
 
 .check {
-  list-style-image: url(../img/tentang/number1.png);
+  list-style-image: url(../img/tentang/check.png);
+  
 }
 
 
@@ -344,7 +345,7 @@ h4 {
 ================================================== */
 
 .profil {
-  height: 190vh;
+  height: 200vh;
   background-color: #F6F6F6;
 }
 
@@ -363,7 +364,7 @@ h4 {
   content: '';
   position: absolute;
   width: 2px;
-  background: #EF233C;
+  background: #fc8c64;
   top: 0;
   bottom: 0;
   left: 50%;
@@ -395,7 +396,7 @@ h4 {
   top: 48px;
   right: -8px;
   background: #ffffff;
-  border: 2px solid #EF233C;
+  border: 2px solid #fc8c64;
   border-radius: 16px;
   z-index: 1;
 }
@@ -427,7 +428,7 @@ border-color: transparent #dddddd transparent transparent;
   top: 44px;
   font-size: 16px;
   font-weight: 600;
-  color: #EF233C;
+  color: #fc8c64;
   text-transform: uppercase;
   letter-spacing: 1px;
   z-index: 1;
