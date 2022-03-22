@@ -137,6 +137,10 @@ session_start();
                         </ul>
                     </div>
                 </div>
+                <h2 style="margin-top: 100px; margin-bottom: 40px;" class="text-center font-weight-600">Video Perkenalan Tim Ruang Berproses</h2>
+                <video controls width="100%" autoplay="true">
+                    <source src="video/rb.mp4" type="video/mp4">
+                </video>
             </div>
         </div>
 
