@@ -308,24 +308,19 @@ session_start();
                 <h2 class="text-center font-weight-600">Pertanyaan Sahabat RB</h2>
                 <div class="row mt-5 col-md-12">
                     <div class="center">
-                        <button class="accordion">Tak kenal maka tak sayang, boleh dong kak kita kenalan, kakak founder namanya siapa?</button>
+                        <button class="accordion">Apa saja sih program yang tersedia di Ruang Berproses?</button>
                         <div class="panel">
-                            <p>Halo, aku Yohana Sondang Activa Hutabarat, panggil saja Kak Yo atau Yohana. Aku merupakan Founder dari Ruang Berproses.</p>
+                            <p>Ruang Berproses menyediakan Program Webinar Psytalk, Kelas Berproses dan juga IG Live.</p>
                         </div>
 
-                        <button class="accordion">Kalau boleh tahu nih kak, pada bulan dan tahun apa Ruang Berproses berdiri?</button>
+                        <button class="accordion">Apakah semua Program Ruang Berproses gratis?</button>
                         <div class="panel">
-                            <p>Secara officially Ruang Berproses didirikan pada bulan Juli tahun 2020, jadi bulan Juli adalah Anniversary dari Ruang Berproses.</p>
+                            <p>Apabila ingin mengikuti Webinar Psytalk, klien akan dikenakan biaya sebesar Rp. 25.000/tiket. Apabila ingin mengikuti Program Kelas Berproses, klien akan dikenakan biaya sebesar Rp. 30.000/tiket. Kedua layanan ini dilakukan secara virtual. Akan tetapi, apabila ingin mengikuti program IG Live, maka klien dapat mengikuti program secara gratis.</p>
                         </div>
 
-                        <button class="accordion">Apa yang membuat Kak Yo memutuskan membangun Ruang Berproses?</button>
+                        <button class="accordion">Bagaimana cara mendaftarnya?</button>
                         <div class="panel">
-                            <p>RB itu adalah hasil dari kondisi yang tidak baik-baik saja secara mental yang aku alami di awal-awal pandemi.<br>Berangkat dari situ, aku memberanikan diri membuat webinar dengan judul 'It's okay not to be okay' dan mengundang temanku seorang Psikolog yang berada di Thailand, Priska Sinaga. Dari webinar tersebut mendapatkan Banyak feedback positif dari peserta, dan request untuk sesi lanjutan.<br>Ketagihan selenggarain webinar sendiri, berlanjut deh sampai Tiga sesi webinar yang aku beri nama Psytalk, artinya bicara tentang psikis. Jadi, itu asal dari program pertama RB yaitu webinar PSYTALK.</p>
-                        </div>
-
-                        <button class="accordion">Wah menarik sekali ya kak! Mungkin bisa di sharing nih, apa yang kakak harapkan dari terbentuknya Ruang Berproses?</button>
-                        <div class="panel">
-                            <p>Jadi, aku hanya ingin teman-teman diluaran sana memiliki wadah untuk mereka berproses lebih dalam untuk melihat dirinya dan kondisi kesehatan mentalnya. Ya berharapnya bahwa RB menjadi salah satu wadah aman dan nyaman tersebut.</p>
+                            <p>Kamu dapat melihat website atau media sosial Ruang Berproses lainnya, kemudian daftarkan diri dengan mengisi data diri serta permasalahan yang sedang dihadapi. Selanjutnya data ini akan diproses oleh tim untuk pelaksanaan program.</p>
                         </div>
                     </div>
                 </div>

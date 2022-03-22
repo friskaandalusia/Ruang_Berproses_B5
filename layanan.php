@@ -103,15 +103,12 @@ session_start();
 						<img src="img/layanan/layanan-konseling.jpg" alt="Hero Image" width="90%">
 					</div>
 					<div class="konseling col-lg-6 col-md-6 col-sm-6 col-12 my-auto text-md-left text-justify">
-						<p>Konseling atau penyuluhan adalah proses pemberian bantuan yang dilakukan oleh seorang yang ahli pada bidangnya kepada individu yang mengalami sesuatu masalah yang bermuara pada teratasinya masalah yang dihadapi klien.</p>
+						<p>Konseling merupakan salah satu upaya untuk dapat membantu mengatasi konflik, hambatan dan kesulitan dalam memenuhi kebutuhan pada individu, serta upaya untuk meningkatkan kesehatan mental. Konseling adalah proses yang berkaitan dengan hubungan profesional antara konselor dan klien.</p>
 						<h3 class="need">Tanda kamu butuh konseling</h3>
 						<ul>
-							<li>Contrary to popular belief, Lorem Ipsum is not simply random text</li>
-							<p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. </p>
-							<li>Contrary to popular belief, Lorem Ipsum is not simply random text</li>
-							<p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. </p>
-							<li>Contrary to popular belief, Lorem Ipsum is not simply random text</li>
-							<p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. </p>
+							<li>Ketika kamu punya masalah, merasa tidak tahu harus berbuat apa, bingung harus cerita kepada siapa atau tidak punya orang yang bisa kamu percaya</p>
+							<li>Ketika kamu merasa ada perubahan baik secara emosi, perilaku maupun pikiran, yang berpengaruh terhadap kesehatan fisik, mental, serta social. Contohnya, mudah marah, kurang percaya diri, merasa rendah diri, jadi menyendiri, dan lain-lain.</p>
+							<li>Ketika kamu menghadapi kesulitan dan hambatan dari dalam diri kamu sendiri, menghadapi masalah dalam pendidikan, pekerjaan, hubungan romantis, keluarga dan lainnnya. Misalnya, putus dengan pasangan, burnout karena pekerjaan, toxic parents, trauma, tidak ada motivasi untuk sekolah, dan lain-lain.</p>
 						</ul>
 					</div>
 				</div>
@@ -164,24 +161,26 @@ session_start();
 				<h2 class="text-center font-weight-600">Pertanyaan Sahabat RB</h2>
 				<div class="row mt-5 col-md-12">
 					<div class="center">
-						<button class="accordion">Tak kenal maka tak sayang, boleh dong kak kita kenalan, kakak founder namanya siapa?</button>
+						<button class="accordion">Apa saja sih layanan yang diberikan Ruang Berproses terkait dengan konseling?</button>
 						<div class="panel">
-							<p>Halo, aku Yohana Sondang Activa Hutabarat, panggil saja Kak Yo atau Yohana. Aku merupakan Founder dari Ruang Berproses.</p>
+							<p>Ruang Berproses menyediakan layanan konsultasi dengan konseling professional dan peer counselling.</p>
 						</div>
 
-						<button class="accordion">Kalau boleh tahu nih kak, pada bulan dan tahun apa Ruang Berproses berdiri?</button>
+						<button class="accordion">Apa perbedaan konsultasi dengan konseling professional dan peer counselling?</button>
 						<div class="panel">
-							<p>Secara officially Ruang Berproses didirikan pada bulan Juli tahun 2020, jadi bulan Juli adalah Anniversary dari Ruang Berproses.</p>
+							<p>Perbedaannya, yaitu : <br> 1. Konseling professional merupakan layanan konseling secara virtual yang dilakukan oleh para psycholog associate di Ruang Berproses yang berkompeten sesuai dengan ranah atau bidangnya masing masing, seperti ranah klinis dewasa, klinis anak, pendidikan, serta industri dan organisasi. <br>
+								2. Peer counsellor merupakan tenaga terlatih konseling yang siap untuk menjadi pendengar dan membantu menemukan solusi dalam masalah atau isu kesehatan mental non-klinis dengan tetap menjaga kerahasiaan dan berada di bawah supervisi profesional.
+							</p>
 						</div>
 
-						<button class="accordion">Apa yang membuat Kak Yo memutuskan membangun Ruang Berproses?</button>
+						<button class="accordion">Apakah semua layanan konseling Ruang Berproses gratis?</button>
 						<div class="panel">
-							<p>RB itu adalah hasil dari kondisi yang tidak baik-baik saja secara mental yang aku alami di awal-awal pandemi.<br>Berangkat dari situ, aku memberanikan diri membuat webinar dengan judul 'It's okay not to be okay' dan mengundang temanku seorang Psikolog yang berada di Thailand, Priska Sinaga. Dari webinar tersebut mendapatkan Banyak feedback positif dari peserta, dan request untuk sesi lanjutan.<br>Ketagihan selenggarain webinar sendiri, berlanjut deh sampai Tiga sesi webinar yang aku beri nama Psytalk, artinya bicara tentang psikis. Jadi, itu asal dari program pertama RB yaitu webinar PSYTALK.</p>
+							<p>Apabila kamu ingin berkonsultasi dengan peer counsellor, layanan ini tidak dipungut biaya. Akan tetapi, apabila kamu ingin berkonsultasi dengan psycholog associate maka klien akan dikenakan biaya sebesar Rp. 100.000/sesi. Kedua layanan ini dilakukan secara virtual.</p>
 						</div>
 
-						<button class="accordion">Wah menarik sekali ya kak! Mungkin bisa di sharing nih, apa yang kakak harapkan dari terbentuknya Ruang Berproses?</button>
+						<button class="accordion">Bagaimana cara mendaftarnya?</button>
 						<div class="panel">
-							<p>Jadi, aku hanya ingin teman-teman diluaran sana memiliki wadah untuk mereka berproses lebih dalam untuk melihat dirinya dan kondisi kesehatan mentalnya. Ya berharapnya bahwa RB menjadi salah satu wadah aman dan nyaman tersebut.</p>
+							<p>Kamu dapat melihat website atau media sosial Ruang Berproses lainnya, kemudian daftarkan diri dengan mengisi data diri serta permasalahan yang sedang dihadapi. Selanjutnya data ini akan diproses oleh tim untuk pelaksanaan konselingnya.</p>
 						</div>
 					</div>
 				</div>
