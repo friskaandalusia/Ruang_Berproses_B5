@@ -267,7 +267,7 @@ session_start();
                                 </div>
                                 <div class="item">
                                     <div class="shadow-effect">
-                                        <img class="imgPlaceholder" src="img/user.png" alt="">
+                                        <img class="imgPlaceholder" src="img/associate/daniswara.jpeg" alt="">
                                         <h>Konseling Profesional Team<h>
                                     </div>
                                     <div class="associate-name">Daniswara Agusta Wijaya, M.Psi., Psikolog</div>

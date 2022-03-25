@@ -87,7 +87,7 @@ session_start();
 							</div>
 							<div class="col-lg-5 col-md-6 col-sm-6 col-12 my-auto text-md-left text-center">
 								<h1 class="font-weight-600">Layanan RB</h1>
-								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+								<p>Layanan Ruang Berproses memiliki berbagai macam seperti Virtual Support Grup, Virtual Peer Counseling dan Counseling Proffesional yang membantu teman-teman untuk mengobati keadaan mental yang mungkin kurang membaik terutama dikeadaan pandemi seperti ini dengan sering bermunculannya keadaan Quarter Life Crisis atau fase seperempat abad yang sering mengalami kekhawatiran dalam hidup dan Kegiatan ini diciptakan layaknya klinik kesehatan mental untuk masyarakat serta belajar tumbuh menjadi versi terbaiknya bersama kami.</p>
 							</div>
 						</div>
 					</div>

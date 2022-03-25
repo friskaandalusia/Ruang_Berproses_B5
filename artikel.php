@@ -134,7 +134,7 @@ session_start();
                         </div>
                     </div>
                 </div>
-                <div class="row mt-5">
+                <!-- <div class="row mt-5">
                     <div class="card-deck">
                         <div class="card" style="width: 18rem;">
                             <img class="card-img-top" src="img/psytalk52.jpg" alt="Card image cap">
@@ -173,7 +173,7 @@ session_start();
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
 
