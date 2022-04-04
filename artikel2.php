@@ -86,7 +86,7 @@ session_start();
                         <h2>Kenali Karakteristik <i> Codependent</i> dalam <i>Toxic Relationship</i></h2>
                         <h6>Oleh : Widya Prasetyaningtyas</h6>
                         <hr>
-                        <img src="img/tentang/tentang-visimisi.jpg" alt="Hero Image" width="60%">
+                        <img src="img/artikel/each/artikel2.jpg" alt="Hero Image" width="80%">
                         <!-- <a href="http://www.freepik.com">Designed by stories / Freepik</a> -->
                         <p>
                             Pada zaman sekarang, sudah cukup banyak masyarakat yang mulai menyadari akan adanya toxic relationship. Biasanya, toxic relationship dimulai dengan adanya gaslighting. Menurut American Psychological Association (APA), gaslight merupakan tindakan memanipulasi orang lain agar mereka meragukan persepsi, pengalaman, atau pemahamannya tentang suatu peristiwa. Selain gaslight, yang seringkali dijumpai dalam toxic relationship adalah tindakan yang abusive atau tindakan kekerasan, baik secara mental maupun fisik. Berada di dalam hubungan yang tidak sehat tentunya memiliki dampak untuk kesehatan mental, mulai dari merasa kehilangan harga diri, cemas berlebih, gangguan kepercayaan, hilangnya rasa kebahagiaan, dan lain-lain. Terdapat karakteristik lain di dalam hubungan yang tidak sehat atau toxic relationship, yaitu codependent atau codependency.

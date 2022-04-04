@@ -86,7 +86,7 @@ session_start();
                         <h2>Lingkungan, Konflik Orangtua-Anak, dan Masalah Emosional sebagai Penyebab Permasalahan Mental pada Anak</h2>
                         <h6>Oleh : Clarita Andreane</h6>
                         <hr>
-                        <img src="img/tentang/tentang-visimisi.jpg" alt="Hero Image" width="60%">
+                        <img src="img/artikel/each/artikel1.jpg" alt="Hero Image" width="60%">
                         <!-- <a href="http://www.freepik.com">Designed by stories / Freepik</a> -->
                         <p>
                             Pertumbuhan dan perkembangan adalah fase penting dalam kehidupan individu yang mulai berlangsung sejak dari lahir. Anak-anak tumbuh dengan sangat cepat dan secara konsisten mengalami perubahan pada kemampuan sosial, emosional, dan mental. Dalam proses pertumbuhan ini, terdapat periode sensitif, yaitu waktu di mana anak dengan mudah terpengaruh oleh hal positif atau negatif dari lingkungan. Tanpa pengasuhan yang konsisten, anak akan mengembangkan permasalahan dalam aspek kepercayaan dengan orang lain sehingga jika hal ini tidak diperbaiki, anak akan mengembangkan permasalahan mental yang akan berlanjut hingga dewasa. Tanpa kasih sayang dan pengasuhan yang tepat, anak akan tumbuh dewasa dengan membawa luka dari masa kecil mereka.</p>

@@ -86,7 +86,7 @@ session_start();
                         <h2>Menjaga Kesehatan Mental Orang Tua dalam Membangun Pola Asuh yang Sehat</h2>
                         <h6>Oleh : Afni Handayani</h6>
                         <hr>
-                        <img src="img/tentang/tentang-visimisi.jpg" alt="Hero Image" width="60%">
+                        <img src="img/artikel/each/artikel3.jpg" alt="Hero Image" width="80%">
                         <!-- <a href="http://www.freepik.com">Designed by stories / Freepik</a> -->
                         <p>
                             Kesehatan mental merupakan kondisi dari kesejahteraan yang disadari individu, yang di dalamnya terdapat kemampuan-kemampuan untuk mengelola stres kehidupan yang wajar, untuk bekerja secara produktif dan menghasilkan karya serta ikut berperan di komunitasnya. Keluarga merupakan bagian mikro ekosistem dari tatanan tumbuh kembang anak. Keluarga nantinya mengajarkan bagaimana anak merasakan empati dan beradaptasi dengan masyarakat yang merupakan makro ekosistem.

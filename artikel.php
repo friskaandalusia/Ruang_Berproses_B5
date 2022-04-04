@@ -96,7 +96,7 @@ session_start();
                 <div class="row mt-5">
                     <div class="card-deck  text-lg-left text-center">
                         <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="img/psytalk52.jpg" alt="Card image cap">
+                            <img class="card-img-top" src="img/artikel/artikel1.jpg" alt="Card image cap">
                             <div class="card-body">
                                 <h5 class="card-title"> Penyebab Permasalahan Mental pada Anak</h5>
                                 <div class="item">
@@ -108,7 +108,7 @@ session_start();
                             </div>
                         </div>
                         <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="img/psytalk52.jpg" alt="Card image cap">
+                            <img class="card-img-top" src="img/artikel/artikel2.jpg" alt="Card image cap">
                             <div class="card-body">
                                 <h5 class="card-title">Kenali Karakteristik Codependent dalam Toxic Relationship</h5>
                                 <div class="item">
@@ -120,7 +120,7 @@ session_start();
                             </div>
                         </div>
                         <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="img/psytalk52.jpg" alt="Card image cap">
+                            <img class="card-img-top" src="img/artikel/artikel3.jpg" alt="Card image cap">
                             <div class="card-body">
                                 <h5 class="card-title">Mental Orang Tua dalam Membangun Pola Asuh yang Sehat
                                 </h5>
