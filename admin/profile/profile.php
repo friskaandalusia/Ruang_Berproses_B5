@@ -172,9 +172,17 @@
             <img src="img/profile2.png" alt="Profile Admin" width="200" class="rounded-circle">
             </div>
             <div class="col-6 col-md-5 mt-5 mb-5">
-            <h3>Nama Pengguna : Admin RB</h3>
-            <h3>Username : adminrb</h3>
-            <h3>Email : ruangberproses.id@gmail.com</h3>
+            <?php
+           include "koneksi.php";
+           $no= ['role'] === 1;
+           $query = mysqli_query($conn, 'SELECT * FROM pengguna  LIMIT 1' );
+          while ($data = mysqli_fetch_array($query)) {
+        ?>
+            <h3>Nama Admin : <?php echo $data['nama_pengguna'] ?></h3>
+            <h3>Username Admin : <?php echo $data['username_pengguna'] ?></h3>
+            <h3>Email Admin : <?php echo $data['email_pengguna'] ?></h3>
+      
+        <?php } ?>
             </div> 
           </div>
           </div>
