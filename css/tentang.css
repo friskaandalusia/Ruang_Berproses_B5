@@ -340,6 +340,11 @@ h4 {
   
 }
 
+/* #Video
+================================================== */
+.video{
+  background-color:#EBDFFF;
+}
 
 /* #Profil
 ================================================== */
@@ -483,6 +488,7 @@ border-color: transparent #dddddd transparent transparent;
 .associate{
   padding-top: 50px;
   height: 110vh;
+  background-color:#EBDFFF;
 }
 
 
@@ -838,6 +844,15 @@ footer {
   
   h6 {
     margin-right: 0px;
+  }
+
+  .video{
+    margin-top: 0px;
+    height: 90vh;
+  }
+
+  video{
+    margin-top: 40px;
   }
 
   .card {

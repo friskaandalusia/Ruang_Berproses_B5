@@ -188,16 +188,22 @@ p {
 }
 .jumbotron-section a {
   color: black;
-  padding: 13px 20px;
+  padding: 13px 200px;
   text-decoration: none;
   border: 1px solid #fcbc33;
-  border-radius: 10px;
-  margin-right: 20px;
+  width: 400px;
 }
 .jumbotron-section .jumbotron-cta {
   background-color: #fcbc33;
   color: white;
   font-weight: 600;
+  font-size: 20px;
+}
+.jumbotron-cta:hover {
+ background-color: #df8a00;
+}
+.btn-margin {
+  margin-top: 60px;
 }
 .full-height {
   height: 100vh;
@@ -565,9 +571,8 @@ footer {
 
   h1 {
     padding-top: 80px;
-    padding-bottom: 10px;
-    font-weight: 600;
-    font-size: 32px;
+    padding-bottom: 5px;
+    font-weight: 500;
   }
   h2 {
     padding-top: 80px;
@@ -582,27 +587,30 @@ footer {
     text-align: center;
   }
 
+  .jumbotron-section a {
+    color: black;
+    padding: 8px 110px;
+    text-decoration: none;
+    border: 1px solid #fcbc33;
+  }
   .jumbotron-section .jumbotron-cta {
-    margin-left: 5%;
-    padding-right: 4%;
-    padding-left: 4%;
     background-color: #fcbc33;
     color: white;
-    font-weight: 500;
-    font-size: small;
-    place-items: center;
+    font-weight: 600;
+    font-size: 12px;
+  }
+  .jumbotron-section p {
+    margin-bottom: 10px;
+  }
+  .m-atas {
+    margin-top: 20px;
+    margin-bottom: 10px;;
   }
 
-  .jumbotron-section .btn-small {
-    padding-right: 4%;
-    padding-left: 4%;
-    font-weight: 500;
-    font-size: small;
-    place-items: center;
+  .btn-margin {
+    margin-top: 30px;
   }
-  .img-beranda {
-    margin-top: 10%;
-  }
+
   .usp-item {
     text-align: center;
     margin-bottom: 10%;

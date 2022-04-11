@@ -86,11 +86,17 @@ session_start();
 							<div class="col-lg-5 col-md-6 col-sm-6 col-12 my-auto text-md-left text-center">
 								<h1 class="font-weight-600">Ruang Berproses</h1>
 								<p>Temukan ruang untuk berproses menuju versi terbaikmu dengan berbagai pilihan layanan dan program dari Ruang Berproses. Kami siap hadir memberikan layanan terbaik untuk memenuhi kebutuhan kesehatan mental kamu.</p>
-								<a href="layanan.php" class="jumbotron-cta">Layanan RB</a>
-								<a class="btn-small" href="program.php">Program RB</a>
 							</div>
 							<div class="col-lg-6 col-md-6 col-sm-6 col-12">
-								<img class="img-beranda" src="img/hero/hero-img.png" alt="Hero Image" width="100%">
+								<center><img class="img-beranda" src="img/hero/hero-img.png" alt="Hero Image" width="90%"></center>
+							</div>
+						</div>
+						<div class="row text-center btn-margin">
+							<div class="col-lg-6 col-md-6 col-sm-6 col-12 ">
+								<a href="layanan.php" class="jumbotron-cta">Layanan RB</a>
+							</div>
+							<div class=" col-lg-6 col-md-6 col-sm-6 col-12 m-atas">
+								<a href="program.php" class="jumbotron-cta">Program RB</a>
 							</div>
 						</div>
 					</div>
