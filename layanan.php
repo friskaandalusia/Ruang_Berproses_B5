@@ -31,7 +31,7 @@ session_start();
 							<div class="collapse navbar-collapse" id="navbarSupportedContent">
 								<ul class="navbar-nav ml-auto py-4 py-md-0">
 									<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-										<a class="nav-link" href="index2.php">Beranda</a>
+										<a class="nav-link" href="index.php">Beranda</a>
 									</li>
 									<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 active">
 										<a class="nav-link" href="layanan.php">Layanan</a>
@@ -127,7 +127,7 @@ session_start();
 							</div>
 							<img class="card-img-bottom" src="img/layanan/vsp.jpg" alt="Card image cap">
 							<div id="wrapper">
-								<a href="index.php" class="btn btn-primary">Daftar</a>
+								<a href="index.php#daftar" class="btn btn-primary">Daftar</a>
 							</div>
 						</div>
 						<div class="card" style="width: 18rem;">
@@ -137,7 +137,7 @@ session_start();
 							</div>
 							<img class="card-img-bottom" src="img/layanan/vpc.jpg" alt="Card image cap">
 							<div id="wrapper">
-								<a href="index.php" class="btn btn-primary">Daftar</a>
+								<a href="index.php#daftar" class="btn btn-primary">Daftar</a>
 							</div>
 						</div>
 						<div class="card" style="width: 18rem;">
@@ -148,7 +148,7 @@ session_start();
 							<img class="card-img-bottom" src="img/layanan/cp.jpg" alt="Card image cap">
 							<div id="wrapper">
 								<!-- <a href="http://www.freepik.com">Designed by pch.vector / Freepik</a> -->
-								<a href="index.php" class="btn btn-primary">Daftar</a>
+								<a href="index.php#daftar" class="btn btn-primary">Daftar</a>
 							</div>
 						</div>
 					</div>

@@ -31,7 +31,7 @@ session_start();
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul class="navbar-nav ml-auto py-4 py-md-0">
                                     <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                        <a class="nav-link" href="index2.php">Beranda</a>
+                                        <a class="nav-link" href="index.php">Beranda</a>
                                     </li>
                                     <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
                                         <a class="nav-link" href="layanan.php">Layanan</a>
@@ -101,6 +101,33 @@ session_start();
                 <div class="row mt-5">
                     <div class="card-deck">
                         <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="img/program/psytalk/psytalk64.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Psytalk64: Baby Blues Syndrom</h5>
+                                <div class="item">
+                                    <img src="img/program/calendar.png" alt="Calender">
+                                    <div class="info">
+                                        <p>Sabtu, 23 April 2022</p>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="img/program/clock.png" alt="Calender">
+                                    <div class="info">
+                                        <p>10.00-12.00 WIB</p>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="img/program/money.png" alt="Calender">
+                                    <div class="info">
+                                        <p>IDR 25K (E-certificate + Materi)</p>
+                                    </div>
+                                </div>
+                                <div id="wrapper">
+                                    <a href="https://bit.ly/PSYTALK64" class="btn btn-primary">Daftar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
                             <img class="card-img-top" src="img/program/psytalk/psytalk63.jpeg" alt="Card image cap">
                             <div class="card-body">
                                 <h5 class="card-title">Psytalk63: Gender Violence</h5>
@@ -151,33 +178,6 @@ session_start();
                                 </div>
                                 <div id="wrapper">
                                     <a href="https://bit.ly/PSYTALK62" class="btn btn-primary">Daftar</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="img/program/psytalk/psytalk61.jpeg" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Psytalk61: Suicide Prevention</h5>
-                                <div class="item">
-                                    <img src="img/program/calendar.png" alt="Calender">
-                                    <div class="info">
-                                        <p>Jum'at, 18 Maret 2022</p>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <img src="img/program/clock.png" alt="Calender">
-                                    <div class="info">
-                                        <p>19.00-21.00 WIB</p>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <img src="img/program/money.png" alt="Calender">
-                                    <div class="info">
-                                        <p>IDR 25K (E-certificate + Materi)</p>
-                                    </div>
-                                </div>
-                                <div id="wrapper">
-                                    <a href="https://bit.ly/PSYTALK61" class="btn btn-primary">Daftar</a>
                                 </div>
                             </div>
                         </div>
@@ -260,38 +260,37 @@ session_start();
                 <div class="row mt-5">
                     <div class="card-deck">
                         <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="img/program/ig/ig2.jpeg" alt="Card image cap">
+                            <img class="card-img-top" src="img/program/ig/ig4.png" alt="Card image cap">
                             <div class="card-body">
-                                <h5 class="card-title">IG Live - Mindfulness: Build Knowledge and Skills in the Present</h5>
+                                <h5 class="card-title">IG Live - Future Life: Be a Great Career Woman</h5>
                                 <div class="item">
                                     <img src="img/program/calendar.png" alt="Calender">
                                     <div class="info">
-                                        <p>Sabtu, 26 Maret 2022</p>
+                                        <p>Sabtu, 16 April 2022</p>
                                     </div>
                                 </div>
                                 <div class="item">
                                     <img src="img/program/clock.png" alt="Calender">
                                     <div class="info">
-                                        <p>19.00-20.00 WIB</p>
+                                        <p>15.00-16.00 WIB</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
                         <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="img/program/ig/ig1.jpeg" alt="Card image cap">
+                            <img class="card-img-top" src="img/program/ig/ig3.jpeg" alt="Card image cap">
                             <div class="card-body">
-                                <h5 class="card-title">IG Live - Be Growth: Managing Our Expectation</h5>
+                                <h5 class="card-title">IG Live - Insecurities Amongst Women</h5>
                                 <div class="item">
                                     <img src="img/program/calendar.png" alt="Calender">
                                     <div class="info">
-                                        <p>Sabtu, 12 Maret 2022</p>
+                                        <p>Rabu, 13 April 2022</p>
                                     </div>
                                 </div>
                                 <div class="item">
                                     <img src="img/program/clock.png" alt="Calender">
                                     <div class="info">
-                                        <p>19.00-20.00 WIB</p>
+                                        <p>15.00-16.00 WIB</p>
                                     </div>
                                 </div>
                             </div>
