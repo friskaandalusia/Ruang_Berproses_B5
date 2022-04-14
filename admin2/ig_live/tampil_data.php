@@ -1,13 +1,3 @@
-<?php
-
-session_start();
-
-if (!isset($_SESSION["login"])) {
-    header("Location: ../index.php");
-    exit;
-}
-?>
-
 <!DOCTYPE html>
 <html>
 
@@ -17,19 +7,18 @@ if (!isset($_SESSION["login"])) {
   <meta name="description" content="Start your development with a Dashboard for Bootstrap 4.">
   <meta name="author" content="Creative Tim">
 
-  <title>Dashboard || Ruang Berproses</title>
+  <title>Kelola Data Psytalk || RUANG BERPROSES</title>
   <!-- Favicon -->
-  <link rel="icon" href="assets/img/brand/logo.png" type="image/jpeg">
+  <link rel="icon" href="../assets/img/brand/logo.png" type="image/jpeg">
   <!-- Fonts -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
   <!-- Icons -->
-  <link rel="stylesheet" href="assets/vendor/nucleo/css/nucleo.css" type="text/css">
-  <link rel="stylesheet" href="assets/vendor/@fortawesome/fontawesome-free/css/all.min.css" type="text/css">
+  <link rel="stylesheet" href="../assets/vendor/nucleo/css/nucleo.css" type="text/css">
+  <link rel="stylesheet" href="../assets/vendor/@fortawesome/fontawesome-free/css/all.min.css" type="text/css">
   <!-- Page plugins -->
   <!-- Argon CSS -->
-  <link rel="stylesheet" href="assets/css/argon.css?v=1.2.0" type="text/css">
-
-  </head>
+  <link rel="stylesheet" href="../assets/css/argon.css?v=1.2.0" type="text/css">
+</head>
 
 <body>
   <!-- Sidenav -->
@@ -37,8 +26,8 @@ if (!isset($_SESSION["login"])) {
     <div class="scrollbar-inner">
       <!-- Brand -->
       <div class="sidenav-header  align-items-center" >
-        <a class="navbar-brand" href="dashboard.php">
-          <img src="assets/img/brand/logo.png" class="navbar-brand-img">
+        <a class="navbar-brand" href="../dashboard.php">
+          <img src="../assets/img/brand/logo.png" class="navbar-brand-img">
         </a>
       </div>
       <div class="navbar-inner">
@@ -47,45 +36,44 @@ if (!isset($_SESSION["login"])) {
           <!-- Nav items -->
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" href="dashboard.php">
+              <a class="nav-link active" href="../dashboard.php">
                 <i class="ni ni-tv-2 text-primary"></i>
                 <span class="nav-link-text">Dashboard</span>
               </a>
             </li>
-            
             <li class="nav-item">
-              <a class="nav-link" href="profile/profile.php">
+              <a class="nav-link" href="../profile/profile.php">
                 <i class="ni ni-single-02 text-primary"></i>
                 <span class="nav-link-text">Profile</span>
               </a>
             </li>
           </ul>
-          
+         
           <!-- Heading -->
           <h6 class="navbar-heading p-0 text-muted">
             <span class="docs-normal">Kelola</span>
           </h6>
           <ul class="navbar-nav mb-md-3">
             <li class="nav-item">
-              <a class="nav-link" href="../admin/psytalk/tampil_data.php">
+              <a class="nav-link" href="../psytalk/tampil_data.php">
                 <i class="ni ni-notification-70 text-primary"></i>
                 <span class="nav-link-text">Kelola Data Psytalk</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../admin/kelasberproses/tampil_data.php">
+              <a class="nav-link" href="../kelasberproses/tampil_data.php">
                 <i class="ni ni-notification-70 text-primary"></i>
                 <span class="nav-link-text">Kelola Data Kelas Berproses</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../admin2/ig_live/tampil_data.php">
+              <a class="nav-link" href="../ig_live/tampil_data.php">
                 <i class="ni ni-notification-70 text-primary"></i>
                 <span class="nav-link-text">Kelola Data IG LIVE</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../admin/supportgroup/tampil_data.php">
+              <a class="nav-link" href="../artikel/tampil_data.php">
                 <i class="ni ni-notification-70 text-primary"></i>
                 <span class="nav-link-text">Kelola Artikel</span>
               </a>
@@ -122,21 +110,15 @@ if (!isset($_SESSION["login"])) {
               <nav aria-label="breadcrumb" class="d-none d-md-inline-block ml-md-0 mt-2">
                 <ol class="breadcrumb breadcrumb-links breadcrumb-dark">
                   <li class="breadcrumb-item"><a href="dashboard.php"><i class="fas fa-home"></i></a></li>
-                  <li class="breadcrumb-item"><a href="dashboard.php">Dashboard</a></li>
+                  <li class="breadcrumb-item"><a href="tampil_data.php">Kelola Data IG LIVE</a></li>
                 </ol>
               </nav>
             </div>
           <!-- Navbar links -->
           <ul class="navbar-nav align-items-center  ml-auto ml-md-20 ">
-            <li class="nav-item">
-              <a class="nav-link pr-0" href="profile.php">
-                <div class="media align-items-center">
-
-                </div>
-              </a>
-            </li>
+            
             <li class="nav-item" style="margin-left: 50px">
-              <a class="nav-link pr-0" href="../logout.php">
+              <a class="nav-link pr-0" href="logout.php">
                 <div class="media align-items-center">
                   <span>
                     <i class="ni ni-button-power text-white"></i>
@@ -153,99 +135,107 @@ if (!isset($_SESSION["login"])) {
     </nav>
     <!-- Header -->
     <!-- Header -->
-    <div class="header bg-primary pb-6">
+    <div class="header bg-primary pb-5">
       <div class="container-fluid">
         <div class="header-body">
           <div class="row align-items-center py-4">
-
-          </div>
-          <!-- Card stats -->
-          <div class="row">
-            <div class="col-xl-3 col-md-6">
-              <div class="card card-stats">
-                <!-- Card body -->
-                <div class="card-body">
-                  <div class="row">
-                    <div class="col">
-                      <h5 class="card-title text-uppercase text-muted mb-0">Total Psytalk</h5>
-                      
-                     <span class="h2 font-weight-bold mb-0"><?php echo 15; ?></span>
-                    </div>
-                    <div class="col-auto">
-                      <div class="icon icon-shape bg-gradient-red text-white rounded-circle shadow">
-                        <i class="ni ni-cart"></i>
-                      </div>
-                    </div>
-                  </div>
-                 
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-3 col-md-6">
-              <div class="card card-stats">
-                <!-- Card body -->
-                <div class="card-body">
-                  <div class="row">
-                    <div class="col">
-                      <h5 class="card-title text-uppercase text-muted mb-0">Total Kelas Berproses</h5>
-                     
-                      <span class="h2 font-weight-bold mb-0"><?php echo 5; ?></span>
-                    </div>
-                    <div class="col-auto">
-                      <div class="icon icon-shape bg-gradient-orange text-white rounded-circle shadow">
-                        <i class="ni ni-badge"></i>
-                      </div>
-                    </div>
-                  </div>
-                 
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-3 col-md-6">
-              <div class="card card-stats">
-                <!-- Card body -->
-                <div class="card-body">
-                  <div class="row">
-                    <div class="col">
-                      <h5 class="card-title text-uppercase text-muted mb-0">Total IG LIVE & Artikel</h5>
-                      
-                      <span class="h2 font-weight-bold mb-0"><?php echo 2; ?></span>
-                    </div>
-                    <div class="col-auto">
-                      <div class="icon icon-shape bg-gradient-green text-white rounded-circle shadow">
-                        <i class="ni ni-shop"></i>
-                      </div>
-                    </div>
-                  </div>
-                  
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-3 col-md-6">
-              <div class="card card-stats">
-                <!-- Card body -->
-                <div class="card-body">
-                  <div class="row">
-                    <div class="col">
-                      <h5 class="card-title text-uppercase text-muted mb-0">Total Media Partner</h5>
-                      
-                      <span class="h2 font-weight-bold mb-0">4.5</span>
-                    </div>
-                    <div class="col-auto">
-                      <div class="icon icon-shape bg-gradient-info text-white rounded-circle shadow">
-                        <i class="ni ni-favourite-28"></i>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div class="col-lg-6 col-7">
+              <form class="navbar-search navbar-search-light form-inline mr-sm-3" id="navbar-search-main" method="post">
+	            <div class="form-group mb-0">
+	              <div class="input-group input-group-alternative input-group-merge">
+	                <div class="input-group-prepend">
+	                  <span class="input-group-text"><i class="fas fa-search"></i></span>
+	                </div>
+	                <input class="form-control" placeholder="Search" type="text" name="keyword">
+	              </div>
+	            </div>
+	            <button type="submit" name="cari" class="close" data-action="search-close" data-target="#navbar-search-main" aria-label="Close">
+	              <span aria-hidden="true">×</span>
+	            </button>
+          	  </form>
             </div>
           </div>
         </div>
       </div>
-    </div><br>
+    </div>     
     <!-- Page content -->
+    <div class="container-fluid mt--5">
+      <div class="row">
+        <div class="col">
+          <div class="card">
+            <!-- Card header -->
 
+            <div class="card-header col-lg-6">
+              <h3 class="mb-0">TABEL DATA IG LIVE</h3>
+          	</div>
+            <!-- Light table -->
+
+            <?php
+              include "koneksi.php";     
+                //tampilkan data  
+               $sql = "SELECT * FROM keloladata_iglive";
+               $result = $conn->query($sql);
+            ?>     
+      <div class="table-responsive">
+              <table class="table align-items-center table-flush">
+                <thead class="thead-light">
+                  <tr>
+                  	<th scope="col" class="sort" data-sort="id_iglive">No.</th>
+                    <th scope="col" class="sort" data-sort="judulig">Judul IG LIVE</th>
+                  	<th scope="col" class="sort" data-sort="haritglig">Hari, tanggal</th>
+                    <th scope="col" class="sort" data-sort="waktuig">Waktu</th>
+                    <th scope="col" class="sort" data-sort="link">Link pendaftaran</th>
+                    <th scope="col" class="sort" data-sort="foto_poster">Foto Poster</th>
+                    <th scope="col">Aksi</th>
+                  </tr>
+                </thead>
+
+                <?php 
+          if ($result->num_rows > 0) {
+             // output data of each row
+             $no=0;
+             while($row = $result->fetch_assoc()) {
+             	$no++;
+                 ?>
+
+
+                <tbody class="list">
+
+				    <tr>
+				      <td scope="row"><?= $row["id_iglive"]; ?></td>
+              <td scope="row"><?= $row["judulig"]; ?></td>
+				      <td scope="row"><?= $row["haritglig"]; ?></td>
+				      <td scope="row"><?= $row["waktuig"]; ?></td>
+				      <td scope="row"><?= $row["link"]; ?></td>
+              <td><img src="image_view.php?id_gambar=<?php echo $row['id_iglive']; ?>" width="100"/></td>
+				      <td>
+           
+              <a href="edit.php?id=<?= $row["id_iglive"]; ?>" class="btn btn-success btn-sm" id="modal" onclick="return confirm('Yakin ingin mengedit data ini?');">Edit</a>
+              <a href="hapus.php?id=<?= $row["id_iglive"]; ?>" class="btn btn-danger btn-sm" id="delete_link" onclick="return confirm('Yakin ingin menghapus data ini?');">Hapus</a>
+              
+            </td>
+				    </tr>
+				    </tbody>
+  
+            <?php        
+             }
+         } else {
+             echo "0 results";
+         }
+         
+         $conn->close();
+         ?>
+
+         
+              </table>
+              <br>
+              <form action="tambah_data.php" method="post">
+              <input type="submit" class="btn btn-primary" value="Input Data" name="submit">
+            
+            </div>
+          </div>
+        </div>
+      </div>
       <!-- Footer -->
       <footer class="footer pt-0">
         <div class="row align-items-center justify-content-lg-between">
@@ -260,7 +250,13 @@ if (!isset($_SESSION["login"])) {
               <a href="dashboard.php" class="nav-link" target="_blank">Dashboard</a>
             </li>
             <li class="nav-item">
-              <a href="../logout.php" class="nav-link" target="_blank">Logout</a>
+              <a href="register.php" class="nav-link" target="_blank">Registrasi</a>
+            </li>
+            <li class="nav-item">
+              <a href="login.php" class="nav-link" target="_blank">Login</a>
+            </li>
+            <li class="nav-item">
+              <a href="logout.php" class="nav-link" target="_blank">Logout</a>
             </li>
           </ul>
           </div>

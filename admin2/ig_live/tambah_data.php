@@ -1,11 +1,3 @@
-<?php
-
-session_start();
-
-if (!isset($_SESSION["login"])) {
-    header("Location: ../index.php");
-    exit;
-}
 ?>
 
 <!DOCTYPE html>
@@ -17,19 +9,18 @@ if (!isset($_SESSION["login"])) {
   <meta name="description" content="Start your development with a Dashboard for Bootstrap 4.">
   <meta name="author" content="Creative Tim">
 
-  <title>Dashboard || Ruang Berproses</title>
+  <title>Tambah Konten IG LIVE || Ruang Berproses</title>
   <!-- Favicon -->
-  <link rel="icon" href="assets/img/brand/logo.png" type="image/jpeg">
+  <link rel="icon" href="../img/icon.png" type="image/png" sizes="16x16">
   <!-- Fonts -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
+  <link rel="stylesheet" href="../https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
   <!-- Icons -->
-  <link rel="stylesheet" href="assets/vendor/nucleo/css/nucleo.css" type="text/css">
-  <link rel="stylesheet" href="assets/vendor/@fortawesome/fontawesome-free/css/all.min.css" type="text/css">
+  <link rel="stylesheet" href="../assets/vendor/nucleo/css/nucleo.css" type="text/css">
+  <link rel="stylesheet" href="../assets/vendor/@fortawesome/fontawesome-free/css/all.min.css" type="text/css">
   <!-- Page plugins -->
   <!-- Argon CSS -->
-  <link rel="stylesheet" href="assets/css/argon.css?v=1.2.0" type="text/css">
-
-  </head>
+  <link rel="stylesheet" href="../assets/css/argon.css?v=1.2.0" type="text/css">
+</head>
 
 <body>
   <!-- Sidenav -->
@@ -38,7 +29,7 @@ if (!isset($_SESSION["login"])) {
       <!-- Brand -->
       <div class="sidenav-header  align-items-center" >
         <a class="navbar-brand" href="dashboard.php">
-          <img src="assets/img/brand/logo.png" class="navbar-brand-img">
+          <img src="../assets/img/brand/logo.png" class="navbar-brand-img">
         </a>
       </div>
       <div class="navbar-inner">
@@ -52,9 +43,8 @@ if (!isset($_SESSION["login"])) {
                 <span class="nav-link-text">Dashboard</span>
               </a>
             </li>
-            
             <li class="nav-item">
-              <a class="nav-link" href="profile/profile.php">
+              <a class="nav-link" href="profile.php">
                 <i class="ni ni-single-02 text-primary"></i>
                 <span class="nav-link-text">Profile</span>
               </a>
@@ -67,25 +57,25 @@ if (!isset($_SESSION["login"])) {
           </h6>
           <ul class="navbar-nav mb-md-3">
             <li class="nav-item">
-              <a class="nav-link" href="../admin/psytalk/tampil_data.php">
+              <a class="nav-link" href="../psytalk/tampil_data.php">
                 <i class="ni ni-notification-70 text-primary"></i>
                 <span class="nav-link-text">Kelola Data Psytalk</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../admin/kelasberproses/tampil_data.php">
+              <a class="nav-link" href="../kelasberproses/tampil_data.php">
                 <i class="ni ni-notification-70 text-primary"></i>
                 <span class="nav-link-text">Kelola Data Kelas Berproses</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../admin2/ig_live/tampil_data.php">
+              <a class="nav-link" href="../ig_live/tampil_data.php">
                 <i class="ni ni-notification-70 text-primary"></i>
                 <span class="nav-link-text">Kelola Data IG LIVE</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../admin/supportgroup/tampil_data.php">
+              <a class="nav-link" href="../artikel/tampil_data.php">
                 <i class="ni ni-notification-70 text-primary"></i>
                 <span class="nav-link-text">Kelola Artikel</span>
               </a>
@@ -112,7 +102,8 @@ if (!isset($_SESSION["login"])) {
       </div>
     </div>
   </nav>
-  <!-- Main content -->
+
+ <!-- Main content -->
   <div class="main-content" id="panel">
     <!-- Topnav -->
     <nav class="navbar navbar-top navbar-expand navbar-dark bg-primary border-bottom">
@@ -121,22 +112,27 @@ if (!isset($_SESSION["login"])) {
             <div class="col-lg-6 col-7">
               <nav aria-label="breadcrumb" class="d-none d-md-inline-block ml-md-0 mt-2">
                 <ol class="breadcrumb breadcrumb-links breadcrumb-dark">
-                  <li class="breadcrumb-item"><a href="dashboard.php"><i class="fas fa-home"></i></a></li>
-                  <li class="breadcrumb-item"><a href="dashboard.php">Dashboard</a></li>
+                  <br>
+                  <li class="breadcrumb-item"><a href="../dashboard.php"><i class="fas fa-home"></i></a></li>
+                  <li class="breadcrumb-item"><a href="../dashboard.php">Dashboard</a></li>
+                  <li class="breadcrumb-item"><a href="../psytalk/tampil_data.php"><i class="fas fa-home"></i></a></li>
+                  <li class="breadcrumb-item"><a href="../psytalk/tampil_data.php">Kelola data IG LIVE</a></li>
                 </ol>
               </nav>
             </div>
+            
           <!-- Navbar links -->
           <ul class="navbar-nav align-items-center  ml-auto ml-md-20 ">
             <li class="nav-item">
               <a class="nav-link pr-0" href="profile.php">
                 <div class="media align-items-center">
-
+                  
+                 
                 </div>
               </a>
             </li>
             <li class="nav-item" style="margin-left: 50px">
-              <a class="nav-link pr-0" href="../logout.php">
+              <a class="nav-link pr-0" href="logout.php">
                 <div class="media align-items-center">
                   <span>
                     <i class="ni ni-button-power text-white"></i>
@@ -151,101 +147,79 @@ if (!isset($_SESSION["login"])) {
         </div>
       </div>
     </nav>
-    <!-- Header -->
-    <!-- Header -->
-    <div class="header bg-primary pb-6">
-      <div class="container-fluid">
-        <div class="header-body">
-          <div class="row align-items-center py-4">
+<br>
 
-          </div>
-          <!-- Card stats -->
-          <div class="row">
-            <div class="col-xl-3 col-md-6">
-              <div class="card card-stats">
-                <!-- Card body -->
-                <div class="card-body">
-                  <div class="row">
-                    <div class="col">
-                      <h5 class="card-title text-uppercase text-muted mb-0">Total Psytalk</h5>
-                      
-                     <span class="h2 font-weight-bold mb-0"><?php echo 15; ?></span>
-                    </div>
-                    <div class="col-auto">
-                      <div class="icon icon-shape bg-gradient-red text-white rounded-circle shadow">
-                        <i class="ni ni-cart"></i>
-                      </div>
-                    </div>
-                  </div>
-                 
+  <div class="container-fluid mt--5">
+            <div class="row">
+        <div class="col-xl-12 order-xl-1">
+          <div class="card">
+            <div class="card-header">
+              <div class="row align-items-center">
+                <div class="col-8">
+                  <h3 class="mb-0">TAMBAH KONTEN IG LIVE/h3>
                 </div>
               </div>
             </div>
-            <div class="col-xl-3 col-md-6">
-              <div class="card card-stats">
-                <!-- Card body -->
-                <div class="card-body">
+            <div class="card-body">
+              <form action="tambah.php" method="POST" enctype="multipart/form-data">
+
                   <div class="row">
-                    <div class="col">
-                      <h5 class="card-title text-uppercase text-muted mb-0">Total Kelas Berproses</h5>
-                     
-                      <span class="h2 font-weight-bold mb-0"><?php echo 5; ?></span>
-                    </div>
-                    <div class="col-auto">
-                      <div class="icon icon-shape bg-gradient-orange text-white rounded-circle shadow">
-                        <i class="ni ni-badge"></i>
+                    <div class="col-lg-12">
+                      <div class="form-group">
+                        <label class="form-control-label" for="judulig">Judul IG LIVE</label>
+                        <input type="text" name="judulig" class="form-control" id="judulig" required placeholder="Judul Acara">
+                        <small class="form-text text-muted font-weight-medium">Contoh : "IG LIVE : Be A Great Career Woman"</small>
                       </div>
                     </div>
                   </div>
-                 
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-3 col-md-6">
-              <div class="card card-stats">
-                <!-- Card body -->
-                <div class="card-body">
+
                   <div class="row">
-                    <div class="col">
-                      <h5 class="card-title text-uppercase text-muted mb-0">Total IG LIVE & Artikel</h5>
-                      
-                      <span class="h2 font-weight-bold mb-0"><?php echo 2; ?></span>
-                    </div>
-                    <div class="col-auto">
-                      <div class="icon icon-shape bg-gradient-green text-white rounded-circle shadow">
-                        <i class="ni ni-shop"></i>
+                    <div class="col-lg-12">
+                      <div class="form-group">
+                        <label class="form-control-label" for="haritglig">Hari, Tanggal Acara</label>
+                        <input type="text" name="haritglig" class="form-control" id="haritglig" required placeholder="Hari dan Tanggal">
+                        <small class="form-text text-muted font-weight-medium">Contoh : Jum'at, 04 Maret 2022"</small>
                       </div>
                     </div>
                   </div>
-                  
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-3 col-md-6">
-              <div class="card card-stats">
-                <!-- Card body -->
-                <div class="card-body">
+
                   <div class="row">
-                    <div class="col">
-                      <h5 class="card-title text-uppercase text-muted mb-0">Total Media Partner</h5>
-                      
-                      <span class="h2 font-weight-bold mb-0">4.5</span>
-                    </div>
-                    <div class="col-auto">
-                      <div class="icon icon-shape bg-gradient-info text-white rounded-circle shadow">
-                        <i class="ni ni-favourite-28"></i>
+                  <div class="col-lg-12">
+                      <div class="form-group">
+                        <label class="form-control-label" for="waktu">Waktu Acara</label>
+                        <select name="waktuig" class="form-control">
+                        <option id="waktu1">19.00-21.00 WIB</option>
+                        </select>
                       </div>
                     </div>
                   </div>
+
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <div class="form-group">
+                        <label class="form-control-label" for="link">Link Pendaftaran</label>
+                        <input type="textarea" name="link" class="form-control" id="link" required placeholder="Link Pendaftaran yang dapat diakses">
+                      </div>
+                    </div>
+                  </div>
+
+                <div class="row">
+                  <div class="pl-lg-4">
+                    <div class="form-group">
+                    <label class="form-control-label">Upload Poster acara IG LIVE<br></label><br>
+                    <input type="file" name="foto_poster" id="foto_poster" placeholder="foto_poster"><br><br>
+                  </div> 
+
+                  <div class="form-group">
+                    <button type="submit" name="submit" class="btn btn-primary mb-0">Kirim</button>
+                  </div>
                 </div>
-              </div>
+              </form>
             </div>
           </div>
         </div>
       </div>
-    </div><br>
-    <!-- Page content -->
-
+  </div>
       <!-- Footer -->
       <footer class="footer pt-0">
         <div class="row align-items-center justify-content-lg-between">
@@ -259,8 +233,9 @@ if (!isset($_SESSION["login"])) {
             <li class="nav-item">
               <a href="dashboard.php" class="nav-link" target="_blank">Dashboard</a>
             </li>
+           
             <li class="nav-item">
-              <a href="../logout.php" class="nav-link" target="_blank">Logout</a>
+              <a href="logout.php" class="nav-link" target="_blank">Logout</a>
             </li>
           </ul>
           </div>
@@ -281,5 +256,7 @@ if (!isset($_SESSION["login"])) {
   <!-- Argon JS -->
   <script src="../assets/js/argon.js?v=1.2.0"></script>
 </body>
-
 </html>
+       
+</html>
+<!-- end document-->
