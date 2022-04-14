@@ -1,3 +1,5 @@
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -7,11 +9,11 @@
   <meta name="description" content="Start your development with a Dashboard for Bootstrap 4.">
   <meta name="author" content="Creative Tim">
 
-  <title>Kelola Data Psytalk || RUANG BERPROSES</title>
+  <title>Tambah Artikel || Ruang Berproses</title>
   <!-- Favicon -->
-  <link rel="icon" href="../assets/img/brand/logo.png" type="image/jpeg">
+  <link rel="icon" href="../img/icon.png" type="image/png" sizes="16x16">
   <!-- Fonts -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
+  <link rel="stylesheet" href="../https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
   <!-- Icons -->
   <link rel="stylesheet" href="../assets/vendor/nucleo/css/nucleo.css" type="text/css">
   <link rel="stylesheet" href="../assets/vendor/@fortawesome/fontawesome-free/css/all.min.css" type="text/css">
@@ -26,7 +28,7 @@
     <div class="scrollbar-inner">
       <!-- Brand -->
       <div class="sidenav-header  align-items-center" >
-        <a class="navbar-brand" href="../dashboard.php">
+        <a class="navbar-brand" href="dashboard.php">
           <img src="../assets/img/brand/logo.png" class="navbar-brand-img">
         </a>
       </div>
@@ -36,19 +38,19 @@
           <!-- Nav items -->
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" href="../dashboard.php">
+              <a class="nav-link active" href="dashboard.php">
                 <i class="ni ni-tv-2 text-primary"></i>
                 <span class="nav-link-text">Dashboard</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../profile/profile.php">
+              <a class="nav-link" href="profile.php">
                 <i class="ni ni-single-02 text-primary"></i>
                 <span class="nav-link-text">Profile</span>
               </a>
             </li>
           </ul>
-         
+          
           <!-- Heading -->
           <h6 class="navbar-heading p-0 text-muted">
             <span class="docs-normal">Kelola</span>
@@ -100,7 +102,8 @@
       </div>
     </div>
   </nav>
-  <!-- Main content -->
+
+ <!-- Main content -->
   <div class="main-content" id="panel">
     <!-- Topnav -->
     <nav class="navbar navbar-top navbar-expand navbar-dark bg-primary border-bottom">
@@ -109,14 +112,25 @@
             <div class="col-lg-6 col-7">
               <nav aria-label="breadcrumb" class="d-none d-md-inline-block ml-md-0 mt-2">
                 <ol class="breadcrumb breadcrumb-links breadcrumb-dark">
-                  <li class="breadcrumb-item"><a href="dashboard.php"><i class="fas fa-home"></i></a></li>
-                  <li class="breadcrumb-item"><a href="tampil_data.php">Kelola Data Artikel</a></li>
+                  <br>
+                  <li class="breadcrumb-item"><a href="../dashboard.php"><i class="fas fa-home"></i></a></li>
+                  <li class="breadcrumb-item"><a href="../dashboard.php">Dashboard</a></li>
+                  <li class="breadcrumb-item"><a href="../psytalk/tampil_data.php"><i class="fas fa-home"></i></a></li>
+                  <li class="breadcrumb-item"><a href="../psytalk/tampil_data.php">Kelola data Artikel</a></li>
                 </ol>
               </nav>
             </div>
+            
           <!-- Navbar links -->
           <ul class="navbar-nav align-items-center  ml-auto ml-md-20 ">
-            
+            <li class="nav-item">
+              <a class="nav-link pr-0" href="profile.php">
+                <div class="media align-items-center">
+                  
+                 
+                </div>
+              </a>
+            </li>
             <li class="nav-item" style="margin-left: 50px">
               <a class="nav-link pr-0" href="logout.php">
                 <div class="media align-items-center">
@@ -133,107 +147,75 @@
         </div>
       </div>
     </nav>
-    <!-- Header -->
-    <!-- Header -->
-    <div class="header bg-primary pb-5">
-      <div class="container-fluid">
-        <div class="header-body">
-          <div class="row align-items-center py-4">
-            <div class="col-lg-6 col-7">
-              <form class="navbar-search navbar-search-light form-inline mr-sm-3" id="navbar-search-main" method="post">
-	            <div class="form-group mb-0">
-	              <div class="input-group input-group-alternative input-group-merge">
-	                <div class="input-group-prepend">
-	                  <span class="input-group-text"><i class="fas fa-search"></i></span>
-	                </div>
-	                <input class="form-control" placeholder="Search" type="text" name="keyword">
-	              </div>
-	            </div>
-	            <button type="submit" name="cari" class="close" data-action="search-close" data-target="#navbar-search-main" aria-label="Close">
-	              <span aria-hidden="true">×</span>
-	            </button>
-          	  </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>     
-    <!-- Page content -->
-    <div class="container-fluid mt--5">
-      <div class="row">
-        <div class="col">
+<br>
+
+  <div class="container-fluid mt--5">
+            <div class="row">
+        <div class="col-xl-12 order-xl-1">
           <div class="card">
-            <!-- Card header -->
+            <div class="card-header">
+              <div class="row align-items-center">
+                <div class="col-8">
+                  <h3 class="mb-0">TAMBAH ARTIKEL</h3>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <form action="tambah.php" method="POST" enctype="multipart/form-data">
 
-            <div class="card-header col-lg-6">
-              <h3 class="mb-0">TABEL DATA Artikel</h3>
-          	</div>
-            <!-- Light table -->
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <div class="form-group">
+                        <label class="form-control-label" for="judulartikel">Judul Artikel</label>
+                        <input type="text" name="judulartikel" class="form-control" id="judulartikel" required placeholder="Judul Artikel"><small class="form-text text-muted font-weight-medium">Contoh : "Bagaimana musik mengobati mentalmu"</small>
+                      </div>
+                    </div>
+                  </div>
 
-            <?php
-              include "koneksi.php";     
-                //tampilkan data  
-               $sql = "SELECT * FROM keloladata_artikel";
-               $result = $conn->query($sql);
-            ?>     
-      <div class="table-responsive">
-              <table class="table align-items-center table-flush">
-                <thead class="thead-light">
-                  <tr>
-                  	<th scope="col" class="sort" data-sort="no_artikel">No.</th>
-                    <th scope="col" class="sort" data-sort="judulartikel">Judul Artikel</th>
-                  	<th scope="col" class="sort" data-sort="summary">Summary</th>
-                    <th scope="col" class="sort" data-sort="isi">Isi Artikel</th>
-                    <th scope="col" class="sort" data-sort="foto_artikel">Foto Artikel</th>
-                    <th scope="col">Aksi</th>
-                  </tr>
-                </thead>
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <div class="form-group">
+                        <label class="form-control-label" for="summary">Summary</label>
+                        <input type="text" name="summary" class="form-control" id="summary" required placeholder="Summary">
+                      </div>
+                    </div>
+                  </div>
 
-                <?php 
-          if ($result->num_rows > 0) {
-             // output data of each row
-             $no=0;
-             while($row = $result->fetch_assoc()) {
-             	$no++;
-                 ?>
+                  <div class="row">
+                  <div class="col-lg-12">
+                      <div class="form-group">
+                        <label class="form-control-label" for="isi">Isi Artikel</label>
+                        <input type="text" name="isi" class="form-control" id="isi" required placeholder="Isi Artikel">
+                      </div>
+                    </div>
+                  </div>
 
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <div class="form-group">
+                        <label class="form-control-label" for="referensi">Referensi Artikel</label>
+                        <input type="textarea" name="referensi" class="form-control" id="referensi" required placeholder="Referensi Artikel">
+                      </div>
+                    </div>
+                  </div>
 
-                <tbody class="list">
+                <div class="row">
+                  <div class="pl-lg-4">
+                    <div class="form-group">
+                    <label class="form-control-label">Upload Foto Artikel<br></label><br>
+                    <input type="file" name="foto_artikel" id="foto_artikel" placeholder="foto_artikel"><br><br>
+                  </div> 
 
-				    <tr>
-				      <td scope="row"><?= $row["no_artikel"]; ?></td>
-              <td scope="row"><?= $row["judulartikel"]; ?></td>
-				      <td scope="row"><?= $row["summary"]; ?></td>
-				      <td scope="row"><?= $row["isi"]; ?></td>
-              <td><img src="image_view.php?id_gambar=<?php echo $row['no_artikel']; ?>" width="100"/></td>
-				      <td>
-           
-              <a href="edit.php?id=<?= $row["no_artikel"]; ?>" class="btn btn-success btn-sm" id="modal" onclick="return confirm('Yakin ingin mengedit data ini?');">Edit</a>
-              <a href="hapus.php?id=<?= $row["no_artikel"]; ?>" class="btn btn-danger btn-sm" id="delete_link" onclick="return confirm('Yakin ingin menghapus data ini?');">Hapus</a>
-              
-            </td>
-				    </tr>
-				    </tbody>
-  
-            <?php        
-             }
-         } else {
-             echo "0 results";
-         }
-         
-         $conn->close();
-         ?>
-
-         
-              </table>
-              <br>
-              <form action="tambah_data.php" method="post">
-              <input type="submit" class="btn btn-primary" value="Input Data" name="submit">
-            
+                  <div class="form-group">
+                    <button type="submit" name="submit" class="btn btn-primary mb-0">Kirim</button>
+                  </div>
+                </div>
+              </form>
             </div>
           </div>
         </div>
       </div>
+  </div>
       <!-- Footer -->
       <footer class="footer pt-0">
         <div class="row align-items-center justify-content-lg-between">
@@ -247,12 +229,7 @@
             <li class="nav-item">
               <a href="dashboard.php" class="nav-link" target="_blank">Dashboard</a>
             </li>
-            <li class="nav-item">
-              <a href="register.php" class="nav-link" target="_blank">Registrasi</a>
-            </li>
-            <li class="nav-item">
-              <a href="login.php" class="nav-link" target="_blank">Login</a>
-            </li>
+           
             <li class="nav-item">
               <a href="logout.php" class="nav-link" target="_blank">Logout</a>
             </li>
@@ -275,5 +252,7 @@
   <!-- Argon JS -->
   <script src="../assets/js/argon.js?v=1.2.0"></script>
 </body>
-
 </html>
+       
+</html>
+<!-- end document-->
