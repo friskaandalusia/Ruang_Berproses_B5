@@ -528,15 +528,14 @@ footer {
 @media screen and (max-width: 450px) {
 
   .full-height {
-    height: 110vh;
+    height: 100vh;
   }
-
   .absolute-center {
     position: absolute;
     top: 50%;
     left: 0;
     width: 100%;
-    margin-top: 40px;
+    margin-top: -10px;
   }
   h1 {
     font-size: 32px;

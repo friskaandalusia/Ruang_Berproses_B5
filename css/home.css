@@ -217,7 +217,7 @@ p {
   top: 50%;
   left: 0;
   width: 100%;
-  margin-top: 40px;
+  margin-top: 30px;
   transform: translateY(-50%);
   z-index: 20;
 }
@@ -570,7 +570,7 @@ footer {
 @media screen and (max-width: 450px) {
 
   h1 {
-    padding-top: 80px;
+    margin-top: -50px;
     padding-bottom: 5px;
     font-weight: 500;
   }

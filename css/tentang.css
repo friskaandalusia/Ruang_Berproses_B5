@@ -350,7 +350,6 @@ h4 {
 ================================================== */
 
 .profil {
-  height: 200vh;
   background-color: #F6F6F6;
 }
 
@@ -487,7 +486,6 @@ border-color: transparent #dddddd transparent transparent;
 
 .associate{
   padding-top: 50px;
-  height: 110vh;
   background-color:#EBDFFF;
 }
 
@@ -575,7 +573,6 @@ border-color: transparent #dddddd transparent transparent;
 
 .team{
   padding-top: 50px;
-  height: 110vh;
   background-color: #F6F6F6;
 }
 
@@ -804,7 +801,7 @@ footer {
 @media screen and (max-width: 450px) {
 
   .full-height {
-    height: 110vh;
+    height: 100vh;
     background-color: #EBDFFF;
   }
 
@@ -813,7 +810,7 @@ footer {
     top: 50%;
     left: 0;
     width: 100%;
-    margin-top: 10px;
+    margin-top: -20px;
   }
   
   .lebar {
@@ -848,7 +845,7 @@ footer {
 
   .video{
     margin-top: 0px;
-    height: 90vh;
+    height: 70vh;
   }
 
   video{
@@ -926,7 +923,6 @@ footer {
 @media (max-width: 767.98px) {
 
   .profil {
-    height: 330vh;
     background-color: #F6F6F6;
   }
   .experience .timeline::after {
