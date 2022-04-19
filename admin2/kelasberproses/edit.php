@@ -47,8 +47,8 @@
             </li>
           </ul>
           
-            <!-- Heading -->
-            <h6 class="navbar-heading p-0 text-muted">
+           <!-- Heading -->
+           <h6 class="navbar-heading p-0 text-muted">
             <span class="docs-normal">Kelola</span>
           </h6>
           <ul class="navbar-nav mb-md-3">
@@ -152,23 +152,23 @@
             <div class="card-header">
               <div class="row align-items-center">
                 <div class="col-8">
-                  <h3 class="mb-0">EDIT KONTEN PSYTALK</h3>
+                  <h3 class="mb-0">EDIT KONTEN KELAS BERPROSES</h3>
                 </div>
               </div>
             </div>
             <div class="card-body">
             <?php        
             include "koneksi.php";
-            $no_konten=$_GET['id'];    
-            $sql = "SELECT * FROM keloladata_psytalk where no_konten='$no_konten' ";
+            $id_kb=$_GET['id'];    
+            $sql = "SELECT * FROM kelola_kb where id_kb='$id_kb' ";
             $result = $conn->query($sql);
             if ($result->num_rows > 0) {
                 // output data of each row
                 while($row = $result->fetch_assoc()) { 
-                $judul=$row["judul"];
-                $hari_tgl=$row["hari_tgl"];
-                $waktu=$row["waktu"];  
-                $fee=$row["fee"];
+                $judulkb=$row["judulkb"];
+                $haritglkb=$row["haritglkb"];
+                $waktukb=$row["waktukb"];  
+                $feekb=$row["feekb"];
                 $link=$row["link"]; 
                 }
             }
@@ -182,9 +182,10 @@
                   <div class="row">
                     <div class="col-lg-12">
                       <div class="form-group">
-                        <label class="form-control-label" for="judul">Judul acara Psytalk</label>
-                        <input type="text" name="judul" class="form-control" id="judul" required placeholder="Judul Acara"value="<?php echo $judul;?>">
-                        <small class="form-text text-muted font-weight-medium">Contoh : "Psytalk60: Time Management"</small>
+                        <label class="form-control-label" for="judulkb">Judul acara Kelas Berproses</label>
+                        <input type="text" name="judulkb" class="form-control" id="judulkb" required placeholder="Judul Acara"
+                        value="<?php echo $judulkb;?>">
+                        <small class="form-text text-muted font-weight-medium">Contoh : "Topic Quarter Life Crisis (QLC)"</small>
                       </div>
                     </div>
                   </div>
@@ -192,8 +193,8 @@
                   <div class="row">
                     <div class="col-lg-12">
                       <div class="form-group">
-                        <label class="form-control-label" for="hari_tgl">Hari, Tanggal Acara</label>
-                        <input type="text" name="hari_tgl" class="form-control" id="hari_tgl" required placeholder="Hari dan Tanggal" value="<?php echo $hari_tgl;?>">
+                        <label class="form-control-label" for="haritglkb">Hari, Tanggal Acara</label>
+                        <input type="text" name="haritglkb" class="form-control" id="haritglkb" required placeholder="Hari dan Tanggal" value="<?php echo $haritglkb;?>">
                         <small class="form-text text-muted font-weight-medium">Contoh : Jum'at, 04 Maret 2022"</small>
                       </div>
                     </div>
@@ -202,9 +203,10 @@
                   <div class="row">
                   <div class="col-lg-12">
                       <div class="form-group">
-                        <label class="form-control-label" for="waktu">Waktu Acara</label>
-                        <select name="waktu" class="form-control" value="<?php echo $waktu;?>">
+                        <label class="form-control-label" for="waktukb">Waktu Acara</label>
+                        <select name="waktukb" class="form-control" value="<?php echo $waktukb;?>">
                         <option id="waktu1">19.00-21.00 WIB</option>
+                        <option id="waktu2">10.00-12.00 WIB</option>
                         </select>
                       </div>
                     </div>
@@ -213,8 +215,8 @@
                   <div class="row">
                   <div class="col-lg-12">
                       <div class="form-group">
-                        <label class="form-control-label" for="fee">Fee Acara</label>
-                        <select name="fee" class="form-control" value="<?php echo $fee;?>">
+                        <label class="form-control-label" for="feekb">Fee Acara</label>
+                        <select name="feekb" class="form-control" value="<?php echo $feekb;?>">
                         <option id="fee1">IDR 10K (E-certificate + Materi)</option>
                         <option id="fee2">IDR 15K (E-certificate + Materi)</option>
                         <option id="fee3">IDR 20K (E-certificate + Materi)</option>
@@ -238,10 +240,10 @@
                   <div class="form-group">
                   <label for="foto_poster"> 
                   Foto Poster</label> 
-                  <br><img src="image_view.php?id_gambar=<?php echo $no_konten; ?>" width="100"/></br> 
-                  <br><input type="file" id="foto_poster" name="foto_poster" /> <br /> 
+                  <br><img src="image_view.php?id_gambar=<?php echo $id_kb; ?>" width="100"/></br> 
+                  <br><input type="file" id="foto_posterkb" name="foto_posterkb" /> <br /> 
                 <br /> 
-                <input type="hidden" id="no_konten" name="no_konten" value="<?php echo $no_konten;?>"> 
+                <input type="hidden" id="id_kb" name="id_kb" value="<?php echo $id_kb;?>"> 
                 <br /> 
 
                 <div> 

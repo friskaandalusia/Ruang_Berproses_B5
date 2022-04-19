@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="Start your development with a Dashboard for Bootstrap 4.">
   <meta name="author" content="Creative Tim">
 
-  <title>Edit Konten Psytalk || Ruang Berproses</title>
+  <title>Kelola Data Kelas Berproses || RUANG BERPROSES</title>
   <!-- Favicon -->
-  <link rel="icon" href="../img/icon.png" type="image/png" sizes="16x16">
+  <link rel="icon" href="../assets/img/brand/logo.png" type="image/jpeg">
   <!-- Fonts -->
-  <link rel="stylesheet" href="../https://fonts.googlea   pis.com/css?family=Open+Sans:300,400,600,700">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
   <!-- Icons -->
   <link rel="stylesheet" href="../assets/vendor/nucleo/css/nucleo.css" type="text/css">
   <link rel="stylesheet" href="../assets/vendor/@fortawesome/fontawesome-free/css/all.min.css" type="text/css">
@@ -18,13 +19,14 @@
   <!-- Argon CSS -->
   <link rel="stylesheet" href="../assets/css/argon.css?v=1.2.0" type="text/css">
 </head>
+
 <body>
   <!-- Sidenav -->
   <nav class="sidenav navbar navbar-vertical  fixed-left  navbar-expand-xs navbar-light bg-white" id="sidenav-main">
     <div class="scrollbar-inner">
       <!-- Brand -->
       <div class="sidenav-header  align-items-center" >
-        <a class="navbar-brand" href="dashboard.php">
+        <a class="navbar-brand" href="../dashboard.php">
           <img src="../assets/img/brand/logo.png" class="navbar-brand-img">
         </a>
       </div>
@@ -34,21 +36,22 @@
           <!-- Nav items -->
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" href="dashboard.php">
+              <a class="nav-link active" href="../dashboard.php">
                 <i class="ni ni-tv-2 text-primary"></i>
                 <span class="nav-link-text">Dashboard</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="profile.php">
+              <a class="nav-link" href="../profile/profile.php">
                 <i class="ni ni-single-02 text-primary"></i>
                 <span class="nav-link-text">Profile</span>
               </a>
             </li>
           </ul>
-          
-            <!-- Heading -->
-            <h6 class="navbar-heading p-0 text-muted">
+          <hr class="my-3">
+         
+           <!-- Heading -->
+           <h6 class="navbar-heading p-0 text-muted">
             <span class="docs-normal">Kelola</span>
           </h6>
           <ul class="navbar-nav mb-md-3">
@@ -98,8 +101,7 @@
       </div>
     </div>
   </nav>
-
- <!-- Main content -->
+  <!-- Main content -->
   <div class="main-content" id="panel">
     <!-- Topnav -->
     <nav class="navbar navbar-top navbar-expand navbar-dark bg-primary border-bottom">
@@ -108,25 +110,14 @@
             <div class="col-lg-6 col-7">
               <nav aria-label="breadcrumb" class="d-none d-md-inline-block ml-md-0 mt-2">
                 <ol class="breadcrumb breadcrumb-links breadcrumb-dark">
-                  <br>
-                  <li class="breadcrumb-item"><a href="../dashboard.php"><i class="fas fa-home"></i></a></li>
-                  <li class="breadcrumb-item"><a href="../dashboard.php">Dashboard</a></li>
-                  <li class="breadcrumb-item"><a href="../psytalk/tampil_data.php"><i class="fas fa-home"></i></a></li>
-                  <li class="breadcrumb-item"><a href="../psytalk/tampil_data.php">Kelola data Psytalk</a></li>
+                  <li class="breadcrumb-item"><a href="dashboard.php"><i class="fas fa-home"></i></a></li>
+                  <li class="breadcrumb-item"><a href="tampil_data.php">Kelola Data Kelas Berproses</a></li>
                 </ol>
               </nav>
             </div>
-            
           <!-- Navbar links -->
           <ul class="navbar-nav align-items-center  ml-auto ml-md-20 ">
-            <li class="nav-item">
-              <a class="nav-link pr-0" href="profile.php">
-                <div class="media align-items-center">
-                  
-                 
-                </div>
-              </a>
-            </li>
+            
             <li class="nav-item" style="margin-left: 50px">
               <a class="nav-link pr-0" href="logout.php">
                 <div class="media align-items-center">
@@ -143,116 +134,112 @@
         </div>
       </div>
     </nav>
-<br>
-
-<div class="container-fluid mt-- 5">
-            <div class="row">
-        <div class="col-xl-12 order-xl-1">
-          <div class="card">
-            <div class="card-header">
-              <div class="row align-items-center">
-                <div class="col-8">
-                  <h3 class="mb-0">EDIT KONTEN PSYTALK</h3>
-                </div>
-              </div>
+    <!-- Header -->
+    <!-- Header -->
+    <div class="header bg-primary pb-5">
+      <div class="container-fluid">
+        <div class="header-body">
+          <div class="row align-items-center py-4">
+            <div class="col-lg-6 col-7">
+              <form class="navbar-search navbar-search-light form-inline mr-sm-3" id="navbar-search-main" method="post">
+	            <div class="form-group mb-0">
+	              <div class="input-group input-group-alternative input-group-merge">
+	                <div class="input-group-prepend">
+	                  <span class="input-group-text"><i class="fas fa-search"></i></span>
+	                </div>
+	                <input class="form-control" placeholder="Search" type="text" name="keyword">
+	              </div>
+	            </div>
+	            <button type="submit" name="cari" class="close" data-action="search-close" data-target="#navbar-search-main" aria-label="Close">
+	              <span aria-hidden="true">×</span>
+	            </button>
+          	  </form>
             </div>
-            <div class="card-body">
+          </div>
+        </div>
+      </div>
+    </div>     
+    <!-- Page content -->
+    <div class="container-fluid mt--5">
+      <div class="row">
+        <div class="col">
+          <div class="card">
+            <!-- Card header -->
+
+            <div class="card-header col-lg-6">
+              <h3 class="mb-0">TABEL DATA KONTEN KELAS BERPROSES</h3>
+          	</div>
+            <!-- Light table -->
+
+            <?php
+              include "koneksi.php";     
+                //tampilkan data  
+               $sql = "SELECT * FROM kelola_kb";
+               $result = $conn->query($sql);
+            ?>     
+      <div class="table-responsive">
+              <table class="table align-items-center table-flush">
+                <thead class="thead-light">
+                  <tr>
+                  	<th scope="col" class="sort" data-sort="id_kb">No.</th>
+                    <th scope="col" class="sort" data-sort="judulkb">Judul Kelas Berproses</th>
+                  	<th scope="col" class="sort" data-sort="haritglkb">Hari, tanggal</th>
+                    <th scope="col" class="sort" data-sort="waktukb">Waktu</th>
+                    <th scope="col" class="sort" data-sort="feekb">Fee</th>
+                    <th scope="col" class="sort" data-sort="link">Link pendaftaran</th>
+                    <th scope="col" class="sort" data-sort="foto_posterkb">Foto Poster</th>
+                    <th scope="col">Aksi</th>
+                  </tr>
+                </thead>
+
+                <?php 
+          if ($result->num_rows > 0) {
+             // output data of each row
+             $no=0;
+             while($row = $result->fetch_assoc()) {
+             	$no++;
+                 ?>
+
+
+                <tbody class="list">
+
+				    <tr>
+				      <td scope="row"><?= $row["id_kb"]; ?></td>
+              <td scope="row"><?= $row["judulkb"]; ?></td>
+				      <td scope="row"><?= $row["haritglkb"]; ?></td>
+				      <td scope="row"><?= $row["waktukb"]; ?></td>
+				      <td scope="row"><?= $row["feekb"]; ?></td>
+				      <td scope="row"><?= $row["link"]; ?></td>
+              <td><img src="image_view.php?id_gambar=<?php echo $row['id_kb']; ?>" width="100"/></td>
+				      <td>
+           
+              <a href="edit.php?id=<?= $row["id_kb"]; ?>" class="btn btn-success btn-sm" id="modal" onclick="return confirm('Yakin ingin mengedit data ini?');">Edit</a>
+              <a href="hapus.php?id=<?= $row["id_kb"]; ?>" class="btn btn-danger btn-sm" id="delete_link" onclick="return confirm('Yakin ingin menghapus data ini?');">Hapus</a>
+              
+            </td>
+				    </tr>
+				    </tbody>
+  
             <?php        
-            include "koneksi.php";
-            $no_konten=$_GET['id'];    
-            $sql = "SELECT * FROM keloladata_psytalk where no_konten='$no_konten' ";
-            $result = $conn->query($sql);
-            if ($result->num_rows > 0) {
-                // output data of each row
-                while($row = $result->fetch_assoc()) { 
-                $judul=$row["judul"];
-                $hari_tgl=$row["hari_tgl"];
-                $waktu=$row["waktu"];  
-                $fee=$row["fee"];
-                $link=$row["link"]; 
-                }
-            }
-            else
-                { 
-                 
-            }
-            ?> 
-              <form action="update.php" method="POST" enctype="multipart/form-data">
+             }
+         } else {
+             echo "0 results";
+         }
+         
+         $conn->close();
+         ?>
 
-                  <div class="row">
-                    <div class="col-lg-12">
-                      <div class="form-group">
-                        <label class="form-control-label" for="judul">Judul acara Psytalk</label>
-                        <input type="text" name="judul" class="form-control" id="judul" required placeholder="Judul Acara"value="<?php echo $judul;?>">
-                        <small class="form-text text-muted font-weight-medium">Contoh : "Psytalk60: Time Management"</small>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="row">
-                    <div class="col-lg-12">
-                      <div class="form-group">
-                        <label class="form-control-label" for="hari_tgl">Hari, Tanggal Acara</label>
-                        <input type="text" name="hari_tgl" class="form-control" id="hari_tgl" required placeholder="Hari dan Tanggal" value="<?php echo $hari_tgl;?>">
-                        <small class="form-text text-muted font-weight-medium">Contoh : Jum'at, 04 Maret 2022"</small>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="row">
-                  <div class="col-lg-12">
-                      <div class="form-group">
-                        <label class="form-control-label" for="waktu">Waktu Acara</label>
-                        <select name="waktu" class="form-control" value="<?php echo $waktu;?>">
-                        <option id="waktu1">19.00-21.00 WIB</option>
-                        </select>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="row">
-                  <div class="col-lg-12">
-                      <div class="form-group">
-                        <label class="form-control-label" for="fee">Fee Acara</label>
-                        <select name="fee" class="form-control" value="<?php echo $fee;?>">
-                        <option id="fee1">IDR 10K (E-certificate + Materi)</option>
-                        <option id="fee2">IDR 15K (E-certificate + Materi)</option>
-                        <option id="fee3">IDR 20K (E-certificate + Materi)</option>
-                        <option id="fee4">IDR 25K (E-certificate + Materi)</option>
-                        </select>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="row">
-                    <div class="col-lg-12">
-                      <div class="form-group">
-                        <label class="form-control-label" for="link">Link Pendaftaran</label>
-                        <input type="textarea" name="link" class="form-control" id="link" required placeholder="Link Pendaftaran yang dapat diakses" value="<?php echo $link;?>">
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <div class="row">
-                <div class="pl-lg-4">
-                  <div class="form-group">
-                  <label for="foto_poster"> 
-                  Foto Poster</label> 
-                  <br><img src="image_view.php?id_gambar=<?php echo $no_konten; ?>" width="100"/></br> 
-                  <br><input type="file" id="foto_poster" name="foto_poster" /> <br /> 
-                <br /> 
-                <input type="hidden" id="no_konten" name="no_konten" value="<?php echo $no_konten;?>"> 
-                <br /> 
-
-                <div> 
-                  <button class="btn btn--radius-2 btn--red" type="submit" name="update">Submit</button> 
-                </div> 
-              </form> 
-            </div> 
-          </div> 
-        </div> 
-      </div> 
-    </div> 
+         
+              </table>
+              <br>
+              <form action="tambah_data.php" method="post">
+              <input type="submit" class="btn btn-primary" value="Input Data" name="submit">
+            
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Footer -->
       <footer class="footer pt-0">
         <div class="row align-items-center justify-content-lg-between">
           <div class="col-lg-6">
@@ -265,7 +252,12 @@
             <li class="nav-item">
               <a href="dashboard.php" class="nav-link" target="_blank">Dashboard</a>
             </li>
-           
+            <li class="nav-item">
+              <a href="register.php" class="nav-link" target="_blank">Registrasi</a>
+            </li>
+            <li class="nav-item">
+              <a href="login.php" class="nav-link" target="_blank">Login</a>
+            </li>
             <li class="nav-item">
               <a href="logout.php" class="nav-link" target="_blank">Logout</a>
             </li>
@@ -288,7 +280,5 @@
   <!-- Argon JS -->
   <script src="../assets/js/argon.js?v=1.2.0"></script>
 </body>
+
 </html>
-       
-</html>
-<!-- end document-->

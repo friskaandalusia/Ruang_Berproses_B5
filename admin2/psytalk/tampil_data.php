@@ -50,59 +50,46 @@
           </ul>
           <hr class="my-3">
          
-          <!-- Heading -->
-          <h6 class="navbar-heading p-0 text-muted">
+           <!-- Heading -->
+           <h6 class="navbar-heading p-0 text-muted">
             <span class="docs-normal">Kelola</span>
           </h6>
           <ul class="navbar-nav mb-md-3">
             <li class="nav-item">
               <a class="nav-link" href="../psytalk/tampil_data.php">
-                <i class="ni ni-cart text-primary"></i>
+                <i class="ni ni-notification-70 text-primary"></i>
                 <span class="nav-link-text">Kelola Data Psytalk</span>
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="../kelasberproses/tampil_data.php">
-                <i class="ni ni-bus-front-12 text-primary"></i>
+                <i class="ni ni-notification-70 text-primary"></i>
                 <span class="nav-link-text">Kelola Data Kelas Berproses</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../peerconseling/tampil_data.php">
+              <a class="nav-link" href="../ig_live/tampil_data.php">
                 <i class="ni ni-notification-70 text-primary"></i>
-                <span class="nav-link-text">Kelola Data Peer Counseling</span>
+                <span class="nav-link-text">Kelola Data IG LIVE</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../supportgroup/tampil_data.php">
+              <a class="nav-link" href="../artikel/tampil_data.php">
                 <i class="ni ni-notification-70 text-primary"></i>
-                <span class="nav-link-text">Kelola Data Support Group</span>
+                <span class="nav-link-text">Kelola Artikel</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../counselingprofessional/tampil_data.php">
+              <a class="nav-link" href="../admin/counselingprofessional/tampil_data.php">
                 <i class="ni ni-notification-70 text-primary"></i>
-                <span class="nav-link-text">Kelola Data Counseling Professional</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="kelola_customer.php">
-                <i class="ni ni-badge text-primary"></i>
-                <span class="nav-link-text">Kelola Data Pengguna</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="kelola_testimoni.php">
-                <i class="ni ni-chat-round text-primary"></i>
                 <span class="nav-link-text">Kelola Testimoni</span>
               </a>
             </li>
           </ul>
-
           <hr class="my-3">
           <ul class="navbar-nav mb-md-3">  
             <li class="nav-item">
-              <a class="nav-link" href="logout.php">
+              <a class="nav-link" href="../logout.php">
                 <i class="ni ni-button-power text-primary"></i>
                 <span class="nav-link-text">Logout</span>
               </a>
