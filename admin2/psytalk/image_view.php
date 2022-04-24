@@ -2,11 +2,11 @@
 include('koneksi.php');
 if(isset($_GET['id_gambar'])) 
 {
-    $no_konten=$_GET['id_gambar'];    
-    $query = mysqli_query($conn,"select * from keloladata_psytalk where no_konten='$no_konten'");
+    $no_pendaftaran=$_GET['id_gambar'];    
+    $query = mysqli_query($conn,"select * from pendaftaran_psytalk where no_pendaftaran='$no_pendaftaran'");
     $row = mysqli_fetch_array($query);
     header("Content-type: ");
-    echo $row["foto_poster"];
+    echo $row["bukti_pembayaran"];
 }
 else
 {

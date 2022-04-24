@@ -1,27 +1,32 @@
 <?php
 include "koneksi.php"; 
 if( isset($_POST["submit"])) {
-    if(!isset($_FILES['foto_poster'])){
+    if(!isset($_FILES['bukti_pembayaran'])){
         echo '<span style="color:red"><b><u><i>Gagal upload file/i></u></b></span>';
     }
     else
     {
-        $file_size = $_FILES['foto_poster']['size'];
-        $file_type = $_FILES['foto_poster']['type'];
+        $file_size = $_FILES['bukti_pembayaran']['size'];
+        $file_type = $_FILES['bukti_pembayaran']['type'];
         if ($file_size < 2048000 and ($file_type =='image/jpeg' or $file_type == 'image/png'))
         {
-            $foto_poster   = addslashes(file_get_contents($_FILES['foto_poster']['tmp_name']));
+            $bukti_pembayaran   = addslashes(file_get_contents($_FILES['bukti_pembayaran']['tmp_name']));
             // menyimpan data kedalam variabel
-            $judul = $_POST['judul'];
-            $hari_tgl = $_POST['hari_tgl'];
-            $waktu = $_POST['waktu'];
-            $fee = $_POST['fee'];
-            $link = $_POST['link'];
-            
+            $nama_lengkap = $_POST['nama_lengkap'];
+            $email = $_POST['email'];
+            $no_telp = $_POST['no_telp'];
+            $usia = $_POST['usia'];
+            $pilihan_webinar = $_POST['pilihan_webinar'];
+            $domisili = $_POST['domisili'];
+            $pekerjaan = $_POST['pekerjaan'];
+            $alasan = $_POST['alasan'];
+            $pernah_mengikuti = $_POST['pernah_mengikuti'];
+            $pertanyaan = $_POST['pertanyaan'];
+            $asal_info = $_POST['asal_info'];
 
             // query SQL untuk insert data
-           
-            $sql = "INSERT INTO keloladata_psytalk (judul, hari_tgl, waktu, fee, link, foto_poster) VALUES('".$judul."', '".$hari_tgl."','".$waktu."', '".$fee."', '".$link."', '".$foto_poster."')";
+            //$query="INSERT INTO pendaftaran SET nama_depan='$nama_depan',nama='$nama',nama_belakang='$nama_belakang',no_telp='$no_telp',perusahaan='$perusahaan',email='$email',tgl_lahir='$tgl_lahir'";
+            $sql = "INSERT INTO pendaftaran_psytalk (nama_lengkap, email, no_telp, usia, pilihan_webinar, domisili, pekerjaan, alasan, pernah_mengikuti, pertanyaan, asal_info, bukti_pembayaran) VALUES('".$nama_lengkap."', '".$email."','".$no_telp."', '".$usia."', '".$pilihan_webinar."', '".$domisili."','".$pekerjaan."','".$alasan."','".$pernah_mengikuti."', '".$pertanyaan."', '".$asal_info."', '".$bukti_pembayaran."')";
             if ($conn->query($sql) === TRUE) {
                 // redirect ke halaman tampil data
                 header("Location: tampil_data.php");
@@ -39,6 +44,18 @@ if( isset($_POST["submit"])) {
     
 
 }
+
+
+
+// $sql = "INSERT INTO pendaftaran (nama_depan, nama_belakang, no_telp,perusahaan,email,kota,tgl_lahir,event)
+// VALUES ('".$nama_depan."','".$nama_belakang."','".$no_telp."','".$perusahaan."','".$email."','".$kota."','".$tgl_lahir."','PSYTALK 31')";
+
+
+//if (mysqli_query($conn, $sql)) {
+//  echo "New record created successfully";
+//} else {
+ // echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+//}
 
 mysqli_close($conn);
 ?>

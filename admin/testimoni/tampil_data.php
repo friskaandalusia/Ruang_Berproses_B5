@@ -4,10 +4,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Start your development with a Dashboard for Bootstrap 4.">
+  <meta name="description" content="Start your development with a Dashboard for Bootstrap 4."> 
   <meta name="author" content="Creative Tim">
 
-  <title>Kelola Data Kelas Berproses || RUANG BERPROSES</title>
+  <title>Kelola Data Testimoni || RUANG BERPROSES</title>
   <!-- Favicon -->
   <link rel="icon" href="../assets/img/brand/logo.png" type="image/jpeg">
   <!-- Fonts -->
@@ -111,7 +111,7 @@
               <nav aria-label="breadcrumb" class="d-none d-md-inline-block ml-md-0 mt-2">
                 <ol class="breadcrumb breadcrumb-links breadcrumb-dark">
                   <li class="breadcrumb-item"><a href="dashboard.php"><i class="fas fa-home"></i></a></li>
-                  <li class="breadcrumb-item"><a href="tampil_data.php">Kelola Data Kelas Berproses</a></li>
+                  <li class="breadcrumb-item"><a href="tampil_data.php">Kelola Data Testimoni </a></li>
                 </ol>
               </nav>
             </div>
@@ -167,27 +167,25 @@
             <!-- Card header -->
 
             <div class="card-header col-lg-6">
-              <h3 class="mb-0">TABEL DATA KONTEN KELAS BERPROSES</h3>
+              <h3 class="mb-0">TABEL DATA TESTIMONI</h3>
           	</div>
             <!-- Light table -->
 
             <?php
               include "koneksi.php";     
                 //tampilkan data  
-               $sql = "SELECT * FROM kelola_kb";
+               $sql = "SELECT * FROM testimoni";
                $result = $conn->query($sql);
             ?>     
       <div class="table-responsive">
               <table class="table align-items-center table-flush">
                 <thead class="thead-light">
                   <tr>
-                  	<th scope="col" class="sort" data-sort="id_kb">No.</th>
-                    <th scope="col" class="sort" data-sort="judulkb">Judul Kelas Berproses</th>
-                  	<th scope="col" class="sort" data-sort="haritglkb">Hari, tanggal</th>
-                    <th scope="col" class="sort" data-sort="waktukb">Waktu</th>
-                    <th scope="col" class="sort" data-sort="feekb">Fee</th>
-                    <th scope="col" class="sort" data-sort="link">Link pendaftaran</th>
-                    <th scope="col" class="sort" data-sort="foto_posterkb">Foto Poster</th>
+                  	<th scope="col" class="sort" data-sort="id_testi">No.</th>
+                    <th scope="col" class="sort" data-sort="nama">Nama</th>
+                  	<th scope="col" class="sort" data-sort="isi_testi">Isi Komentar</th>
+                    <th scope="col" class="sort" data-sort="hari_tgl">Date</th>
+                   
                     <th scope="col">Aksi</th>
                   </tr>
                 </thead>
@@ -204,17 +202,15 @@
                 <tbody class="list">
 
 				    <tr>
-				      <td scope="row"><?= $row["id_kb"]; ?></td>
-              <td scope="row"><?= $row["judulkb"]; ?></td>
-				      <td scope="row"><?= $row["haritglkb"]; ?></td>
-				      <td scope="row"><?= $row["waktukb"]; ?></td>
-				      <td scope="row"><?= $row["feekb"]; ?></td>
-				      <td scope="row"><?= $row["link"]; ?></td>
-              <td><img src="image_view.php?id_gambar=<?php echo $row['id_kb']; ?>" width="100"/></td>
+				      <td scope="row"><?= $row["id_testi"]; ?></td>
+              <td scope="row"><?= $row["nama"]; ?></td>
+				      <td scope="row"><?= $row["isi_testi"]; ?></td>
+				      <td scope="row"><?= $row["hari_tgl"]; ?></td>
+              <td><img src="image_view.php?id_gambar=<?php echo $row['id_testi']; ?>" width="100"/></td>
 				      <td>
            
-              <a href="edit.php?id=<?= $row["id_kb"]; ?>" class="btn btn-success btn-sm" id="modal" onclick="return confirm('Yakin ingin mengedit data ini?');">Edit</a>
-              <a href="hapus.php?id=<?= $row["id_kb"]; ?>" class="btn btn-danger btn-sm" id="delete_link" onclick="return confirm('Yakin ingin menghapus data ini?');">Hapus</a>
+              <a href="edit.php?id=<?= $row["id_testi"]; ?>" class="btn btn-success btn-sm" id="modal" onclick="return confirm('Yakin ingin mengedit data ini?');">Edit</a>
+              <a href="hapus.php?id=<?= $row["id_testi"]; ?>" class="btn btn-danger btn-sm" id="delete_link" onclick="return confirm('Yakin ingin menghapus data ini?');">Hapus</a>
               
             </td>
 				    </tr>
@@ -225,7 +221,7 @@
          } else {
              echo "0 results";
          }
-         
+          
          $conn->close();
          ?>
 

@@ -2,8 +2,8 @@
 
  include "koneksi.php";
  //hapus data
- $id_kb=$_GET['id'];   
-   $sql = "delete from kelola_kb where id_kb='$id_kb'";  
+ $id_testi=$_GET['id'];   
+   $sql = "delete from testimoni where id_testi='$id_testi'";  
    if ($conn->query($sql) === TRUE) {
        // redirect ke halaman tampil data
        header("Location: tampil_data.php");

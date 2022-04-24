@@ -3,36 +3,26 @@
 //update data
 if(isset($_POST['update']))
 {
-    $no_pendaftaran= $_POST['no_pendaftaran'];
-    $nama = $_POST['nama'];
-    $email = $_POST['email'];
-    $no_telp = $_POST['no_telp'];
-    $usia = $_POST['usia'];
-    $domisili = $_POST['domisili'];
-    $pekerjaan = $_POST['pekerjaan'];
-    $alasan = $_POST['alasan'];
-    $pernah_mengikuti = $_POST['pernah_mengikuti'];
-    $pertanyaan = $_POST['pertanyaan'];
-    $asal_info = $_POST['asal_info']; 
-    if(!isset($_FILES['bukti_pembayaran']) || $_FILES['bukti_pembayaran']['error'] == UPLOAD_ERR_NO_FILE){
-        $sql = "UPDATE pendaftaran_kelas_berproses set nama='$nama', email='$email', 
-        no_telp='$no_telp', usia='$usia', domisili='$domisili', pekerjaan='$pekerjaan', alasan='$alasan', 
-        pernah_mengikuti='$pernah_mengikuti', pertanyaan='$pertanyaan', asal_info='$asal_info' where no_pendaftaran ='$no_pendaftaran' ";
+    $id_kb= $_POST['id_kb'];
+    $judulkb = $_POST['judulkb'];
+    $haritglkb = $_POST['haritglkb'];
+    $waktukb = $_POST['waktukb'];
+    $feekb = $_POST['feekb'];
+    $link = $_POST['link'];
+    if(!isset($_FILES['foto_posterkb']) || $_FILES['foto_posterkb']['error'] == UPLOAD_ERR_NO_FILE){
+        $sql = "UPDATE kelola_kb set judulkb='$judulkb', haritglkb='$haritglkb', waktukb='$waktukb', feekb='$feekb', link='$link' where id_kb ='$id_kb' ";
     }
     else{
-        $file_size = $_FILES['bukti_pembayaran']['size'];
-        $file_type = $_FILES['bukti_pembayaran']['type'];
+        $file_size = $_FILES['foto_posterkb']['size'];
+        $file_type = $_FILES['foto_posterkb']['type'];
         if ($file_size < 2048000 and ($file_type =='image/jpeg' or $file_type == 'image/png')){
-            $bukti_pembayaran   = addslashes(file_get_contents($_FILES['bukti_pembayaran']['tmp_name']));
-            $sql = "UPDATE pendaftaran_kelas_berproses set nama='$nama', email='$email', no_telp='$no_telp', 
-            usia='$usia', domisili='$domisili', pekerjaan='$pekerjaan', alasan='$alasan', pernah_mengikuti='$pernah_mengikuti', 
-            pertanyaan='$pertanyaan', asal_info='$asal_info', bukti_pembayaran='$bukti_pembayaran' where no_pendaftaran ='$no_pendaftaran' ";
+            $foto_posterkb   = addslashes(file_get_contents($_FILES['foto_posterkb']['tmp_name']));
+            $sql = "UPDATE kelola_kb set judulkb='$judulkb', haritglkb='$haritglkb', waktukb='$waktukb', feekb='$feekb', link='$link', foto_posterkb='$foto_posterkb' where id_kb ='$id_kb' ";
         }
         else{
             echo '<span style="color:red"><b><u><i>Ukuruan File / Tipe File Tidak Sesuai</i></u></b></span>';
         }
-    } 
-    
+    }
     if ($conn->query($sql) === TRUE) {
        // redirect ke halaman tampil data
        header("Location: tampil_data.php");

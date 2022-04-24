@@ -9,7 +9,7 @@
   <meta name="description" content="Start your development with a Dashboard for Bootstrap 4.">
   <meta name="author" content="Creative Tim">
 
-  <title>Tambah Konten Psytalk || Ruang Berproses</title>
+  <title>Tambah Data Psytalk || Ruang Berproses</title>
   <!-- Favicon -->
   <link rel="icon" href="../img/icon.png" type="image/png" sizes="16x16">
   <!-- Fonts -->
@@ -168,19 +168,18 @@
             <div class="card-header">
               <div class="row align-items-center">
                 <div class="col-8">
-                  <h3 class="mb-0">TAMBAH KONTEN PSYTALK</h3>
+                  <h3 class="mb-0">TAMBAH DATA PSYTALK</h3>
                 </div>
               </div>
             </div>
             <div class="card-body">
               <form action="tambah.php" method="POST" enctype="multipart/form-data">
-
                   <div class="row">
                     <div class="col-lg-12">
                       <div class="form-group">
-                        <label class="form-control-label" for="judul">Judul acara Psytalk</label>
-                        <input type="text" name="judul" class="form-control" id="judul" required placeholder="Judul Acara">
-                        <small class="form-text text-muted font-weight-medium">Contoh : "Psytalk60: Time Management"</small>
+                        <label class="form-control-label" for="nama_lengkap">Nama Lengkap dan Gelar (Jika ada)</label>
+                        <input type="text" name="nama_lengkap" class="form-control" id="nama_lengkap" required placeholder="Nama Lengkap dan Gelar">
+                        <small class="form-text text-muted font-weight-medium">Masukkan nama lengkap dan gelar bagi yang membutuhkan e-Certificate</small>
                       </div>
                     </div>
                   </div>
@@ -188,34 +187,48 @@
                   <div class="row">
                     <div class="col-lg-12">
                       <div class="form-group">
-                        <label class="form-control-label" for="hari_tgl">Hari, Tanggal Acara</label>
-                        <input type="text" name="hari_tgl" class="form-control" id="hari_tgl" required placeholder="Hari dan Tanggal">
-                        <small class="form-text text-muted font-weight-medium">Contoh : Jum'at, 04 Maret 2022"</small>
+                        <label class="form-control-label" for="email">Email</label>
+                        <input type="email" name="email" class="form-control" id="email" required placeholder="Alamat email valid">
                       </div>
                     </div>
                   </div>
 
                   <div class="row">
-                  <div class="col-lg-12">
+                    <div class="col-lg-12">
                       <div class="form-group">
-                        <label class="form-control-label" for="waktu">Waktu Acara</label>
-                        <select name="waktu" class="form-control">
-                        <option id="waktu1">19.00-21.00 WIB</option>
+                        <label class="form-control-label" for="no_telp">No. WhatsApp</label>
+                        <input type="text" name="no_telp" class="form-control" id="no_telp" required placeholder="No. WhatsApp Aktif">
+                        <small class="form-text text-muted font-weight-medium">Pastikan nomor handphone yang Anda isi adalah nomor yang aktif saat ini</small>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label class="form-control-label" for="usia">Usia</label>
+                        <input type="number" name="usia" class="form-control" id="usia" required placeholder="Usia (Angka)">
+                      </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label class="form-control-label" for="pilihan_webinar">Pilihan Webinar</label>
+                        <select name="pilihan_webinar" class="form-control">
+                        <option id="psytalk46">PSYTALK 46 "Mengenal Cyberbullying dari Sisi Pelaku, Korban, dan Bystander"- 10K</option>
+                        <option id="psytalk45">PSYTALK 47 "High Sensitive Person" - 20K</option>
+                  <!-- <option id="paket_psytalk">Paket 2 Sesi : PSYTALK 34 "Self Branding" & PSYTALK 35 "Overload Problem at Work" - 50K</option> -->
                         </select>
                       </div>
                     </div>
                   </div>
 
                   <div class="row">
-                  <div class="col-lg-12">
+                    <div class="col-lg-12">
                       <div class="form-group">
-                        <label class="form-control-label" for="fee">Fee Acara</label>
-                        <select name="fee" class="form-control">
-                        <option id="fee1">IDR 10K (E-certificate + Materi)</option>
-                        <option id="fee2">IDR 15K (E-certificate + Materi)</option>
-                        <option id="fee3">IDR 20K (E-certificate + Materi)</option>
-                        <option id="fee4">IDR 25K (E-certificate + Materi)</option>
-                        </select>
+                        <label class="form-control-label" for="domisili">Domisili</label>
+                        <input type="text" name="domisili" class="form-control" id="domisili" required placeholder="Domisili saat ini">
+                        
                       </div>
                     </div>
                   </div>
@@ -223,18 +236,65 @@
                   <div class="row">
                     <div class="col-lg-12">
                       <div class="form-group">
-                        <label class="form-control-label" for="link">Link Pendaftaran</label>
-                        <input type="textarea" name="link" class="form-control" id="link" required placeholder="Link Pendaftaran yang dapat diakses">
+                        <label class="form-control-label" for="pekerjaan">Pekerjaan</label>
+                        <input type="text" name="pekerjaan" class="form-control" id="pekerjaan" required placeholder="Pekerjaan saat ini">
                       </div>
                     </div>
                   </div>
 
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <div class="form-group">
+                        <label class="form-control-label" for="alasan">Alasan</label>
+                        <input type="textarea" name="alasan" class="form-control" id="alasan" required placeholder="Alasan mengikuti webinar ini">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <div class="form-group">
+                        <label class="form-control-label" for="pernah_mengikuti">Apakah Anda mengikuti rangkaian webinar @ruangberproses.id sebelumnya?</label>
+                        <br><input type="radio" id="ya" name="pernah_mengikuti" value="ya" style="margin: 10px 0" required />
+                            <label for="ya" style="font-weight: 400">Ya</label> <br />
+                            <input type="radio" id="tidak" name="pernah_mengikuti" value="tidak"  style="margin-bottom: 25px" />
+                            <label for="tidak" style="font-weight: 400">Tidak</label> <br />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <div class="form-group">
+                        <label class="form-control-label" for="pertanyaan">Pertanyaan yang ingin diajukan terkait topik</label>
+                        <input type="textarea" name="pertanyaan" class="form-control" id="pertanyaan" 
+                        required placeholder="Tuliskan Pertanyaan Anda">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                  <div class="col-lg-6">
+                      <div class="form-group">
+                        <label class="form-control-label" for="asal_info">Asal Info Webinar</label>
+                        <select name="asal_info" class="form-control">
+                        <option id="asal_info1">Instagram</option>
+                        <option id="asal_info2">Twitter</option>
+                        <option id="asal_info3">Broadcast</option>
+                        <option id="asal_info4">Facebook</option>
+                        <option id="asal_info5">Media Partner</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  
                 <div class="row">
-                  <div class="pl-lg-4">
-                    <div class="form-group">
-                    <label class="form-control-label">Upload Poster acara Psytalk<br></label><br>
-                    <input type="file" name="foto_poster" id="foto_poster" placeholder="foto_poster"><br><br>
-                  </div> 
+                <div class="pl-lg-4">
+                  <div class="form-group">
+                    <label class="form-control-label">Upload bukti pembayaran sesuai dengan webinar yang dipilih untuk mendapatkan<br>
+                      E-Certificate + Materi</label><br>
+                    <input type="file" name="bukti_pembayaran" id="bukti_pembayaran" placeholder="Upload bukti pembayaran"><br><br>
+                  </div>
 
                   <div class="form-group">
                     <button type="submit" name="submit" class="btn btn-primary mb-0">Kirim</button>
@@ -251,7 +311,7 @@
         <div class="row align-items-center justify-content-lg-between">
           <div class="col-lg-6">
             <div class="copyright text-center  text-lg-left  text-muted">
-              &copy; 2022 <a href="dashboard.php" class="font-weight-bold ml-1" target="_blank">RUANG BERPROSES TEAM</a>
+              &copy; 2021 <a href="dashboard.php" class="font-weight-bold ml-1" target="_blank">RUANG BERPROSES TEAM</a>
             </div>
           </div>
           <div class="col-lg-6">

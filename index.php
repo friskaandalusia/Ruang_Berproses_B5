@@ -58,7 +58,7 @@ session_start();
 										if ($_SESSION["role"] == 1) {
 										?>
 											<li>
-												<a href="admin/dashboard.php" class="nav-link">Rekap Admin</a>
+												<a href="admin/dashboard.php" class="nav-link">&nbsp&nbsp&nbsp&nbsp Rekap Admin &nbsp&nbsp&nbsp&nbsp</a>
 
 											</li>
 										<?php

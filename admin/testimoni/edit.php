@@ -1,19 +1,16 @@
-?>
-
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="Start your development with a Dashboard for Bootstrap 4.">
   <meta name="author" content="Creative Tim">
 
-  <title>Tambah Konten Psytalk || Ruang Berproses</title>
+  <title>Edit Testimoni || Ruang Berproses</title>
   <!-- Favicon -->
   <link rel="icon" href="../img/icon.png" type="image/png" sizes="16x16">
   <!-- Fonts -->
-  <link rel="stylesheet" href="../https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
+  <link rel="stylesheet" href="../https://fonts.googlea   pis.com/css?family=Open+Sans:300,400,600,700">
   <!-- Icons -->
   <link rel="stylesheet" href="../assets/vendor/nucleo/css/nucleo.css" type="text/css">
   <link rel="stylesheet" href="../assets/vendor/@fortawesome/fontawesome-free/css/all.min.css" type="text/css">
@@ -21,7 +18,6 @@
   <!-- Argon CSS -->
   <link rel="stylesheet" href="../assets/css/argon.css?v=1.2.0" type="text/css">
 </head>
-
 <body>
   <!-- Sidenav -->
   <nav class="sidenav navbar navbar-vertical  fixed-left  navbar-expand-xs navbar-light bg-white" id="sidenav-main">
@@ -51,8 +47,8 @@
             </li>
           </ul>
           
-           <!-- Heading -->
-           <h6 class="navbar-heading p-0 text-muted">
+            <!-- Heading -->
+            <h6 class="navbar-heading p-0 text-muted">
             <span class="docs-normal">Kelola</span>
           </h6>
           <ul class="navbar-nav mb-md-3">
@@ -115,8 +111,8 @@
                   <br>
                   <li class="breadcrumb-item"><a href="../dashboard.php"><i class="fas fa-home"></i></a></li>
                   <li class="breadcrumb-item"><a href="../dashboard.php">Dashboard</a></li>
-                  <li class="breadcrumb-item"><a href="../psytalk/tampil_data.php"><i class="fas fa-home"></i></a></li>
-                  <li class="breadcrumb-item"><a href="../psytalk/tampil_data.php">Kelola data Psytalk</a></li>
+                  <li class="breadcrumb-item"><a href="../testimoni/tampil_data.php"><i class="fas fa-home"></i></a></li>
+                  <li class="breadcrumb-item"><a href="../testimoni/tampil_data.php">Kelola data Testimoni</a></li>
                 </ol>
               </nav>
             </div>
@@ -149,26 +145,45 @@
     </nav>
 <br>
 
-  <div class="container-fluid mt--5">
+<div class="container-fluid mt-- 5">
             <div class="row">
         <div class="col-xl-12 order-xl-1">
           <div class="card">
             <div class="card-header">
               <div class="row align-items-center">
                 <div class="col-8">
-                  <h3 class="mb-0">TAMBAH KONTEN KELAS BERPROSES</h3>
+                  <h3 class="mb-0">EDIT KONTEN TESTIMONI</h3>
                 </div>
               </div>
             </div>
             <div class="card-body">
-              <form action="tambah.php" method="POST" enctype="multipart/form-data">
+            <?php        
+            include "koneksi.php";
+            $id_testi=$_GET['id'];     
+            $sql = "SELECT * FROM testimoni where id_testi='$id_testi' ";
+            $result = $conn->query($sql);
+            if ($result->num_rows > 0) {
+                // output data of each row
+                while($row = $result->fetch_assoc()) { 
+                $nama=$row["nama"];
+                $isi_testi=$row["isi_testi"];
+                $hari_tgl=$row["hari_tgl"]; 
+                $foto=$row["foto"];  
+                }
+            }
+            else
+                { 
+                 
+            }
+            ?> 
+              <form action="update.php" method="POST" enctype="multipart/form-data">
 
                   <div class="row">
                     <div class="col-lg-12">
                       <div class="form-group">
-                        <label class="form-control-label" for="judulkb">Judul acara Kelas Berproses</label>
-                        <input type="text" name="judulkb" class="form-control" id="judulkb" required placeholder="Judul Acara">
-                        <small class="form-text text-muted font-weight-medium">Contoh : "Topic Quarter Life Crisis (QLC)"</small>
+                        <label class="form-control-label" for="nama">Nama</label>
+                        <input type="text" name="nama" class="form-control" id="nama" required placeholder="nama pemberi testimoni (boleh inisial/tidak)"value="<?php echo $nama;?>">
+                        <small class="form-text text-muted font-weight-medium">Contoh : "Mr.A"</small>
                       </div>
                     </div>
                   </div>
@@ -176,9 +191,9 @@
                   <div class="row">
                     <div class="col-lg-12">
                       <div class="form-group">
-                        <label class="form-control-label" for="haritglkb">Hari, Tanggal Acara</label>
-                        <input type="text" name="haritglkb" class="form-control" id="haritglkb" required placeholder="Hari dan Tanggal">
-                        <small class="form-text text-muted font-weight-medium">Contoh : Jum'at, 04 Maret 2022"</small>
+                        <label class="form-control-label" for="isi_testi">Komentar atau testimoni</label>
+                        <input type="text" name="isi_testi" class="form-control" id="isi_testi" required placeholder="Isi komentar" value="<?php echo $isi_testi;?>">
+                        <small class="form-text text-muted font-weight-medium">Contoh : "Layanan yang diberikan sangat baik"</small>
                       </div>
                     </div>
                   </div>
@@ -186,76 +201,34 @@
                   <div class="row">
                   <div class="col-lg-12">
                       <div class="form-group">
-                        <label class="form-control-label" for="waktukb">Waktu Acara</label>
-                        <select name="waktukb" class="form-control">
-                        <option id="waktu1">19.00-21.00 WIB</option>
-                        <option id="waktu2">10.00-12.00 WIB</option>
-                        </select>
+                        <label class="form-control-label" for="hari_tgl">Waktu input komentar</label>
+                        <input type="text" name="hari_tgl" class="form-control" id="hari_tgl" required placeholder="Hari & Tanggal input komentar" value="<?php echo $hari_tgl;?>">
+                        <small class="form-text text-muted font-weight-medium">Contoh : "Jumat, 22 April 2022"</small>
                       </div>
                     </div>
-                  </div>
 
-                  <div class="row">
-                  <div class="col-lg-12">
-                      <div class="form-group">
-                        <label class="form-control-label" for="feekb">Fee Acara</label>
-                        <select name="feekb" class="form-control">
-                        <option id="fee1">IDR 10K (E-certificate + Materi)</option>
-                        <option id="fee2">IDR 15K (E-certificate + Materi)</option>
-                        <option id="fee3">IDR 20K (E-certificate + Materi)</option>
-                        <option id="fee4">IDR 25K (E-certificate + Materi)</option>
-                        </select>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="row">
-                    <div class="col-lg-12">
-                      <div class="form-group">
-                        <label class="form-control-label" for="link">Link Pendaftaran</label>
-                        <input type="textarea" name="link" class="form-control" id="link" required placeholder="Link Pendaftaran yang dapat diakses">
-                      </div>
-                    </div>
-                  </div>
-
-                <div class="row">
-                  <div class="pl-lg-4">
-                    <div class="form-group">
-                    <label class="form-control-label">Upload Poster acara Kelas Berproses<br></label><br>
-                    <input type="file" name="foto_posterkb" id="foto_posterkb" placeholder="foto_posterkb"><br><br>
-                  </div> 
-
+                    <div class="row">
+                <div class="pl-lg-4">
                   <div class="form-group">
-                    <button type="submit" name="submit" class="btn btn-primary mb-0">Kirim</button>
+                  <label for="foto"> 
+                  Foto </label> 
+                  <br><img src="image_view.php?id_gambar=<?php echo $id_testi; ?>" width="100"/></br> 
+                  <br><input type="file" id="foto" name="foto" /> <br /> 
+                <br /> 
+                <input type="hidden" id="id_testi" name="id_testi" value="<?php echo $id_testi;?>"> 
+                <br /> 
+
                   </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-  </div>
-      <!-- Footer -->
-      <footer class="footer pt-0">
-        <div class="row align-items-center justify-content-lg-between">
-          <div class="col-lg-6">
-            <div class="copyright text-center  text-lg-left  text-muted">
-              &copy; 2022 <a href="dashboard.php" class="font-weight-bold ml-1" target="_blank">RUANG BERPROSES TEAM</a>
-            </div>
-          </div>
-          <div class="col-lg-6">
-          <ul class="nav nav-footer justify-content-center justify-content-xl-end">
-            <li class="nav-item">
-              <a href="dashboard.php" class="nav-link" target="_blank">Dashboard</a>
-            </li>
-           
-            <li class="nav-item">
-              <a href="logout.php" class="nav-link" target="_blank">Logout</a>
-            </li>
-          </ul>
-          </div>
-        </div>
-      </footer>
+                  <button class="btn btn--radius-2 btn--red" type="submit" name="update">Submit</button> 
+                </div> 
+              </form> 
+            </div> 
+          </div> 
+        </div> 
+      </div> 
+    </div> 
+    
+     
     </div>
   </div>
   <!-- Argon Scripts -->

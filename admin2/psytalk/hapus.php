@@ -2,8 +2,8 @@
 
  include "koneksi.php";
  //hapus data
- $no_konten=$_GET['id'];   
-   $sql = "delete from keloladata_psytalk where no_konten='$no_konten'";  
+ $no_pendaftaran=$_GET['id'];   
+   $sql = "delete from pendaftaran_psytalk where no_pendaftaran='$no_pendaftaran'";  
    if ($conn->query($sql) === TRUE) {
        // redirect ke halaman tampil data
        header("Location: tampil_data.php");

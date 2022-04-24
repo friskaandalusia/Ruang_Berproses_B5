@@ -68,31 +68,43 @@ if (!isset($_SESSION["login"])) {
           <ul class="navbar-nav mb-md-3">
             <li class="nav-item">
               <a class="nav-link" href="../admin/psytalk/tampil_data.php">
-                <i class="ni ni-notification-70 text-primary"></i>
+                <i class="ni ni-cart text-primary"></i>
                 <span class="nav-link-text">Kelola Data Psytalk</span>
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="../admin/kelasberproses/tampil_data.php">
-                <i class="ni ni-notification-70 text-primary"></i>
+                <i class="ni ni-bus-front-12 text-primary"></i>
                 <span class="nav-link-text">Kelola Data Kelas Berproses</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../admin2/ig_live/tampil_data.php">
+              <a class="nav-link" href="../admin/peerconseling/tampil_data.php">
                 <i class="ni ni-notification-70 text-primary"></i>
-                <span class="nav-link-text">Kelola Data IG LIVE</span>
+                <span class="nav-link-text">Kelola Data Peer Counseling</span>
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="../admin/supportgroup/tampil_data.php">
                 <i class="ni ni-notification-70 text-primary"></i>
-                <span class="nav-link-text">Kelola Artikel</span>
+                <span class="nav-link-text">Kelola Data Support Group</span>
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="../admin/counselingprofessional/tampil_data.php">
                 <i class="ni ni-notification-70 text-primary"></i>
+                <span class="nav-link-text">Kelola Data Counseling Professional</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">
+                <i class="ni ni-badge text-primary"></i>
+                <span class="nav-link-text">Kelola Data Pengguna</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">
+                <i class="ni ni-chat-round text-primary"></i>
                 <span class="nav-link-text">Kelola Testimoni</span>
               </a>
             </li>
@@ -187,7 +199,7 @@ if (!isset($_SESSION["login"])) {
                 <div class="card-body">
                   <div class="row">
                     <div class="col">
-                      <h5 class="card-title text-uppercase text-muted mb-0">Total Kelas Berproses</h5>
+                      <h5 class="card-title text-uppercase text-muted mb-0">Total Pengguna</h5>
                      
                       <span class="h2 font-weight-bold mb-0"><?php echo 5; ?></span>
                     </div>
@@ -207,7 +219,7 @@ if (!isset($_SESSION["login"])) {
                 <div class="card-body">
                   <div class="row">
                     <div class="col">
-                      <h5 class="card-title text-uppercase text-muted mb-0">Total IG LIVE & Artikel</h5>
+                      <h5 class="card-title text-uppercase text-muted mb-0">Total Medpart</h5>
                       
                       <span class="h2 font-weight-bold mb-0"><?php echo 2; ?></span>
                     </div>
@@ -227,7 +239,7 @@ if (!isset($_SESSION["login"])) {
                 <div class="card-body">
                   <div class="row">
                     <div class="col">
-                      <h5 class="card-title text-uppercase text-muted mb-0">Total Media Partner</h5>
+                      <h5 class="card-title text-uppercase text-muted mb-0">Rating Pengguna</h5>
                       
                       <span class="h2 font-weight-bold mb-0">4.5</span>
                     </div>

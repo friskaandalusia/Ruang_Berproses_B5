@@ -3,27 +3,21 @@
 //update data
 if(isset($_POST['update']))
 {
-    $no_pendaftaran= $_POST['no_pendaftaran'];
-    $nama_lengkap = $_POST['nama_lengkap'];
-    $email = $_POST['email'];
-    $no_telp = $_POST['no_telp'];
-    $usia = $_POST['usia'];
-    $pilihan_webinar = $_POST['pilihan_webinar'];
-    $domisili = $_POST['domisili'];
-    $pekerjaan = $_POST['pekerjaan'];
-    $alasan = $_POST['alasan'];
-    $pernah_mengikuti = $_POST['pernah_mengikuti'];
-    $pertanyaan = $_POST['pertanyaan'];
-    $asal_info = $_POST['asal_info']; 
-    if(!isset($_FILES['bukti_pembayaran']) || $_FILES['bukti_pembayaran']['error'] == UPLOAD_ERR_NO_FILE){
-        $sql = "UPDATE pendaftaran_psytalk set nama_lengkap='$nama_lengkap', email='$email', no_telp='$no_telp', usia='$usia', pilihan_webinar='$pilihan_webinar', domisili='$domisili', pekerjaan='$pekerjaan', alasan='$alasan', pernah_mengikuti='$pernah_mengikuti', pertanyaan='$pertanyaan', asal_info='$asal_info' where no_pendaftaran ='$no_pendaftaran' ";
+    $no_konten= $_POST['no_konten'];
+    $judul = $_POST['judul'];
+    $hari_tgl = $_POST['hari_tgl'];
+    $waktu = $_POST['waktu'];
+    $fee = $_POST['fee'];
+    $link = $_POST['link'];
+    if(!isset($_FILES['foto_poster']) || $_FILES['foto_poster']['error'] == UPLOAD_ERR_NO_FILE){
+        $sql = "UPDATE keloladata_psytalk set judul='$judul', hari_tgl='$hari_tgl', waktu='$waktu', fee='$fee', link='$link' where no_konten ='$no_konten' ";
     }
     else{
-        $file_size = $_FILES['bukti_pembayaran']['size'];
-        $file_type = $_FILES['bukti_pembayaran']['type'];
+        $file_size = $_FILES['foto_poster']['size'];
+        $file_type = $_FILES['foto_poster']['type'];
         if ($file_size < 2048000 and ($file_type =='image/jpeg' or $file_type == 'image/png')){
-            $bukti_pembayaran   = addslashes(file_get_contents($_FILES['bukti_pembayaran']['tmp_name']));
-            $sql = "UPDATE pendaftaran_psytalk set nama_lengkap='$nama_lengkap', email='$email', no_telp='$no_telp', usia='$usia', pilihan_webinar='$pilihan_webinar', domisili='$domisili', pekerjaan='$pekerjaan', alasan='$alasan', pernah_mengikuti='$pernah_mengikuti', pertanyaan='$pertanyaan', asal_info='$asal_info', bukti_pembayaran='$bukti_pembayaran' where no_pendaftaran ='$no_pendaftaran' ";
+            $foto_poster   = addslashes(file_get_contents($_FILES['foto_poster']['tmp_name']));
+            $sql = "UPDATE keloladata_psytalk set judul='$judul', hari_tgl='$hari_tgl', waktu='$waktu', fee='$fee', link='$link', foto_poster='$foto_poster' where no_konten ='$no_konten' ";
         }
         else{
             echo '<span style="color:red"><b><u><i>Ukuruan File / Tipe File Tidak Sesuai</i></u></b></span>';

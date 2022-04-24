@@ -6,11 +6,11 @@
   <meta name="description" content="Start your development with a Dashboard for Bootstrap 4.">
   <meta name="author" content="Creative Tim">
 
-  <title>Edit Data Psytalk || Ruang Berproses</title>
+  <title>Edit Konten Psytalk || Ruang Berproses</title>
   <!-- Favicon -->
   <link rel="icon" href="../img/icon.png" type="image/png" sizes="16x16">
   <!-- Fonts -->
-  <link rel="stylesheet" href="../https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
+  <link rel="stylesheet" href="../https://fonts.googlea   pis.com/css?family=Open+Sans:300,400,600,700">
   <!-- Icons -->
   <link rel="stylesheet" href="../assets/vendor/nucleo/css/nucleo.css" type="text/css">
   <link rel="stylesheet" href="../assets/vendor/@fortawesome/fontawesome-free/css/all.min.css" type="text/css">
@@ -47,50 +47,38 @@
             </li>
           </ul>
           
-          <!-- Heading -->
-          <h6 class="navbar-heading p-0 text-muted">
+           <!-- Heading -->
+           <h6 class="navbar-heading p-0 text-muted">
             <span class="docs-normal">Kelola</span>
           </h6>
           <ul class="navbar-nav mb-md-3">
             <li class="nav-item">
               <a class="nav-link" href="../psytalk/tampil_data.php">
-                <i class="ni ni-cart text-primary"></i>
+                <i class="ni ni-notification-70 text-primary"></i>
                 <span class="nav-link-text">Kelola Data Psytalk</span>
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="../kelasberproses/tampil_data.php">
-                <i class="ni ni-bus-front-12 text-primary"></i>
+                <i class="ni ni-notification-70 text-primary"></i>
                 <span class="nav-link-text">Kelola Data Kelas Berproses</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../peerconseling/tampil_data.php">
+              <a class="nav-link" href="../ig_live/tampil_data.php">
                 <i class="ni ni-notification-70 text-primary"></i>
-                <span class="nav-link-text">Kelola Data Peer Counseling</span>
+                <span class="nav-link-text">Kelola Data IG LIVE</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../supportgroup/tampil_data.php">
+              <a class="nav-link" href="../artikel/tampil_data.php">
                 <i class="ni ni-notification-70 text-primary"></i>
-                <span class="nav-link-text">Kelola Data Support Group</span>
+                <span class="nav-link-text">Kelola Artikel</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../counselingprofessional/tampil_data.php">
+              <a class="nav-link" href="../admin/counselingprofessional/tampil_data.php">
                 <i class="ni ni-notification-70 text-primary"></i>
-                <span class="nav-link-text">Kelola Data Counseling Professional</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="">
-                <i class="ni ni-badge text-primary"></i>
-                <span class="nav-link-text">Kelola Data Pengguna</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="">
-                <i class="ni ni-chat-round text-primary"></i>
                 <span class="nav-link-text">Kelola Testimoni</span>
               </a>
             </li>
@@ -98,7 +86,7 @@
           <hr class="my-3">
           <ul class="navbar-nav mb-md-3">  
             <li class="nav-item">
-              <a class="nav-link" href="logout.php">
+              <a class="nav-link" href="../logout.php">
                 <i class="ni ni-button-power text-primary"></i>
                 <span class="nav-link-text">Logout</span>
               </a>
@@ -123,8 +111,8 @@
                   <br>
                   <li class="breadcrumb-item"><a href="../dashboard.php"><i class="fas fa-home"></i></a></li>
                   <li class="breadcrumb-item"><a href="../dashboard.php">Dashboard</a></li>
-                  <li class="breadcrumb-item"><a href="../kelasberproses/tampil_data.php"><i class="fas fa-home"></i></a></li>
-                  <li class="breadcrumb-item"><a href="../kelasberproses/tampil_data.php">Kelola data Kelas Berproses</a></li>
+                  <li class="breadcrumb-item"><a href="../psytalk/tampil_data.php"><i class="fas fa-home"></i></a></li>
+                  <li class="breadcrumb-item"><a href="../psytalk/tampil_data.php">Kelola data Psytalk</a></li>
                 </ol>
               </nav>
             </div>
@@ -157,36 +145,31 @@
     </nav>
 <br>
 
-<div class="container-fluid mt--5">
+<div class="container-fluid mt-- 5">
             <div class="row">
         <div class="col-xl-12 order-xl-1">
           <div class="card">
             <div class="card-header">
               <div class="row align-items-center">
                 <div class="col-8">
-                  <h3 class="mb-0">EDIT DATA KELAS BERPROSES</h3>
+                  <h3 class="mb-0">EDIT KONTEN KELAS BERPROSES</h3>
                 </div>
               </div>
             </div>
             <div class="card-body">
             <?php        
             include "koneksi.php";
-            $no_pendaftaran=$_GET['id'];    
-            $sql = "SELECT * FROM pendaftaran_kelas_berproses where no_pendaftaran='$no_pendaftaran' ";
+            $id_kb=$_GET['id'];    
+            $sql = "SELECT * FROM kelola_kb where id_kb='$id_kb' ";
             $result = $conn->query($sql);
             if ($result->num_rows > 0) {
                 // output data of each row
                 while($row = $result->fetch_assoc()) { 
-                $nama=$row["nama"];
-                $email=$row["email"];
-                $no_telp=$row["no_telp"];  
-                $usia=$row["usia"];
-                $domisili=$row["domisili"];
-                $pekerjaan=$row["pekerjaan"];
-                $alasan=$row["alasan"];
-                $pernah_mengikuti=$row["pernah_mengikuti"];
-                $pertanyaan=$row["pertanyaan"];      
-                $asal_info=$row["asal_info"]; 
+                $judulkb=$row["judulkb"];
+                $haritglkb=$row["haritglkb"];
+                $waktukb=$row["waktukb"];  
+                $feekb=$row["feekb"];
+                $link=$row["link"]; 
                 }
             }
             else
@@ -195,40 +178,14 @@
             }
             ?> 
               <form action="update.php" method="POST" enctype="multipart/form-data">
-                   
-                     <ul>
-                        <li>Kelas Berproses 2 <span>"Psychological First Aid" </span> bersama Ellyana Dwi Farisandy, M.Psi, Psikolog (Clinical Psychologist)</li>
-                        </ul>
-                      
-                        <!-- <p>Ruang Berproses kembali menghadirkan webinar dengan topik dan pembicara yang sangat menarik. Untuk edisi bulan Mei dengan mengangkat tema PEKERJAAN, kami mempersembahkan topik dan pembicara berikut ini :</p>
-                        <br /> -->
-                        <p>Event Timing :</p>
-                        <ul>
-                            <li>Jum'at, 27 Agustus 2021 pukul 19.00-21.00 WIB | Via Zoom Apps</li>
-                        </ul>
-                        
-                        <p>Contact us at :</p>
-                        <ul>
-                            <li>Instagram : <a href="https://www.instagram.com/ruangberproses.id/" target="_blank">ruangberproses.id</a></li>
-                            <li>Twitter : <a href="https://twitter.com/ruangberproses">ruangberproses</a></li>
-                            <li>Email : <a href="mailto: ruangberproses.id@gmail.com">ruangberproses.id@gmail.com</a></li>
-                        </ul>
-                    </div>
-                    <hr />
-                </div>
-              </div>
-            </div>
-            <div class="card-body">
-              <form action="update.php" method="POST" enctype="multipart/form-data">
-              
+
                   <div class="row">
                     <div class="col-lg-12">
                       <div class="form-group">
-                      
-                      <label class="form-control-label" for="nama">Nama Lengkap dan Gelar (Jika ada)</label>
-                        <input type="text" name="nama" class="form-control" id="nama" required placeholder="Nama Lengkap dan Gelar"  value="<?php echo $nama;?>">
-                        <small class="form-text text-muted font-weight-medium">Masukkan nama lengkap dan gelar bagi yang membutuhkan e-Certificate</small>  
-
+                        <label class="form-control-label" for="judulkb">Judul acara Kelas Berproses</label>
+                        <input type="text" name="judulkb" class="form-control" id="judulkb" required placeholder="Judul Acara"
+                        value="<?php echo $judulkb;?>">
+                        <small class="form-text text-muted font-weight-medium">Contoh : "Topic Quarter Life Crisis (QLC)"</small>
                       </div>
                     </div>
                   </div>
@@ -236,97 +193,60 @@
                   <div class="row">
                     <div class="col-lg-12">
                       <div class="form-group">
-                        <label class="form-control-label" for="email">Email</label>
-                        <input type="email" name="email" class="form-control" id="email" required placeholder="Alamat email valid"  value="<?php echo $email;?>">
+                        <label class="form-control-label" for="haritglkb">Hari, Tanggal Acara</label>
+                        <input type="text" name="haritglkb" class="form-control" id="haritglkb" required placeholder="Hari dan Tanggal" value="<?php echo $haritglkb;?>">
+                        <small class="form-text text-muted font-weight-medium">Contoh : Jum'at, 04 Maret 2022"</small>
                       </div>
                     </div>
                   </div>
 
                   <div class="row">
-                    <div class="col-lg-12">
+                  <div class="col-lg-12">
                       <div class="form-group">
-                        <label class="form-control-label" for="no_telp">No. WhatsApp</label>
-                        <input type="text" name="no_telp" class="form-control" id="no_telp" required placeholder="No. WhatsApp Aktif" value="<?php echo $no_telp;?>">
-                        <small class="form-text text-muted font-weight-medium">Pastikan nomor handphone yang Anda isi adalah nomor yang aktif saat ini</small>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="row">
-                    <div class="col-lg-12">
-                      <div class="form-group">
-                        <label class="form-control-label" for="usia">Usia</label>
-                        <input type="number" name="usia" class="form-control" id="usia" required placeholder="Usia (Angka)" value="<?php echo $usia;?>">
-                      </div>
-                    </div>
-
-                    
-
-                  <div class="row">
-                    <div class="col-lg-12">
-                      <div class="form-group">
-                        <label class="form-control-label" for="domisili">Domisili</label>
-                        <input type="text" name="domisili" class="form-control" id="domisili" required placeholder="Domisili saat ini"  value="<?php echo $domisili;?>">
-                        
-                      </div>
-                    </div>
-                  </div>
-<br>
-                  <div class="row">
-                    <div class="col-lg-12">
-                      <div class="form-group">
-                        <label class="form-control-label" for="pekerjaan">Pekerjaan</label>
-                        <input type="text" name="pekerjaan" class="form-control" id="pekerjaan" required placeholder="Pekerjaan saat ini"  value="<?php echo $pekerjaan;?>" >
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="row">
-                    <div class="col-lg-12">
-                      <div class="form-group">
-                        <label class="form-control-label" for="alasan">Alasan</label>
-                        <input type="textarea" name="alasan" class="form-control" id="alasan" required placeholder="Alasan mengikuti webinar ini"  value="<?php echo $alasan;?>" >
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="row">
-                    <div class="col-lg-12">
-                      <div class="form-group">
-                        <label class="form-control-label" for="pernah_mengikuti">Apakah Anda mengikuti rangkaian webinar @ruangberproses.id sebelumnya?</label>
-                        <br><input type="radio" id="ya" name="pernah_mengikuti" value="ya" style="margin: 10px 0" <?php if($pernah_mengikuti=="ya"):?>checked="checked" <?php endif;?> required />
-                            <label for="ya" style="font-weight: 400">Ya</label> <br />
-                            <input type="radio" id="tidak" name="pernah_mengikuti" value="tidak"  style="margin-bottom: 25px" <?php if($pernah_mengikuti=="tidak"):?>checked="checked" <?php endif;?> required/>
-                            <label for="tidak" style="font-weight: 400">Tidak</label> <br />
-
-                            <label class="form-control-label" for="pertanyaan">Pertanyaan yang ingin diajukan terkait topik</label>
-                            <input type="textarea" name="pertanyaan" class="form-control" id="pertanyaan" 
-                            required placeholder="Tuliskan Pertanyaan Anda" value="<?php echo $pertanyaan;?>">
-
-                            <label class="form-control-label" for="asal_info">Asal Info Webinar</label>
-                            <select name="asal_info" class="form-control">
-                            <option id="asal_info1">Instagram</option>
-                            <option id="asal_info2">Twitter</option>
-                            <option id="asal_info3">Broadcast</option>
-                            <option id="asal_info4">Facebook</option>
-                            <option id="asal_info5">Media Partner</option>
+                        <label class="form-control-label" for="waktukb">Waktu Acara</label>
+                        <select name="waktukb" class="form-control" value="<?php echo $waktukb;?>">
+                        <option id="waktu1">19.00-21.00 WIB</option>
+                        <option id="waktu2">10.00-12.00 WIB</option>
                         </select>
                       </div>
                     </div>
                   </div>
 
-            <div class="row">
+                  <div class="row">
+                  <div class="col-lg-12">
+                      <div class="form-group">
+                        <label class="form-control-label" for="feekb">Fee Acara</label>
+                        <select name="feekb" class="form-control" value="<?php echo $feekb;?>">
+                        <option id="fee1">IDR 10K (E-certificate + Materi)</option>
+                        <option id="fee2">IDR 15K (E-certificate + Materi)</option>
+                        <option id="fee3">IDR 20K (E-certificate + Materi)</option>
+                        <option id="fee4">IDR 25K (E-certificate + Materi)</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <div class="form-group">
+                        <label class="form-control-label" for="link">Link Pendaftaran</label>
+                        <input type="textarea" name="link" class="form-control" id="link" required placeholder="Link Pendaftaran yang dapat diakses" value="<?php echo $link;?>">
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="row">
                 <div class="pl-lg-4">
-                  <div class="form-group"> 
-                  <label for="bukti_pembayaran"> 
-                  Bukti Pembayaran</label> 
-                  <br><img src="image_view.php?id_gambar=<?php echo $no_pendaftaran; ?>" width="100"/></br> 
-                  <br><input type="file" id="bukti_pembayaran" name="bukti_pembayaran" /> <br /> 
+                  <div class="form-group">
+                  <label for="foto_poster"> 
+                  Foto Poster</label> 
+                  <br><img src="image_view.php?id_gambar=<?php echo $id_kb; ?>" width="100"/></br> 
+                  <br><input type="file" id="foto_posterkb" name="foto_posterkb" /> <br /> 
                 <br /> 
-                <input type="hidden" id="no_pendaftaran" name="no_pendaftaran" value="<?php echo $no_pendaftaran;?>"> 
+                <input type="hidden" id="id_kb" name="id_kb" value="<?php echo $id_kb;?>"> 
                 <br /> 
- 
-                    <div> 
+
+                <div> 
                   <button class="btn btn--radius-2 btn--red" type="submit" name="update">Submit</button> 
                 </div> 
               </form> 
@@ -339,7 +259,7 @@
         <div class="row align-items-center justify-content-lg-between">
           <div class="col-lg-6">
             <div class="copyright text-center  text-lg-left  text-muted">
-              &copy; 2021 <a href="dashboard.php" class="font-weight-bold ml-1" target="_blank">RUANG BERPROSES TEAM</a>
+              &copy; 2022 <a href="dashboard.php" class="font-weight-bold ml-1" target="_blank">RUANG BERPROSES TEAM</a>
             </div>
           </div>
           <div class="col-lg-6">

@@ -2,11 +2,11 @@
 include('koneksi.php');
 if(isset($_GET['id_gambar'])) 
 {
-    $id_kb=$_GET['id_gambar'];    
-    $query = mysqli_query($conn,"select * from kelola_kb where id_kb='$id_kb'");
+    $no_pendaftaran=$_GET['id_gambar'];    
+    $query = mysqli_query($conn,"select * from pendaftaran_kelas_berproses where no_pendaftaran='$no_pendaftaran'");
     $row = mysqli_fetch_array($query);
     header("Content-type: ");
-    echo $row["foto_posterkb"];
+    echo $row["bukti_pembayaran"];
 }
 else
 {

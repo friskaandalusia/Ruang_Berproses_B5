@@ -1,27 +1,34 @@
 <?php
 include "koneksi.php"; 
 if( isset($_POST["submit"])) {
-    if(!isset($_FILES['foto_posterkb'])){
+    if(!isset($_FILES['bukti_pembayaran'])){
         echo '<span style="color:red"><b><u><i>Gagal upload file/i></u></b></span>';
     }
     else
     {
-        $file_size = $_FILES['foto_posterkb']['size'];
-        $file_type = $_FILES['foto_posterkb']['type'];
+        $file_size = $_FILES['bukti_pembayaran']['size'];
+        $file_type = $_FILES['bukti_pembayaran']['type'];
         if ($file_size < 2048000 and ($file_type =='image/jpeg' or $file_type == 'image/png'))
         {
-            $foto_posterkb   = addslashes(file_get_contents($_FILES['foto_posterkb']['tmp_name']));
+            $bukti_pembayaran   = addslashes(file_get_contents($_FILES['bukti_pembayaran']['tmp_name']));
             // menyimpan data kedalam variabel
-            $judulkb = $_POST['judulkb'];
-            $haritglkb = $_POST['haritglkb'];
-            $waktukb = $_POST['waktukb'];
-            $feekb = $_POST['feekb'];
-            $link = $_POST['link'];
-            
+            $nama = $_POST['nama'];
+            $email = $_POST['email'];
+            $no_telp = $_POST['no_telp'];
+            $usia = $_POST['usia'];
+            $domisili = $_POST['domisili'];
+            $pekerjaan = $_POST['pekerjaan'];
+            $alasan = $_POST['alasan'];
+            $pernah_mengikuti = $_POST['pernah_mengikuti'];
+            $pertanyaan = $_POST['pertanyaan'];
+            $asal_info = $_POST['asal_info'];
 
             // query SQL untuk insert data
-           
-            $sql = "INSERT INTO kelola_kb (judulkb, haritglkb, waktukb, feekb, link, foto_posterkb) VALUES('".$judulkb."', '".$haritglkb."','".$waktukb."', '".$feekb."', '".$link."', '".$foto_posterkb."')";
+            //$query="INSERT INTO pendaftaran SET nama_depan='$nama_depan',nama='$nama',nama_belakang='$nama_belakang',no_telp='$no_telp',perusahaan='$perusahaan',email='$email',tgl_lahir='$tgl_lahir'";
+            $sql = "INSERT INTO pendaftaran_kelas_berproses 
+            (nama, email, no_telp, usia, domisili, pekerjaan, alasan, pernah_mengikuti, pertanyaan, asal_info, bukti_pembayaran) 
+            VALUES('".$nama."', '".$email."','".$no_telp."', '".$usia."', '".$domisili."','".$pekerjaan."','".$alasan."',
+            '".$pernah_mengikuti."', '".$pertanyaan."', '".$asal_info."', '".$bukti_pembayaran."')";
             if ($conn->query($sql) === TRUE) {
                 // redirect ke halaman tampil data
                 header("Location: tampil_data.php");
@@ -40,6 +47,18 @@ if( isset($_POST["submit"])) {
 
 }
 
+
+
+// $sql = "INSERT INTO pendaftaran (nama_depan, nama_belakang, no_telp,perusahaan,email,kota,tgl_lahir,event)
+// VALUES ('".$nama_depan."','".$nama_belakang."','".$no_telp."','".$perusahaan."','".$email."','".$kota."','".$tgl_lahir."','PSYTALK 31')";
+
+
+//if (mysqli_query($conn, $sql)) {
+//  echo "New record created successfully";
+//} else {
+ // echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+//}
+
 mysqli_close($conn);
 ?>
 
@@ -55,7 +74,7 @@ mysqli_close($conn);
     <meta name="keywords" content="Colorlib Templates">
 
     <!-- Title Page-->
-    <title>PSYTALK 30 Registasi </title>
+    <title>Kelas Berproses Registrasi </title>
 
     <!-- Icons font CSS-->
     <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">

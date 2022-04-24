@@ -68,43 +68,31 @@ if (!isset($_SESSION["login"])) {
           <ul class="navbar-nav mb-md-3">
             <li class="nav-item">
               <a class="nav-link" href="../admin/psytalk/tampil_data.php">
-                <i class="ni ni-cart text-primary"></i>
+                <i class="ni ni-notification-70 text-primary"></i>
                 <span class="nav-link-text">Kelola Data Psytalk</span>
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="../admin/kelasberproses/tampil_data.php">
-                <i class="ni ni-bus-front-12 text-primary"></i>
+                <i class="ni ni-notification-70 text-primary"></i>
                 <span class="nav-link-text">Kelola Data Kelas Berproses</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../admin/peerconseling/tampil_data.php">
+              <a class="nav-link" href="../admin/ig_live/tampil_data.php">
                 <i class="ni ni-notification-70 text-primary"></i>
-                <span class="nav-link-text">Kelola Data Peer Counseling</span>
+                <span class="nav-link-text">Kelola Data IG LIVE</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../admin/supportgroup/tampil_data.php">
+              <a class="nav-link" href="../admin/artikel/tampil_data.php">
                 <i class="ni ni-notification-70 text-primary"></i>
-                <span class="nav-link-text">Kelola Data Support Group</span>
+                <span class="nav-link-text">Kelola Artikel</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../admin/counselingprofessional/tampil_data.php">
+              <a class="nav-link" href="../admin/testimoni/tampil_data.php">
                 <i class="ni ni-notification-70 text-primary"></i>
-                <span class="nav-link-text">Kelola Data Counseling Professional</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="">
-                <i class="ni ni-badge text-primary"></i>
-                <span class="nav-link-text">Kelola Data Pengguna</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="">
-                <i class="ni ni-chat-round text-primary"></i>
                 <span class="nav-link-text">Kelola Testimoni</span>
               </a>
             </li>
@@ -179,9 +167,9 @@ if (!isset($_SESSION["login"])) {
                 <div class="card-body">
                   <div class="row">
                     <div class="col">
-                      <h5 class="card-title text-uppercase text-muted mb-0">Total Psytalk</h5>
+                      <h5 class="card-title text-uppercase text-muted mb-0">Total Webinar Psytalk</h5>
                       
-                     <span class="h2 font-weight-bold mb-0"><?php echo 15; ?></span>
+                     <span class="h2 font-weight-bold mb-0"><?php echo 25; ?></span>
                     </div>
                     <div class="col-auto">
                       <div class="icon icon-shape bg-gradient-red text-white rounded-circle shadow">
@@ -199,9 +187,9 @@ if (!isset($_SESSION["login"])) {
                 <div class="card-body">
                   <div class="row">
                     <div class="col">
-                      <h5 class="card-title text-uppercase text-muted mb-0">Total Pengguna</h5>
+                      <h5 class="card-title text-uppercase text-muted mb-0">Total <br>Kelas Berproses</h5>
                      
-                      <span class="h2 font-weight-bold mb-0"><?php echo 5; ?></span>
+                      <span class="h2 font-weight-bold mb-0"><?php echo 15; ?></span>
                     </div>
                     <div class="col-auto">
                       <div class="icon icon-shape bg-gradient-orange text-white rounded-circle shadow">
@@ -219,9 +207,9 @@ if (!isset($_SESSION["login"])) {
                 <div class="card-body">
                   <div class="row">
                     <div class="col">
-                      <h5 class="card-title text-uppercase text-muted mb-0">Total Medpart</h5>
+                      <h5 class="card-title text-uppercase text-muted mb-0">Total Instagram LIVE</h5>
                       
-                      <span class="h2 font-weight-bold mb-0"><?php echo 2; ?></span>
+                      <span class="h2 font-weight-bold mb-0"><?php echo 10; ?></span>
                     </div>
                     <div class="col-auto">
                       <div class="icon icon-shape bg-gradient-green text-white rounded-circle shadow">
@@ -239,9 +227,9 @@ if (!isset($_SESSION["login"])) {
                 <div class="card-body">
                   <div class="row">
                     <div class="col">
-                      <h5 class="card-title text-uppercase text-muted mb-0">Rating Pengguna</h5>
+                      <h5 class="card-title text-uppercase text-muted mb-0">Total <br>Media Partner</h5>
                       
-                      <span class="h2 font-weight-bold mb-0">4.5</span>
+                      <span class="h2 font-weight-bold mb-0">3</span>
                     </div>
                     <div class="col-auto">
                       <div class="icon icon-shape bg-gradient-info text-white rounded-circle shadow">
@@ -263,16 +251,16 @@ if (!isset($_SESSION["login"])) {
         <div class="row align-items-center justify-content-lg-between">
           <div class="col-lg-6">
             <div class="copyright text-center  text-lg-left  text-muted">
-              &copy; 2021 <a href="dashboard.php" class="font-weight-bold ml-1" target="_blank">RUANG BERPROSES TEAM</a>
+              &copy; 2022 <a href="dashboard.php" class="font-weight-bold ml-1" target="_blank">RUANG BERPROSES TEAM</a>
             </div>
           </div>
           <div class="col-lg-6">
           <ul class="nav nav-footer justify-content-center justify-content-xl-end">
             <li class="nav-item">
-              <a href="dashboard.php" class="nav-link" target="_blank">Dashboard</a>
+              <a href="dashboard.php" class="nav-link" target="_blank"><br>Dashboard</a>
             </li>
             <li class="nav-item">
-              <a href="../logout.php" class="nav-link" target="_blank">Logout</a>
+              <a href="../logout.php" class="nav-link" target="_blank"><br>Logout</a>
             </li>
           </ul>
           </div>

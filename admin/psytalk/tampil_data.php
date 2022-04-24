@@ -50,59 +50,46 @@
           </ul>
           <hr class="my-3">
          
-          <!-- Heading -->
-          <h6 class="navbar-heading p-0 text-muted">
+           <!-- Heading -->
+           <h6 class="navbar-heading p-0 text-muted">
             <span class="docs-normal">Kelola</span>
           </h6>
           <ul class="navbar-nav mb-md-3">
             <li class="nav-item">
               <a class="nav-link" href="../psytalk/tampil_data.php">
-                <i class="ni ni-cart text-primary"></i>
+                <i class="ni ni-notification-70 text-primary"></i>
                 <span class="nav-link-text">Kelola Data Psytalk</span>
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="../kelasberproses/tampil_data.php">
-                <i class="ni ni-bus-front-12 text-primary"></i>
+                <i class="ni ni-notification-70 text-primary"></i>
                 <span class="nav-link-text">Kelola Data Kelas Berproses</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../peerconseling/tampil_data.php">
+              <a class="nav-link" href="../ig_live/tampil_data.php">
                 <i class="ni ni-notification-70 text-primary"></i>
-                <span class="nav-link-text">Kelola Data Peer Counseling</span>
+                <span class="nav-link-text">Kelola Data IG LIVE</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../supportgroup/tampil_data.php">
+              <a class="nav-link" href="../artikel/tampil_data.php">
                 <i class="ni ni-notification-70 text-primary"></i>
-                <span class="nav-link-text">Kelola Data Support Group</span>
+                <span class="nav-link-text">Kelola Artikel</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../counselingprofessional/tampil_data.php">
+              <a class="nav-link" href="../testimoni/tampil_data.php">
                 <i class="ni ni-notification-70 text-primary"></i>
-                <span class="nav-link-text">Kelola Data Counseling Professional</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="kelola_customer.php">
-                <i class="ni ni-badge text-primary"></i>
-                <span class="nav-link-text">Kelola Data Pengguna</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="kelola_testimoni.php">
-                <i class="ni ni-chat-round text-primary"></i>
                 <span class="nav-link-text">Kelola Testimoni</span>
               </a>
             </li>
           </ul>
-
           <hr class="my-3">
           <ul class="navbar-nav mb-md-3">  
             <li class="nav-item">
-              <a class="nav-link" href="logout.php">
+              <a class="nav-link" href="../logout.php">
                 <i class="ni ni-button-power text-primary"></i>
                 <span class="nav-link-text">Logout</span>
               </a>
@@ -187,27 +174,20 @@
             <?php
               include "koneksi.php";     
                 //tampilkan data  
-               $sql = "SELECT * FROM pendaftaran_psytalk";
+               $sql = "SELECT * FROM keloladata_psytalk";
                $result = $conn->query($sql);
             ?>     
       <div class="table-responsive">
               <table class="table align-items-center table-flush">
                 <thead class="thead-light">
                   <tr>
-                  	<th scope="col" class="sort" data-sort="no_pendaftaran">No.</th>
-                    <th scope="col" class="sort" data-sort="tgl_daftar">Tgl Pendaftaran</th>
-                  	<th scope="col" class="sort" data-sort="nama_lengkap">Nama Lengkap</th>
-                    <th scope="col" class="sort" data-sort="email">Email</th>
-                    <th scope="col" class="sort" data-sort="no_telp">Telepon</th>
-                    <th scope="col" class="sort" data-sort="usia">Usia</th>
-                    <th scope="col" class="sort" data-sort="pilihan_webinar">Pilihan</th>
-                    <th scope="col" class="sort" data-sort="domisili">Domisili</th>
-                    <th scope="col" class="sort" data-sort="pekerjaan">Pekerjaan</th>
-                    <th scope="col" class="sort" data-sort="alasan">Alasan</th>
-                    <th scope="col" class="sort" data-sort="pernah_mengikuti">Pernah Mengikuti</th>
-                    <th scope="col" class="sort" data-sort="pertanyaan">Pertanyaan</th>
-                    <th scope="col" class="sort" data-sort="asal_info">Asal_info</th>
-                    <th scope="col" class="sort" data-sort="bukti_pembayaran">Bukti Pembayaran</th>
+                  	<th scope="col" class="sort" data-sort="no_konten">No.</th>
+                    <th scope="col" class="sort" data-sort="judul">Judul Psytalk</th>
+                  	<th scope="col" class="sort" data-sort="hari_tgl">Hari, tanggal</th>
+                    <th scope="col" class="sort" data-sort="waktu">Waktu</th>
+                    <th scope="col" class="sort" data-sort="fee">Fee</th>
+                    <th scope="col" class="sort" data-sort="link">Link pendaftaran</th>
+                    <th scope="col" class="sort" data-sort="foto_poster">Foto Poster</th>
                     <th scope="col">Aksi</th>
                   </tr>
                 </thead>
@@ -224,24 +204,17 @@
                 <tbody class="list">
 
 				    <tr>
-				      <td scope="row"><?= $row["no_pendaftaran"]; ?></td>
-              <td scope="row"><?= $row["tgl_daftar"]; ?></td>
-				      <td scope="row"><?= $row["nama_lengkap"]; ?></td>
-				      <td scope="row"><?= $row["email"]; ?></td>
-				      <td scope="row"><?= $row["no_telp"]; ?></td>
-				      <td scope="row"><?= $row["usia"]; ?></td>
-              <td scope="row"><?= $row["pilihan_webinar"]; ?></td>
-				      <td scope="row"><?= $row["domisili"]; ?></td>
-				      <td scope="row"><?= $row["pekerjaan"]; ?></td>
-              <td scope="row"><?= $row["alasan"]; ?></td>
-              <td scope="row"><?= $row["pernah_mengikuti"]; ?></td>
-              <td scope="row"><?= $row["pertanyaan"]; ?></td>
-              <td scope="row"><?= $row["asal_info"]; ?></td>
-              <td><img src="image_view.php?id_gambar=<?php echo $row['no_pendaftaran']; ?>" width="100"/></td>
+				      <td scope="row"><?= $row["no_konten"]; ?></td>
+              <td scope="row"><?= $row["judul"]; ?></td>
+				      <td scope="row"><?= $row["hari_tgl"]; ?></td>
+				      <td scope="row"><?= $row["waktu"]; ?></td>
+				      <td scope="row"><?= $row["fee"]; ?></td>
+				      <td scope="row"><?= $row["link"]; ?></td>
+              <td><img src="image_view.php?id_gambar=<?php echo $row['no_konten']; ?>" width="100"/></td>
 				      <td>
            
-              <a href="edit.php?id=<?= $row["no_pendaftaran"]; ?>" class="btn btn-success btn-sm" id="modal" onclick="return confirm('Yakin ingin mengedit data ini?');">Edit</a>
-              <a href="hapus.php?id=<?= $row["no_pendaftaran"]; ?>" class="btn btn-danger btn-sm" id="delete_link" onclick="return confirm('Yakin ingin menghapus data ini?');">Hapus</a>
+              <a href="edit.php?id=<?= $row["no_konten"]; ?>" class="btn btn-success btn-sm" id="modal" onclick="return confirm('Yakin ingin mengedit data ini?');">Edit</a>
+              <a href="hapus.php?id=<?= $row["no_konten"]; ?>" class="btn btn-danger btn-sm" id="delete_link" onclick="return confirm('Yakin ingin menghapus data ini?');">Hapus</a>
               
             </td>
 				    </tr>
