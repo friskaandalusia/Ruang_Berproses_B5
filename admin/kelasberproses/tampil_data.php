@@ -87,7 +87,7 @@
             </li>
           </ul>
           <hr class="my-3">
-          <ul class="navbar-nav mb-md-3">  
+          <ul class="navbar-nav mb-md-3">
             <li class="nav-item">
               <a class="nav-link" href="../logout.php">
                 <i class="ni ni-button-power text-primary"></i>

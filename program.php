@@ -100,87 +100,55 @@ session_start();
                 <h2 class="text-center font-weight-600">Webinar Psytalk</h2>
                 <div class="row mt-5">
                     <div class="card-deck">
+                    <?php
+                      include "admin/psytalk/koneksi.php";
+                        //tampilkan data
+                        $sql = "SELECT * FROM keloladata_psytalk LIMIT 3";
+                        $result = $conn->query($sql);
+                    ?>
+                     <?php
+                         if ($result->num_rows > 0) {
+                            // output data of each row
+                                $no=0;
+                                    while($row = $result->fetch_assoc()) {
+             	                $no++;
+                     ?>
+
                         <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="img/program/psytalk/psytalk64.jpg" alt="Card image cap">
+                            <img class="card-img-top" src="admin/psytalk/image_view.php?id_gambar=<?php echo $row['no_konten']; ?>" alt="Card image cap">
                             <div class="card-body">
-                                <h5 class="card-title">Psytalk64: Baby Blues Syndrom</h5>
+                                <h5 class="card-title"><?= $row["judul"]; ?></h5>
                                 <div class="item">
                                     <img src="img/program/calendar.png" alt="Calender">
                                     <div class="info">
-                                        <p>Sabtu, 23 April 2022</p>
+                                        <p><?=$row["hari_tgl"];?></p>
                                     </div>
                                 </div>
                                 <div class="item">
                                     <img src="img/program/clock.png" alt="Calender">
                                     <div class="info">
-                                        <p>10.00-12.00 WIB</p>
+                                        <p><?= $row["waktu"]; ?></p>
                                     </div>
                                 </div>
                                 <div class="item">
                                     <img src="img/program/money.png" alt="Calender">
                                     <div class="info">
-                                        <p>IDR 25K (E-certificate + Materi)</p>
+                                        <p><?= $row["fee"]; ?></p>
                                     </div>
                                 </div>
                                 <div id="wrapper">
-                                    <a href="https://bit.ly/PSYTALK64" class="btn btn-primary">Daftar</a>
+                                    <a href="<?= $row["fee"]; ?>" class="btn btn-primary">Daftar</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="img/program/psytalk/psytalk63.jpeg" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Psytalk63: Gender Violence</h5>
-                                <div class="item">
-                                    <img src="img/program/calendar.png" alt="Calender">
-                                    <div class="info">
-                                        <p>Sabtu, 16 April 2022</p>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <img src="img/program/clock.png" alt="Calender">
-                                    <div class="info">
-                                        <p>10.00-12.00 WIB</p>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <img src="img/program/money.png" alt="Calender">
-                                    <div class="info">
-                                        <p>IDR 20K (E-certificate + Materi)</p>
-                                    </div>
-                                </div>
-                                <div id="wrapper">
-                                    <a href="https://bit.ly/PSYTALK63" class="btn btn-primary">Daftar</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="img/program/psytalk/psytalk62.jpeg" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Psytalk62: Alpha Female/Woman 101</h5>
-                                <div class="item">
-                                    <img src="img/program/calendar.png" alt="Calender">
-                                    <div class="info">
-                                        <p>Sabtu, 2 April 2022</p>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <img src="img/program/clock.png" alt="Calender">
-                                    <div class="info">
-                                        <p>10.00-12.00 WIB</p>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <img src="img/program/money.png" alt="Calender">
-                                    <div class="info">
-                                        <p>Free (10K untuk E-certificate + Materi)</p>
-                                    </div>
-                                </div>
-                                <div id="wrapper">
-                                    <a href="https://bit.ly/PSYTALK62" class="btn btn-primary">Daftar</a>
-                                </div>
-                            </div>
-                        </div>
+                        <?php        
+             }
+         } else {
+             echo "0 results";
+         }
+         
+         $conn->close();
+         ?>
                     </div>
                 </div>
             </div>
@@ -189,66 +157,55 @@ session_start();
         <div class="section kb">
             <div class="container">
                 <h2 class="text-center font-weight-600">Kelas Berproses</h2>
+                <?php
+                      include "admin/kelasberproses/koneksi.php";
+                        //tampilkan data
+                        $sql = "SELECT * FROM kelola_kb LIMIT 2";
+                        $result = $conn->query($sql);
+                    ?>
+                     <?php
+                         if ($result->num_rows > 0) {
+                            // output data of each row
+                                $no=0;
+                                    while($row = $result->fetch_assoc()) {
+             	                $no++;
+                     ?>
                 <div class="row mt-5">
                     <div class="card-deck">
                         <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="img/program/kb/kb7.jpeg" alt="Card image cap">
+                            <img class="card-img-top" src="admin/kelasberproses/image_view.php?id_gambar=<?php echo $row['id_kb']; ?>" alt="Card image cap">
                             <div class="card-body">
-                                <h5 class="card-title"> KB7: Pelatihan Dasar Self Healing yang Tepat </h5>
+                                <h5 class="card-title"> <?= $row["judulkb"]; ?> </h5>
                                 <div class="item">
                                     <img src="img/program/calendar.png" alt="Calender">
                                     <div class="info">
-                                        <p>Sabtu, 26 Maret 2022</p>
+                                        <p><?= $row["haritglkb"]; ?></p>
                                     </div>
                                 </div>
                                 <div class="item">
                                     <img src="img/program/clock.png" alt="Calender">
                                     <div class="info">
-                                        <p>10.00-12.00 WIB</p>
+                                        <p><?= $row["waktukb"]; ?></p>
                                     </div>
                                 </div>
                                 <div class="item">
                                     <img src="img/program/money.png" alt="Calender">
                                     <div class="info">
-                                        <p>IDR 30K/tiket || IDR 50K/2 tiket</p>
+                                        <p><?= $row["feekb"]; ?></p>
                                     </div>
                                 </div>
                                 <div id="wrapper">
-                                    <a href="https://bit.ly/KelasBerproses7" class="btn btn-primary">Daftar</a>
+                                    <a href="<?= $row["link"]; ?>" class="btn btn-primary">Daftar</a>
                                 </div>
                             </div>
                         </div>
-
-                        <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="img/program/kb/kb6.jpeg" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title"> KB6: Music Therapy untuk Mengatasi Stress </h5>
-                                <div class="item">
-                                    <img src="img/program/calendar.png" alt="Calender">
-                                    <!-- <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
-                                    <div class="info">
-                                        <p>Sabtu, 26 Februari 2022</p>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <img src="img/program/clock.png" alt="Calender">
-                                    <!-- <div>Icons made by <a href="https://www.flaticon.com/authors/vectors-market" title="Vectors Market">Vectors Market</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
-                                    <div class="info">
-                                        <p>10.00-12.00 WIB</p>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <img src="img/program/money.png" alt="Calender">
-                                    <!-- <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
-                                    <div class="info">
-                                        <p>IDR 30K/tiket </p>
-                                    </div>
-                                </div>
-                                <div id="wrapper">
-                                    <a href="https://bit.ly/KelasBerproses6" class="btn btn-primary">Daftar</a>
-                                </div>
-                            </div>
-                        </div>
+                        <?php
+                            }
+                         } else {
+                             echo "0 results";
+                         }
+                            $conn->close();
+                        ?>
                     </div>
                 </div>
             </div>
@@ -257,44 +214,46 @@ session_start();
         <div class="section ig">
             <div class="container">
                 <h2 class="text-center font-weight-600">IG Live</h2>
+                <?php
+                      include "admin/ig_live/koneksi.php";
+                        //tampilkan data
+                        $sql = "SELECT * FROM keloladata_iglive LIMIT 2";
+                        $result = $conn->query($sql);
+                    ?>
+                     <?php
+                         if ($result->num_rows > 0) {
+                            // output data of each row
+                                $no=0;
+                                    while($row = $result->fetch_assoc()) {
+             	                $no++;
+                     ?>
                 <div class="row mt-5">
                     <div class="card-deck">
                         <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="img/program/ig/ig4.png" alt="Card image cap">
+                            <img class="card-img-top" src="admin/ig_live/image_view.php?id_gambar=<?php echo $row['id_iglive']; ?>" alt="Card image cap">
                             <div class="card-body">
-                                <h5 class="card-title">IG Live - Future Life: Be a Great Career Woman</h5>
+                                <h5 class="card-title"><?= $row["judulig"];?></h5>
                                 <div class="item">
                                     <img src="img/program/calendar.png" alt="Calender">
                                     <div class="info">
-                                        <p>Sabtu, 16 April 2022</p>
+                                        <p><?= $row["haritglig"]; ?></p>
                                     </div>
                                 </div>
                                 <div class="item">
                                     <img src="img/program/clock.png" alt="Calender">
                                     <div class="info">
-                                        <p>15.00-16.00 WIB</p>
+                                        <p><?= $row["waktuig"]; ?></p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="img/program/ig/ig3.jpeg" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">IG Live - Insecurities Amongst Women</h5>
-                                <div class="item">
-                                    <img src="img/program/calendar.png" alt="Calender">
-                                    <div class="info">
-                                        <p>Rabu, 13 April 2022</p>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <img src="img/program/clock.png" alt="Calender">
-                                    <div class="info">
-                                        <p>15.00-16.00 WIB</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <?php
+                            }
+                         } else {
+                             echo "0 results";
+                         }
+                            $conn->close();
+                        ?>
                     </div>
                 </div>
             </div>

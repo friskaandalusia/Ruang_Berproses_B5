@@ -172,11 +172,11 @@
             <!-- Light table -->
 
             <?php
-              include "koneksi.php";     
+              include "koneksi.php";
                 //tampilkan data  
                $sql = "SELECT * FROM keloladata_psytalk";
                $result = $conn->query($sql);
-            ?>     
+            ?>
       <div class="table-responsive">
               <table class="table align-items-center table-flush">
                 <thead class="thead-light">
@@ -192,7 +192,7 @@
                   </tr>
                 </thead>
 
-                <?php 
+                <?php
           if ($result->num_rows > 0) {
              // output data of each row
              $no=0;
