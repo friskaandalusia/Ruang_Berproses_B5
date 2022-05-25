@@ -128,7 +128,7 @@
               </a>
             </li>
             <li class="nav-item" style="margin-left: 50px">
-              <a class="nav-link pr-0" href="logout.php">
+              <a class="nav-link pr-0" href="../logout.php">
                 <div class="media align-items-center">
                   <span>
                     <i class="ni ni-button-power text-white"></i>
@@ -233,7 +233,7 @@
                     </div>
                   </div>
                   
-                  <div class="row">
+              <div class="row">
                 <div class="pl-lg-4">
                   <div class="form-group">
                   <label for="foto_poster"> 
@@ -243,11 +243,11 @@
                 <br /> 
                 <input type="hidden" id="no_konten" name="no_konten" value="<?php echo $no_konten;?>"> 
                 <br /> 
-
-                <div> 
+              </form> 
+              
+              <div> 
                   <button class="btn btn--radius-2 btn--red" type="submit" name="update">Submit</button> 
                 </div> 
-              </form> 
             </div> 
           </div> 
         </div> 
@@ -267,7 +267,7 @@
             </li>
            
             <li class="nav-item">
-              <a href="logout.php" class="nav-link" target="_blank">Logout</a>
+              <a href="../logout.php" class="nav-link" target="_blank">Logout</a>
             </li>
           </ul>
           </div>

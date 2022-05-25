@@ -174,32 +174,34 @@
                   </div>
 
                   <div class="row">
+                  <div class="col-lg-12">
+                      <div class="form-group">
+                        <label class="form-control-label" for="layanan">Jenis Layanan</label>
+                        <select name="layanan" class="form-control" value="<?php echo $layanan;?>">
+                        <option id="layanan1">Psytalk</option>
+                        <option id="layanan2">Virtual Support Group</option>
+                        <option id="layanan3">Support Group</option>
+                        <option id="layanan4">Virtual Peer Counseling</option>
+                        <option id="layanan5">Peer Counseling</option>
+                        <option id="layanan6">Counseling Profesional</option>
+                        <option id="layanan7">Kelas Berproses</option>
+                        <option id="layanan8">IG Live</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
                     <div class="col-lg-12">
                       <div class="form-group">
-                        <label class="form-control-label" for="isi_testi">Komentar atau testimoni</label>
+                        <label class="form-control-label" for="isi_testi">Testimoni</label>
                         <input type="text" name="isi_testi" class="form-control" id="isi_testi" required placeholder="Isi komentar">
                         <small class="form-text text-muted font-weight-medium">Contoh : "Layanan yang diberikan sangat baik"</small>
                       </div>
                     </div>
                   </div>
 
-                  <div class="row">
-                    <div class="col-lg-12">
-                      <div class="form-group">
-                        <label class="form-control-label" for="hari_tgl">Waktu input komentar</label>
-                        <input type="text" name="hari_tgl" class="form-control" id="hari_tgl" required placeholder="Hari & Tanggal input komentar">
-                        <small class="form-text text-muted font-weight-medium">Contoh : "Jumat, 22 April 2022"</small>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="row">
-                  <div class="pl-lg-4">
-                    <div class="form-group">
-                    <label class="form-control-label">Upload Foto Pengguna<br></label><br>
-                    <input type="file" name="foto" id="foto" placeholder="foto"><br><br>
-                  </div> 
-
+                 
                   <div class="form-group">
                     <button type="submit" name="submit" class="btn btn-primary mb-0">Kirim</button>
                   </div>

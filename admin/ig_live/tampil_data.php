@@ -217,7 +217,7 @@
 				    </tr>
 				    </tbody>
   
-            <?php        
+            <?php
              }
          } else {
              echo "0 results";

@@ -183,8 +183,8 @@
                   <tr>
                   	<th scope="col" class="sort" data-sort="id_testi">No.</th>
                     <th scope="col" class="sort" data-sort="nama">Nama</th>
+                    <th scope="col" class="sort" data-sort="layanan">Jenis Layanan</th>
                   	<th scope="col" class="sort" data-sort="isi_testi">Isi Komentar</th>
-                    <th scope="col" class="sort" data-sort="hari_tgl">Date</th>
                    
                     <th scope="col">Aksi</th>
                   </tr>
@@ -204,12 +204,10 @@
 				    <tr>
 				      <td scope="row"><?= $row["id_testi"]; ?></td>
               <td scope="row"><?= $row["nama"]; ?></td>
+              <td scope="row"><?= $row["layanan"]; ?></td>
 				      <td scope="row"><?= $row["isi_testi"]; ?></td>
-				      <td scope="row"><?= $row["hari_tgl"]; ?></td>
-              <td><img src="image_view.php?id_gambar=<?php echo $row['id_testi']; ?>" width="100"/></td>
 				      <td>
            
-              <a href="edit.php?id=<?= $row["id_testi"]; ?>" class="btn btn-success btn-sm" id="modal" onclick="return confirm('Yakin ingin mengedit data ini?');">Edit</a>
               <a href="hapus.php?id=<?= $row["id_testi"]; ?>" class="btn btn-danger btn-sm" id="delete_link" onclick="return confirm('Yakin ingin menghapus data ini?');">Hapus</a>
               
             </td>

@@ -273,57 +273,45 @@ session_start();
 				</div>
 			</div>
 		</div>
+		
 		<section class="testimonials">
 			<div class="container">
+				
 				<h2 class="text-center font-weight-600">Testimoni</h2>
 				<div class="wrapper">
 					<div class="row">
+					<?php
+						include "admin/testimoni/koneksi.php";
+                	//tampilkan data
+                    $sql = "SELECT * FROM testimoni";
+                    $result = $conn->query($sql);
+                ?>
+                	<?php
+                        if ($result->num_rows > 0) {
+                        	// output data of each row
+                            $no=0;
+                                while($row = $result->fetch_assoc()) {
+             	            $no++;
+                ?>
 						<div class="col-sm-12">
-							<div id="testimonials-list" class="owl-carousel">
+							<div id="testimonials-list" class="owl-carousel">	
 								<div class="item">
+								
 									<div class="shadow-effect">
+										
 										<img class="imgPlaceholder" src="img/user.png" alt="">
-										<p>"Pembicaranya asik dan moderatornya juga keren. Disetiap pembicara selesai menjawab pertanyaan peserta, moderator selalu menyimpulkan jawaban pembicara"</p>
-										<p>-R.A.B (21 tahun, Mahasiswa psikologi)</p>
+										<p><?= $row["isi_testi"];?></p>
+										<p><?= $row["nama"];?></p>
 									</div>
-									<div class="testimonial-name">Psytalk43</div>
-								</div>
-
-								<div class="item">
-									<div class="shadow-effect">
-										<img class="imgPlaceholder" src="img/user.png" alt="">
-										<p>"Kesan webinar sangat baik. Saya mendapat wawasan lebih luas dan mendalam mengenai journaling serta manfaatnya secara spesifik terhadap kesehatan mental, karena saya belum pernah mendalami mengenai journaling"</p>
-										<p>-S.E.A (42 tahun, Konselor sekolah)</p>
-									</div>
-									<div class="testimonial-name"> Kelas Berproses 1</div>
-								</div>
-
-								<div class="item">
-									<div class="shadow-effect">
-										<img class="imgPlaceholder" src="img/user.png" alt="">
-										<p>"Seru bangetttt menjadi pengalaman dalam hidup saya karena dengan adanya sesi ini saya dapat bercerita apa yang dialami oleh saya sehingga saya mendapatkan kesempatan untuk bercerita pada sesi ini"</p>
-										<p>-M</p>
-									</div>
-									<div class="testimonial-name">Support Group</div>
-								</div>
-
-								<div class="item">
-									<div class="shadow-effect">
-										<img class="imgPlaceholder" src="img/user.png" alt="">
-										<p>"Awalnya saya merasa takut dan ragu untuk bercerita pada orang lain. Namun setelah saya melakukan sesi konseling saya merasa lega, nyaman, dan seperti menemukan hal yang saya cari selama ini. Bukan sekedar omongan motivasi melainkan ilmu dan solusi."</p>
-										<p>-S</p>
-									</div>
-									<div class="testimonial-name">Peer Counseling</div>
-								</div>
-
-								<div class="item">
-									<div class="shadow-effect">
-										<img class="imgPlaceholder" src="img/user.png" alt="">
-										<p>"Menurutku gak terlalu mahal dan Psikolog RB yang konseling aku waktu itu juga baik & bisa menghangatkan suasana, ngga canggung juga, yang jelas aku bisa mengatasi masalahku."</p>
-										<p>-N</p>
-									</div>
-									<div class="testimonial-name">Counseling Profesional</div>
-								</div>
+									<div class="testimonial-name"><?= $row["layanan"];?></div>
+									<?php
+                            }
+                         } else {
+                             echo "0 results";
+                         }
+                            $conn->close();
+                        ?>
+						</div>
 							</div>
 						</div>
 					</div>

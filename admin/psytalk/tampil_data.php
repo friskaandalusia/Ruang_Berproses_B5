@@ -49,7 +49,7 @@
             </li>
           </ul>
           <hr class="my-3">
-         
+
            <!-- Heading -->
            <h6 class="navbar-heading p-0 text-muted">
             <span class="docs-normal">Kelola</span>
@@ -89,7 +89,7 @@
           <hr class="my-3">
           <ul class="navbar-nav mb-md-3">  
             <li class="nav-item">
-              <a class="nav-link" href="../logout.php">
+              <a class="nav-link" href="logout.php">
                 <i class="ni ni-button-power text-primary"></i>
                 <span class="nav-link-text">Logout</span>
               </a>

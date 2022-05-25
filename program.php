@@ -45,26 +45,6 @@ session_start();
                                     <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
                                         <a class="nav-link" href="tentang.php">Tentang</a>
                                     </li>
-                                    <?php
-                                    if (!isset($_SESSION["login"])) {
-                                    ?>
-                                        <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                            <a href="pengguna/login.php" class="nav-link">Masuk</a>
-                                        </li>
-                                        <?php
-                                    } else {
-                                        if ($_SESSION["role"] == 1) {
-                                        ?>
-                                            <li>
-                                                <a href="admin/dashboard.php" class="nav-link">Rekap Admin</a>
-
-                                            </li>
-                                        <?php
-                                        }
-                                        ?>
-                                        <li><a href="logout.php" class="nav-link">Logout</a></li><?php
-                                                                                                }
-                                                                                                    ?>
                                 </ul>
                             </div>
 
@@ -95,7 +75,7 @@ session_start();
             </div>
         </div>
 
-        <div class="section psytalk">
+         <div class="section psytalk">
             <div class="container">
                 <h2 class="text-center font-weight-600">Webinar Psytalk</h2>
                 <div class="row mt-5">
@@ -103,7 +83,7 @@ session_start();
                     <?php
                       include "admin/psytalk/koneksi.php";
                         //tampilkan data
-                        $sql = "SELECT * FROM keloladata_psytalk LIMIT 3";
+                        $sql = "SELECT * FROM keloladata_psytalk ORDER BY no_konten DESC LIMIT 3";
                         $result = $conn->query($sql);
                     ?>
                      <?php
@@ -137,7 +117,7 @@ session_start();
                                     </div>
                                 </div>
                                 <div id="wrapper">
-                                    <a href="<?= $row["fee"]; ?>" class="btn btn-primary">Daftar</a>
+                                    <a href="<?= $row["link"]; ?>" class="btn btn-primary">Daftar</a>
                                 </div>
                             </div>
                         </div>
@@ -157,10 +137,12 @@ session_start();
         <div class="section kb">
             <div class="container">
                 <h2 class="text-center font-weight-600">Kelas Berproses</h2>
-                <?php
+                <div class="row mt-5">
+                    <div class="card-deck">
+                    <?php
                       include "admin/kelasberproses/koneksi.php";
                         //tampilkan data
-                        $sql = "SELECT * FROM kelola_kb LIMIT 2";
+                        $sql = "SELECT * FROM kelola_kb ORDER BY id_kb DESC LIMIT 2";
                         $result = $conn->query($sql);
                     ?>
                      <?php
@@ -170,8 +152,6 @@ session_start();
                                     while($row = $result->fetch_assoc()) {
              	                $no++;
                      ?>
-                <div class="row mt-5">
-                    <div class="card-deck">
                         <div class="card" style="width: 18rem;">
                             <img class="card-img-top" src="admin/kelasberproses/image_view.php?id_gambar=<?php echo $row['id_kb']; ?>" alt="Card image cap">
                             <div class="card-body">
@@ -195,7 +175,7 @@ session_start();
                                     </div>
                                 </div>
                                 <div id="wrapper">
-                                    <a href="<?= $row["link"]; ?>" class="btn btn-primary">Daftar</a>
+                                    <a href=<?= $row["link"]; ?> class="btn btn-primary">Daftar</a>
                                 </div>
                             </div>
                         </div>
@@ -211,13 +191,16 @@ session_start();
             </div>
         </div>
 
-        <div class="section ig">
+
+          <div class="section ig">
             <div class="container">
                 <h2 class="text-center font-weight-600">IG Live</h2>
-                <?php
+                <div class="row mt-5">
+                    <div class="card-deck">
+                        <?php
                       include "admin/ig_live/koneksi.php";
                         //tampilkan data
-                        $sql = "SELECT * FROM keloladata_iglive LIMIT 2";
+                        $sql = "SELECT * FROM keloladata_iglive ORDER BY id_iglive DESC LIMIT 2";
                         $result = $conn->query($sql);
                     ?>
                      <?php
@@ -227,8 +210,6 @@ session_start();
                                     while($row = $result->fetch_assoc()) {
              	                $no++;
                      ?>
-                <div class="row mt-5">
-                    <div class="card-deck">
                         <div class="card" style="width: 18rem;">
                             <img class="card-img-top" src="admin/ig_live/image_view.php?id_gambar=<?php echo $row['id_iglive']; ?>" alt="Card image cap">
                             <div class="card-body">
@@ -299,7 +280,7 @@ session_start();
                         <h3>Kontak</h3>
                         <p><i class="fas fa-phone"></i><a href="https://wa.me/+6281573499529">+6281573499529 (Ruang Berproses)</a></p>
                         <p><i class="fas fa-phone"></i><a href="https://wa.me/+6287719661951">+6287719661951 (Dea)</a></p>
-                        <p><i class="fas fa-envelope"></i><a href="mailto:admin@ruangberproses.id">admin@ruangberproses.id</a></p>
+                        <p><i class="fas fa-envelope"></i><a href="mailto: ruangberproses.id@gmail.com"> ruangberproses.id@gmail.com</a></p>
                     </div>
                     <div class="col-md-4 col-lg-3 footer-social wow fadeInUp text-md-left text-center">
                         <h3>Sosial Media</h3>
@@ -310,6 +291,22 @@ session_start();
                             <a href="https://www.instagram.com/ruangberproses.id/"><i class="fab fa-instagram"></i></a>
                             <a href="https://www.linkedin.com/company/ruang-berproses/"><i class="fab fa-linkedin"></i></a>
                         </p>
+                        <p style="margin-top:22px;">Apakah anda Admin?
+									<?php
+									if (!isset($_SESSION["login"])) {
+									?>
+									    <a href="pengguna/login.php" class="nav-link">Masuk</a>
+									<?php
+									} else {
+										if ($_SESSION["role"] == 1) {
+									?>
+										<a href="admin/dashboard.php" class="nav-link">Rekap Admin</a>
+									<?php
+										}
+									?>
+									    <a href="logout.php" class="nav-link">Logout</a><?php
+									}
+									?></p>
                     </div>
                 </div>
             </div>
