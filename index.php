@@ -273,50 +273,50 @@ session_start();
 				</div>
 			</div>
 		</div>
-		
+
 		<section class="testimonials">
 			<div class="container">
-				
 				<h2 class="text-center font-weight-600">Testimoni</h2>
 				<div class="wrapper">
 					<div class="row">
-					<?php
-						include "admin/testimoni/koneksi.php";
-                	//tampilkan data
-                    $sql = "SELECT * FROM testimoni";
-                    $result = $conn->query($sql);
-                ?>
-                	<?php
-                        if ($result->num_rows > 0) {
-                        	// output data of each row
-                            $no=0;
-                                while($row = $result->fetch_assoc()) {
-             	            $no++;
-                ?>
 						<div class="col-sm-12">
-							<div id="testimonials-list" class="owl-carousel">	
-								<div class="item">
-								
-									<div class="shadow-effect">
-										
-										<img class="imgPlaceholder" src="img/user.png" alt="">
-										<p><?= $row["isi_testi"];?></p>
-										<p><?= $row["nama"];?></p>
-									</div>
-									<div class="testimonial-name"><?= $row["layanan"];?></div>
-									<?php
-                            }
-                         } else {
-                             echo "0 results";
-                         }
-                            $conn->close();
-                        ?>
-						</div>
+							<div id="testimonials-list" class="owl-carousel">
+								<?php
+								include "admin/testimoni/koneksi.php";
+								//tampilkan data
+								$sql = "SELECT * FROM testimoni";
+								$result = $conn->query($sql);
+								?>
+								<?php
+								if ($result->num_rows > 0) {
+									// output data of each row
+									$no = 0;
+									while ($row = $result->fetch_assoc()) {
+										$no++;
+								?>
+										<div class="item">
+
+											<div class="shadow-effect">
+
+												<img class="imgPlaceholder" src="img/user.png" alt="">
+												<p><?= $row["isi_testi"]; ?></p>
+												<p><?= $row["nama"]; ?></p>
+											</div>
+											<div class="testimonial-name"><?= $row["layanan"]; ?></div>
+
+										</div>
+								<?php
+									}
+								} else {
+									echo "0 results";
+								}
+								$conn->close();
+								?>
 							</div>
+
 						</div>
 					</div>
 				</div>
-			</div>
 			</div>
 		</section>
 		<div class="section klien">
