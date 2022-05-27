@@ -46,26 +46,6 @@ session_start();
                                     <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
                                         <a class="nav-link" href="tentang.php">Tentang</a>
                                     </li>
-                                    <?php
-                                    if (!isset($_SESSION["login"])) {
-                                    ?>
-                                        <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                            <a href="pengguna/login.php" class="nav-link">Masuk</a>
-                                        </li>
-                                        <?php
-                                    } else {
-                                        if ($_SESSION["role"] == 1) {
-                                        ?>
-                                            <li>
-                                                <a href="admin/dashboard.php" class="nav-link">Rekap Admin</a>
-
-                                            </li>
-                                        <?php
-                                        }
-                                        ?>
-                                        <li><a href="logout.php" class="nav-link">Logout</a></li><?php
-                                                                                                }
-                                                                                                    ?>
                                 </ul>
                             </div>
 
@@ -110,12 +90,12 @@ session_start();
                         <p>Kesimpulannya adalah bahwa orang tua tidak melulu benar dan orang tua tidak melulu salah, orang tua bukanlah seorang penguasa terhadap jiwa-jiwa anaknya. Berikanlah jiwa dan mental kita sebagai orang tua untuk hening sejenak dari psikis yang tergerus oleh lelahnya pencarian-pencarian yang kadang adalah merupakan ekspektasi orang lain. Belajarlah untuk membahagiakan diri sendiri sebagai orang tua.</p>
 
                         <h6 class="space"> Daftar Pustaka :</h6>
-                        <h6>Wood DL. <i>The importance of play in promoting healthy child development and maintaining strong parent-child bond: focus on children in poverty. American Academy of Pediatrics,</i> 2011;129(1): e204-e214.</h6>
-                        <h6>Santrock, John W. <i>Life-span development.</i> 13th ed. Jakarta: Erlangga. 2012.</h6>
-                        <h6>Hawari D. <i>Ilmu kedokteran dan kesehatan jiwa.</i> Jakarta: Dana Bhakti Prima Yasa. 1997.</h6>
-                        <h6>Dewi A, Amalia J, Sayang Ajeng . M, Maya P, <i>Meningkatkan kesehatan mental dengan membangun hubungan kelekatan antara orang tua dan anak,</i> Jurnal Pengabdian Masyarakat, Vol. III, 2019 hummed.ejournal.unsri.ac.id</h6>
-                        <h6>www.tribunnews.com</h6>
-                        <h6>www.tirto.id</h6>
+                        <p>Wood DL. <i>The importance of play in promoting healthy child development and maintaining strong parent-child bond: focus on children in poverty. American Academy of Pediatrics,</i> 2011;129(1): e204-e214.</p>
+                        <p>Santrock, John W. <i>Life-span development.</i> 13th ed. Jakarta: Erlangga. 2012.</p>
+                        <p>Hawari D. <i>Ilmu kedokteran dan kesehatan jiwa.</i> Jakarta: Dana Bhakti Prima Yasa. 1997.</p>
+                        <p>Dewi A, Amalia J, Sayang Ajeng . M, Maya P, <i>Meningkatkan kesehatan mental dengan membangun hubungan kelekatan antara orang tua dan anak,</i> Jurnal Pengabdian Masyarakat, Vol. III, 2019 hummed.ejournal.unsri.ac.id</p>
+                        <p>www.tribunnews.com</p>
+                        <p>www.tirto.id</p>
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-3 col-12 text-md-left text-center">
                         <h4>Artikel Lainnya</h4>
@@ -161,7 +141,7 @@ session_start();
                         <h3>Kontak</h3>
                         <p><i class="fas fa-phone"></i><a href="https://wa.me/+6281573499529">+6281573499529 (Ruang Berproses)</a></p>
                         <p><i class="fas fa-phone"></i><a href="https://wa.me/+6287719661951">+6287719661951 (Dea)</a></p>
-                        <p><i class="fas fa-envelope"></i><a href="mailto:admin@ruangberproses.id">admin@ruangberproses.id</a></p>
+                        <p><i class="fas fa-envelope"></i><a href="mailto: ruangberproses.id@gmail.com"> ruangberproses.id@gmail.com</a></p>
                     </div>
                     <div class="col-md-4 col-lg-3 footer-social wow fadeInUp text-md-left text-center">
                         <h3>Sosial Media</h3>
@@ -172,6 +152,22 @@ session_start();
                             <a href="https://www.instagram.com/ruangberproses.id/"><i class="fab fa-instagram"></i></a>
                             <a href="https://www.linkedin.com/company/ruang-berproses/"><i class="fab fa-linkedin"></i></a>
                         </p>
+                        <p style="margin-top:22px;">Apakah anda Admin?
+									<?php
+									if (!isset($_SESSION["login"])) {
+									?>
+									    <a href="pengguna/login.php" class="nav-link">Masuk</a>
+									<?php
+									} else {
+										if ($_SESSION["role"] == 1) {
+									?>
+										<a href="admin/dashboard.php" class="nav-link">Rekap Admin</a>
+									<?php
+										}
+									?>
+									    <a href="logout.php" class="nav-link">Logout</a><?php
+									}
+									?></p>
                     </div>
                 </div>
             </div>

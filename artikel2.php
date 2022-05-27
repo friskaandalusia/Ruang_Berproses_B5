@@ -46,26 +46,6 @@ session_start();
                                     <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
                                         <a class="nav-link" href="tentang.php">Tentang</a>
                                     </li>
-                                    <?php
-                                    if (!isset($_SESSION["login"])) {
-                                    ?>
-                                        <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                            <a href="pengguna/login.php" class="nav-link">Masuk</a>
-                                        </li>
-                                        <?php
-                                    } else {
-                                        if ($_SESSION["role"] == 1) {
-                                        ?>
-                                            <li>
-                                                <a href="admin/dashboard.php" class="nav-link">Rekap Admin</a>
-
-                                            </li>
-                                        <?php
-                                        }
-                                        ?>
-                                        <li><a href="logout.php" class="nav-link">Logout</a></li><?php
-                                                                                                }
-                                                                                                    ?>
                                 </ul>
                             </div>
 
@@ -195,21 +175,19 @@ session_start();
 
                         <h6 class="space"> Daftar Pustaka :</h6>
 
-                        <h6> Anderson, S. C. (1994). A critical analysis of the concept of codependency.<i> Social work, 39</i>(6), 677-685. http://lib.ui.ac.id/naskahringkas/2016-05/S57123-Tiara%20Priscarani https://dictionary.apa.org/gaslight</h6>
-                        <h6>
-                            https://www.alodokter.com/mengenal-codependent-relationship-salah-satu-hubungan-tidak-sehat</h6>
-                        <h6>
-                            https://www.psychologytoday.com/intl/blog/conquering-codependency/202010/how-conquer-codependency
-                        </h6>
-                        <h6>
-                            https://www.psychologytoday.com/intl/blog/presence-mind/201307/are-you-in-codependent-relationship
-                        </h6>
-                        <h6>
+                        <p> Anderson, S. C. (1994). A critical analysis of the concept of codependency.<i> Social work, 39</i>(6), 677-685. http://lib.ui.ac.id/naskahringkas/2016-05/S57123-Tiara%20Priscarani https://dictionary.apa.org/gaslight</p>
+                        <p>
+                            https://www.alodokter.com/mengenal-codependent-relationship-salah-satu-hubungan-tidak-sehat</p>
+                        <p>
+                            https://www.psychologytoday.com/intl/ blog/conquering-codependency/202010/how-conquer-codependency</p>
+                        <p>
+                            https://www.psychologytoday.com/intl/ blog/presence-mind/201307/are-you-in-codependent-relationship</p>
+                        <p>
                             Julianto, V., Cahayani, R. A., Sukmawati, S., & Aji, E. S. R. (2020). Hubungan antara harapan dan harga diri terhadap kebahagiaan pada orang yang mengalami toxic relationship dengan kesehatan psikologis. <i> Jurnal Psikologi Integratif, 8</i>(1), 103-115.
-                        </h6>
-                        <h6>
+                        </p>
+                        <p>
                             Marks, A. D., Blore, R. L., Hine, D. W., & Dear, G. E. (2012). Development and validation of a revised measure of codependency. <i>Australian Journal of Psychology, 64</i>(3), 119-127.
-                        </h6>
+                        </p>
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-3 col-12 text-md-left text-center">
                         <h4>Artikel Lainnya</h4>
@@ -255,7 +233,7 @@ session_start();
                         <h3>Kontak</h3>
                         <p><i class="fas fa-phone"></i><a href="https://wa.me/+6281573499529">+6281573499529 (Ruang Berproses)</a></p>
                         <p><i class="fas fa-phone"></i><a href="https://wa.me/+6287719661951">+6287719661951 (Dea)</a></p>
-                        <p><i class="fas fa-envelope"></i><a href="mailto:admin@ruangberproses.id">admin@ruangberproses.id</a></p>
+                        <p><i class="fas fa-envelope"></i><a href="mailto: ruangberproses.id@gmail.com"> ruangberproses.id@gmail.com</a></p>
                     </div>
                     <div class="col-md-4 col-lg-3 footer-social wow fadeInUp text-md-left text-center">
                         <h3>Sosial Media</h3>
@@ -266,6 +244,22 @@ session_start();
                             <a href="https://www.instagram.com/ruangberproses.id/"><i class="fab fa-instagram"></i></a>
                             <a href="https://www.linkedin.com/company/ruang-berproses/"><i class="fab fa-linkedin"></i></a>
                         </p>
+                        <p style="margin-top:22px;">Apakah anda Admin?
+									<?php
+									if (!isset($_SESSION["login"])) {
+									?>
+									    <a href="pengguna/login.php" class="nav-link">Masuk</a>
+									<?php
+									} else {
+										if ($_SESSION["role"] == 1) {
+									?>
+										<a href="admin/dashboard.php" class="nav-link">Rekap Admin</a>
+									<?php
+										}
+									?>
+									    <a href="logout.php" class="nav-link">Logout</a><?php
+									}
+									?></p>
                     </div>
                 </div>
             </div>

@@ -45,26 +45,6 @@ session_start();
                                     <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
                                         <a class="nav-link" href="tentang.php">Tentang</a>
                                     </li>
-                                    <?php
-                                    if (!isset($_SESSION["login"])) {
-                                    ?>
-                                        <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                            <a href="pengguna/login.php" class="nav-link">Masuk</a>
-                                        </li>
-                                        <?php
-                                    } else {
-                                        if ($_SESSION["role"] == 1) {
-                                        ?>
-                                            <li>
-                                                <a href="admin/dashboard.php" class="nav-link">Rekap Admin</a>
-
-                                            </li>
-                                        <?php
-                                        }
-                                        ?>
-                                        <li><a href="logout.php" class="nav-link">Logout</a></li><?php
-                                                                                                }
-                                                                                                    ?>
                                 </ul>
                             </div>
 
@@ -112,7 +92,7 @@ session_start();
                             <div class="card-body">
                                 <h5 class="card-title">Kenali Karakteristik Codependent dalam Toxic Relationship</h5>
                                 <div class="item">
-                                    <p> Akhir-akhir ini banyak masyarakat yang mulai aware akan toxic relationship dan dampaknya pada kesehatan mental, namun ciri-ciri yang sering dibahas adalah keberadaan gaslighting, kekerasan secara verbal atau fisik, dan lain-lain. Maka artikel ini akan membahas karakteristik lain yaitu “codependent”.</p>
+                                    <p> Akhir-akhir ini banyak masyarakat yang mulai aware akan toxic relationship dan dampaknya. Ciri-ciri yang sering dibahas adalah keberadaan gaslighting, kekerasan secara verbal atau fisik, dan lain-lain. Artikel ini akan membahas karakteristik lain yaitu “codependent”.</p>
                                 </div>
                                 <div id="wrapper">
                                     <a href="artikel2.php" class="btn btn-primary">Selengkapnya</a>
@@ -200,7 +180,7 @@ session_start();
                         <h3>Kontak</h3>
                         <p><i class="fas fa-phone"></i><a href="https://wa.me/+6281573499529">+6281573499529 (Ruang Berproses)</a></p>
                         <p><i class="fas fa-phone"></i><a href="https://wa.me/+6287719661951">+6287719661951 (Dea)</a></p>
-                        <p><i class="fas fa-envelope"></i><a href="mailto:admin@ruangberproses.id">admin@ruangberproses.id</a></p>
+                        <p><i class="fas fa-envelope"></i><a href="mailto: ruangberproses.id@gmail.com"> ruangberproses.id@gmail.com</a></p>
                     </div>
                     <div class="col-md-4 col-lg-3 footer-social wow fadeInUp text-md-left text-center">
                         <h3>Sosial Media</h3>
@@ -211,6 +191,22 @@ session_start();
                             <a href="https://www.instagram.com/ruangberproses.id/"><i class="fab fa-instagram"></i></a>
                             <a href="https://www.linkedin.com/company/ruang-berproses/"><i class="fab fa-linkedin"></i></a>
                         </p>
+                        <p style="margin-top:22px;">Apakah anda Admin?
+									<?php
+									if (!isset($_SESSION["login"])) {
+									?>
+									    <a href="pengguna/login.php" class="nav-link">Masuk</a>
+									<?php
+									} else {
+										if ($_SESSION["role"] == 1) {
+									?>
+										<a href="admin/dashboard.php" class="nav-link">Rekap Admin</a>
+									<?php
+										}
+									?>
+									    <a href="logout.php" class="nav-link">Logout</a><?php
+									}
+									?></p>
                     </div>
                 </div>
             </div>

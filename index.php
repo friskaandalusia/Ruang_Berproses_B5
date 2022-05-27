@@ -47,26 +47,6 @@ session_start();
 									<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
 										<a class="nav-link" href="tentang.php">Tentang</a>
 									</li>
-									<?php
-									if (!isset($_SESSION["login"])) {
-									?>
-										<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-											<a href="pengguna/login.php" class="nav-link">Masuk</a>
-										</li>
-										<?php
-									} else {
-										if ($_SESSION["role"] == 1) {
-										?>
-											<li>
-												<a href="admin/dashboard.php" class="nav-link">&nbsp&nbsp&nbsp&nbsp Rekap Admin &nbsp&nbsp&nbsp&nbsp</a>
-
-											</li>
-										<?php
-										}
-										?>
-										<li><a href="logout.php" class="nav-link">Logout</a></li><?php
-																								}
-																									?>
 								</ul>
 							</div>
 
@@ -274,6 +254,66 @@ session_start();
 			</div>
 		</div>
 
+					<!-- <section class="testimonials">
+			<div class="container">
+				<h2 class="text-center font-weight-600">Testimoni</h2>
+				<div class="wrapper">
+					<div class="row">
+						<div class="col-sm-12">
+							<div id="testimonials-list" class="owl-carousel">
+								<div class="item">
+									<div class="shadow-effect">
+										<img class="imgPlaceholder" src="img/user.png" alt="">
+										<p>"Pembicaranya asik dan moderatornya juga keren. Disetiap pembicara selesai menjawab pertanyaan peserta, moderator selalu menyimpulkan jawaban pembicara"</p>
+										<p>-R.A.B (21 tahun, Mahasiswa psikologi)</p>
+									</div>
+									<div class="testimonial-name">Psytalk43</div>
+								</div>
+
+								<div class="item">
+									<div class="shadow-effect">
+										<img class="imgPlaceholder" src="img/user.png" alt="">
+										<p>"Kesan webinar sangat baik. Saya mendapat wawasan lebih luas dan mendalam mengenai journaling serta manfaatnya secara spesifik terhadap kesehatan mental, karena saya belum pernah mendalami mengenai journaling"</p>
+										<p>-S.E.A (42 tahun, Konselor sekolah)</p>
+									</div>
+									<div class="testimonial-name"> Kelas Berproses 1</div>
+								</div>
+
+								<div class="item">
+									<div class="shadow-effect">
+										<img class="imgPlaceholder" src="img/user.png" alt="">
+										<p>"Seru bangetttt menjadi pengalaman dalam hidup saya karena dengan adanya sesi ini saya dapat bercerita apa yang dialami oleh saya sehingga saya mendapatkan kesempatan untuk bercerita pada sesi ini"</p>
+										<p>-M</p>
+									</div>
+									<div class="testimonial-name">Support Group</div>
+								</div>
+
+								<div class="item">
+									<div class="shadow-effect">
+										<img class="imgPlaceholder" src="img/user.png" alt="">
+										<p>"Awalnya saya merasa takut dan ragu untuk bercerita pada orang lain. Namun setelah saya melakukan sesi konseling saya merasa lega, nyaman, dan seperti menemukan hal yang saya cari selama ini. Bukan sekedar omongan motivasi melainkan ilmu dan solusi."</p>
+										<p>-S</p>
+									</div>
+									<div class="testimonial-name">Peer Counseling</div>
+								</div>
+
+								<div class="item">
+									<div class="shadow-effect">
+										<img class="imgPlaceholder" src="img/user.png" alt="">
+										<p>"Menurutku gak terlalu mahal dan Psikolog RB yang konseling aku waktu itu juga baik & bisa menghangatkan suasana, ngga canggung juga, yang jelas aku bisa mengatasi masalahku."</p>
+										<p>-N</p>
+									</div>
+									<div class="testimonial-name">Counseling Profesional</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
+		</section> -->
+
+		
 		<section class="testimonials">
 			<div class="container">
 				<h2 class="text-center font-weight-600">Testimoni</h2>
@@ -319,12 +359,20 @@ session_start();
 				</div>
 			</div>
 		</section>
+		
 		<div class="section klien">
 			<div class="container">
-				<h2 class="text-center font-weight-600">Klien Kami</h2>
-				<div class="row mt-5">
-					<img src="img/rsz1.png" alt="" style="max-width: 25%; margin: auto; display:block;">
-				</div>
+				<h2 style="margin-bottom:70px;" class="text-center font-weight-600">Klien Kami</h2>
+				<div class="row text-center">
+    				<div class="col-12 col-sm-4 my-auto mt-5"> <img src="img/rsz1.png" alt="" style="max-width: 75%; margin: auto; display:block;">
+    				 <h6 style="margin-top:30px; margin-bottom:100px;">St. John's Catholic School</h6>
+    				</div>
+    				<div class="col-12 col-sm-4 my-auto mt-5"> <img src="img/basuki_grup.jpg" alt="Basuki Grup SVG" style="max-width: 75%; margin: auto; display:block;"> 
+    				<h6 style="margin-top:30px; margin-bottom:100px;">Basuki Pratama Engineering</h6>
+    				</div>
+    				<div class="col-12 col-sm-4 my-auto mt-5"> <img src="img/kelas_harmoni.jpg" alt="Kelas Harmoni SVG" style="max-width: 75%; margin: auto; display:block;">
+    				 <h6 style="margin-top:30px; margin-bottom:100px;">Kelas Main Harmoni</h6></div>
+			    </div>
 			</div>
 		</div>
 	</main>
@@ -343,7 +391,7 @@ session_start();
 						<h3>Kontak</h3>
 						<p><i class="fas fa-phone"></i><a href="https://wa.me/+6281573499529">+6281573499529 (Ruang Berproses)</a></p>
 						<p><i class="fas fa-phone"></i><a href="https://wa.me/+6287719661951">+6287719661951 (Dea)</a></p>
-						<p><i class="fas fa-envelope"></i><a href="mailto:admin@ruangberproses.id">admin@ruangberproses.id</a></p>
+						<p><i class="fas fa-envelope"></i><a href="mailto: ruangberproses.id@gmail.com"> ruangberproses.id@gmail.com</a></p>
 					</div>
 					<div class="col-md-4 col-lg-3 footer-social wow fadeInUp text-md-left text-center">
 						<h3>Sosial Media</h3>
@@ -354,6 +402,22 @@ session_start();
 							<a href="https://www.instagram.com/ruangberproses.id/"><i class="fab fa-instagram"></i></a>
 							<a href="https://www.linkedin.com/company/ruang-berproses/"><i class="fab fa-linkedin"></i></a>
 						</p>
+						<p style="margin-top:22px;">Apakah anda Admin?
+									<?php
+									if (!isset($_SESSION["login"])) {
+									?>
+									    <a href="pengguna/login.php" class="nav-link">Masuk</a>
+									<?php
+									} else {
+										if ($_SESSION["role"] == 1) {
+									?>
+										<a href="admin/dashboard.php" class="nav-link">Rekap Admin</a>
+									<?php
+										}
+									?>
+									    <a href="logout.php" class="nav-link">Logout</a><?php
+									}
+									?></p>
 					</div>
 				</div>
 			</div>
@@ -417,3 +481,4 @@ session_start();
 <script src="js/testimonial.js"></script>
 
 </html>
+		

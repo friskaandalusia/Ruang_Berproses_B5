@@ -165,9 +165,9 @@
            $query = mysqli_query($conn, 'SELECT * FROM pengguna  LIMIT 1' );
           while ($data = mysqli_fetch_array($query)) {
         ?>
-            <h3>Nama Admin : <?php echo $data['nama_pengguna'] ?></h3>
             <h3>Username Admin : <?php echo $data['username_pengguna'] ?></h3>
             <h3>Email Admin : <?php echo $data['email_pengguna'] ?></h3>
+            <h3>Password Admin : Versiterbaik1</h3>
       
         <?php } ?>
             </div> 
@@ -182,7 +182,7 @@
         <div class="row align-items-center justify-content-lg-between">
           <div class="col-lg-6">
             <div class="copyright text-center  text-lg-left  text-muted">
-              &copy; 2021 <a href="dashboard.php" class="font-weight-bold ml-1" target="_blank">RUANG BERPROSES TEAM</a>
+              &copy; 2022 <a href="dashboard.php" class="font-weight-bold ml-1" target="_blank">RUANG BERPROSES TEAM</a>
             </div>
           </div>
           <div class="col-lg-6">

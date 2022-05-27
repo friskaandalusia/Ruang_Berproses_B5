@@ -184,7 +184,6 @@
                     <th scope="col" class="sort" data-sort="judulig">Judul IG LIVE</th>
                   	<th scope="col" class="sort" data-sort="haritglig">Hari, tanggal</th>
                     <th scope="col" class="sort" data-sort="waktuig">Waktu</th>
-                    <th scope="col" class="sort" data-sort="link">Link pendaftaran</th>
                     <th scope="col" class="sort" data-sort="foto_poster">Foto Poster</th>
                     <th scope="col">Aksi</th>
                   </tr>
@@ -206,7 +205,6 @@
               <td scope="row"><?= $row["judulig"]; ?></td>
 				      <td scope="row"><?= $row["haritglig"]; ?></td>
 				      <td scope="row"><?= $row["waktuig"]; ?></td>
-				      <td scope="row"><?= $row["link"]; ?></td>
               <td><img src="image_view.php?id_gambar=<?php echo $row['id_iglive']; ?>" width="100"/></td>
 				      <td>
            
@@ -217,7 +215,7 @@
 				    </tr>
 				    </tbody>
   
-            <?php
+            <?php        
              }
          } else {
              echo "0 results";

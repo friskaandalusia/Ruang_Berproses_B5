@@ -46,26 +46,6 @@ session_start();
                                     <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
                                         <a class="nav-link" href="tentang.php">Tentang</a>
                                     </li>
-                                    <?php
-                                    if (!isset($_SESSION["login"])) {
-                                    ?>
-                                        <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                            <a href="pengguna/login.php" class="nav-link">Masuk</a>
-                                        </li>
-                                        <?php
-                                    } else {
-                                        if ($_SESSION["role"] == 1) {
-                                        ?>
-                                            <li>
-                                                <a href="admin/dashboard.php" class="nav-link">Rekap Admin</a>
-
-                                            </li>
-                                        <?php
-                                        }
-                                        ?>
-                                        <li><a href="logout.php" class="nav-link">Logout</a></li><?php
-                                                                                                }
-                                                                                                    ?>
                                 </ul>
                             </div>
 
@@ -143,8 +123,8 @@ session_start();
                         <p>Dalam hal ini dapat disimpulkan bahwa terdapat setidaknya dua faktor yang menjadi penyebab atau faktor seorang anak mengalami gangguan pada kesehatan mentalnya. Faktor yang mendasari gangguan ini tentu dapat dihindari dengan memberikan perhatian, pengertian, kasih sayang, dan menghindari anak terpapar pada peristiwa-peristiwa yang tidak seharusnya dialami pada usia perkembangan. Melalui tanda atau gejala yang telah dijelaskan, diharapkan orang tua atau pengasuh anak dapat menyadari sedini mungkin kesulitan atau masalah yang dihadapi anak, sehingga dapat memberikan pertolongan tepat waktu. Melalui intervensi dan penyebab yang telah dijelaskan pula, diharapkan anak akan mendapatkan lingkungan hidup yang lebih sehat, baik di rumah saat bersama orang tua dan saudara kandung, maupun dengan lingkungan bermain atau lingkungan sosial anak.
                         </p>
                         <h6 class="space"> Daftar Pustaka :</h6>
-                        <h6>Valfre, M. M. (2017). <i> Foundation of mental health care (6th ed.).</i> St. Louis: Elsevier
-                        </h6>
+                        <p>Valfre, M. M. (2017). <i> Foundation of mental health care (6th ed.).</i> St. Louis: Elsevier
+                        </p>
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-3 col-12 text-md-left text-center">
                         <h4>Artikel Lainnya</h4>
@@ -190,7 +170,7 @@ session_start();
                         <h3>Kontak</h3>
                         <p><i class="fas fa-phone"></i><a href="https://wa.me/+6281573499529">+6281573499529 (Ruang Berproses)</a></p>
                         <p><i class="fas fa-phone"></i><a href="https://wa.me/+6287719661951">+6287719661951 (Dea)</a></p>
-                        <p><i class="fas fa-envelope"></i><a href="mailto:admin@ruangberproses.id">admin@ruangberproses.id</a></p>
+                        <p><i class="fas fa-envelope"></i><a href="mailto: ruangberproses.id@gmail.com"> ruangberproses.id@gmail.com</a></p>
                     </div>
                     <div class="col-md-4 col-lg-3 footer-social wow fadeInUp text-md-left text-center">
                         <h3>Sosial Media</h3>
@@ -201,6 +181,22 @@ session_start();
                             <a href="https://www.instagram.com/ruangberproses.id/"><i class="fab fa-instagram"></i></a>
                             <a href="https://www.linkedin.com/company/ruang-berproses/"><i class="fab fa-linkedin"></i></a>
                         </p>
+                        <p style="margin-top:22px;">Apakah anda Admin?
+									<?php
+									if (!isset($_SESSION["login"])) {
+									?>
+									    <a href="pengguna/login.php" class="nav-link">Masuk</a>
+									<?php
+									} else {
+										if ($_SESSION["role"] == 1) {
+									?>
+										<a href="admin/dashboard.php" class="nav-link">Rekap Admin</a>
+									<?php
+										}
+									?>
+									    <a href="logout.php" class="nav-link">Logout</a><?php
+									}
+									?></p>
                     </div>
                 </div>
             </div>
