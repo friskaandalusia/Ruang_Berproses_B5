@@ -167,33 +167,13 @@ if (!isset($_SESSION["login"])) {
                 <div class="card-body">
                   <div class="row">
                     <div class="col">
-                      <h5 class="card-title text-uppercase text-muted mb-0">Total Webinar Psytalk</h5>
-                      
-                     <span class="h2 font-weight-bold mb-0"><?php echo 25; ?></span>
-                    </div>
-                    <div class="col-auto">
-                      <div class="icon icon-shape bg-gradient-red text-white rounded-circle shadow">
-                        <i class="ni ni-cart"></i>
-                      </div>
-                    </div>
-                  </div>
-                 
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-3 col-md-6">
-              <div class="card card-stats">
-                <!-- Card body -->
-                <div class="card-body">
-                  <div class="row">
-                    <div class="col">
-                      <h5 class="card-title text-uppercase text-muted mb-0">Total <br>Kelas Berproses</h5>
-                     
-                      <span class="h2 font-weight-bold mb-0"><?php echo 15; ?></span>
+                        <a href ="../admin/profile/profile.php"
+                      <h5 class="card-title text-uppercase text-muted mb-0">Profile</h5>
                     </div>
                     <div class="col-auto">
                       <div class="icon icon-shape bg-gradient-orange text-white rounded-circle shadow">
                         <i class="ni ni-badge"></i>
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -207,13 +187,123 @@ if (!isset($_SESSION["login"])) {
                 <div class="card-body">
                   <div class="row">
                     <div class="col">
-                      <h5 class="card-title text-uppercase text-muted mb-0">Total Instagram LIVE</h5>
+                        <a href ="../admin/psytalk/tampil_data.php"
+                      <h5 class="card-title text-uppercase text-muted mb-0">Psytalk</h5>
+                    </div>
+                    <div class="col-auto">
+                      <div class="icon icon-shape bg-gradient-red text-white rounded-circle shadow">
+                        <i class="ni ni-cart"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                 
+                </div>
+              </div>
+            </div>
+            
+             <div class="col-xl-3 col-md-6">
+              <div class="card card-stats">
+                <!-- Card body -->
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col">
+                        <a href ="../admin/kelasberproses/tampil_data.php"
+                      <h5 class="card-title text-uppercase text-muted mb-0">Kelas Berproses</h5>
+            
+                    </div>
+                    <div class="col-auto">
+                      <div class="icon icon-shape bg-gradient-red text-white rounded-circle shadow">
+                        <i class="ni ni-cart"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                 
+                </div>
+              </div>
+            </div> 
+            
+            
+             <div class="col-xl-3 col-md-6">
+              <div class="card card-stats">
+                <!-- Card body -->
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col">
+                         <a href ="../admin/ig_live/tampil_data.php"
+                      <h5 class="card-title text-uppercase text-muted mb-0">IG LIVE</h5>
+                    </div>
+                    <div class="col-auto">
+                      <div class="icon icon-shape bg-gradient-red text-white rounded-circle shadow">
+                        <i class="ni ni-cart"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                 
+                </div>
+              </div>
+            </div>
+            
+            
+             <div class="col-xl-3 col-md-6">
+              <div class="card card-stats">
+                <!-- Card body -->
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col">
+                         <a href ="../admin/artikel/tampil_data.php"
+                      <h5 class="card-title text-uppercase text-muted mb-0">Kelola Artikel</h5>
                       
-                      <span class="h2 font-weight-bold mb-0"><?php echo 10; ?></span>
+                    
+                    </div>
+                    <div class="col-auto">
+                      <div class="icon icon-shape bg-gradient-red text-white rounded-circle shadow">
+                        <i class="ni ni-cart"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                 
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-xl-3 col-md-6">
+              <div class="card card-stats">
+                <!-- Card body -->
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col">
+                         <a href ="../admin/testimoni/tampil_data.php"
+                      <h5 class="card-title text-uppercase text-muted mb-0">Kelola Testimoni</h5>
+                    </div>
+                    <div class="col-auto">
+                      <div class="icon icon-shape bg-gradient-orange text-white rounded-circle shadow">
+                        <i class="ni ni-badge"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                 
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-md-6">
+              <div class="card card-stats">
+                <!-- Card body -->
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col">
+                         <a href ="../index.php"
+                      <h5 class="card-title text-uppercase text-muted mb-0">Web Utama</h5>
+                
                     </div>
                     <div class="col-auto">
                       <div class="icon icon-shape bg-gradient-green text-white rounded-circle shadow">
                         <i class="ni ni-shop"></i>
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -221,25 +311,9 @@ if (!isset($_SESSION["login"])) {
                 </div>
               </div>
             </div>
-            <div class="col-xl-3 col-md-6">
-              <div class="card card-stats">
-                <!-- Card body -->
-                <div class="card-body">
-                  <div class="row">
-                    <div class="col">
-                      <h5 class="card-title text-uppercase text-muted mb-0">Total <br>Media Partner</h5>
-                      
-                      <span class="h2 font-weight-bold mb-0">3</span>
-                    </div>
-                    <div class="col-auto">
-                      <div class="icon icon-shape bg-gradient-info text-white rounded-circle shadow">
-                        <i class="ni ni-favourite-28"></i>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            
+        
+            
           </div>
         </div>
       </div>
@@ -257,11 +331,9 @@ if (!isset($_SESSION["login"])) {
           <div class="col-lg-6">
           <ul class="nav nav-footer justify-content-center justify-content-xl-end">
             <li class="nav-item">
-              <a href="dashboard.php" class="nav-link" target="_blank"><br>Dashboard</a>
+              <a href="../dashboard.php" class="nav-link" target="_blank">Dashboard</a>
             </li>
-            <li class="nav-item">
-              <a href="../logout.php" class="nav-link" target="_blank"><br>Logout</a>
-            </li>
+          
           </ul>
           </div>
         </div>

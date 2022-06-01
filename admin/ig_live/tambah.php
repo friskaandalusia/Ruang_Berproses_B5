@@ -15,12 +15,11 @@ if( isset($_POST["submit"])) {
             $judulig = $_POST['judulig'];
             $haritglig = $_POST['haritglig'];
             $waktuig = $_POST['waktuig'];
-            $link = $_POST['link'];
             
 
             // query SQL untuk insert data
            
-            $sql = "INSERT INTO keloladata_iglive (judulig, haritglig, waktuig, link, foto_poster) VALUES('".$judulig."', '".$haritglig."','".$waktuig."', '".$link."', '".$foto_poster."')";
+            $sql = "INSERT INTO keloladata_iglive (judulig, haritglig, waktuig, foto_poster) VALUES('".$judulig."', '".$haritglig."','".$waktuig."', '".$foto_poster."')";
             if ($conn->query($sql) === TRUE) {
                 // redirect ke halaman tampil data
                 header("Location: tampil_data.php");

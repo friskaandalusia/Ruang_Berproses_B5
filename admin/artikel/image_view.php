@@ -6,7 +6,7 @@ if(isset($_GET['id_gambar']))
     $query = mysqli_query($conn,"select * from keloladata_artikel where no_artikel='$no_artikel'");
     $row = mysqli_fetch_array($query);
     header("Content-type: ");
-    echo $row["foto_poster"];
+    echo $row["foto_artikel"];
 }
 else
 {

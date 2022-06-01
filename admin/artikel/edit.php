@@ -47,50 +47,38 @@
             </li>
           </ul>
           
-          <!-- Heading -->
-          <h6 class="navbar-heading p-0 text-muted">
+                   <!-- Heading -->
+                   <h6 class="navbar-heading p-0 text-muted">
             <span class="docs-normal">Kelola</span>
           </h6>
           <ul class="navbar-nav mb-md-3">
             <li class="nav-item">
               <a class="nav-link" href="../psytalk/tampil_data.php">
-                <i class="ni ni-cart text-primary"></i>
+                <i class="ni ni-notification-70 text-primary"></i>
                 <span class="nav-link-text">Kelola Data Psytalk</span>
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="../kelasberproses/tampil_data.php">
-                <i class="ni ni-bus-front-12 text-primary"></i>
+                <i class="ni ni-notification-70 text-primary"></i>
                 <span class="nav-link-text">Kelola Data Kelas Berproses</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../peerconseling/tampil_data.php">
+              <a class="nav-link" href="../ig_live/tampil_data.php">
                 <i class="ni ni-notification-70 text-primary"></i>
-                <span class="nav-link-text">Kelola Data Peer Counseling</span>
+                <span class="nav-link-text">Kelola Data IG LIVE</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../supportgroup/tampil_data.php">
+              <a class="nav-link" href="../artikel/tampil_data.php">
                 <i class="ni ni-notification-70 text-primary"></i>
-                <span class="nav-link-text">Kelola Data Support Group</span>
+                <span class="nav-link-text">Kelola Artikel</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../counselingprofessional/tampil_data.php">
+              <a class="nav-link" href="../admin/counselingprofessional/tampil_data.php">
                 <i class="ni ni-notification-70 text-primary"></i>
-                <span class="nav-link-text">Kelola Data Counseling Professional</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="">
-                <i class="ni ni-badge text-primary"></i>
-                <span class="nav-link-text">Kelola Data Pengguna</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="">
-                <i class="ni ni-chat-round text-primary"></i>
                 <span class="nav-link-text">Kelola Testimoni</span>
               </a>
             </li>
@@ -98,7 +86,7 @@
           <hr class="my-3">
           <ul class="navbar-nav mb-md-3">  
             <li class="nav-item">
-              <a class="nav-link" href="logout.php">
+              <a class="nav-link" href="../logout.php">
                 <i class="ni ni-button-power text-primary"></i>
                 <span class="nav-link-text">Logout</span>
               </a>
@@ -251,18 +239,16 @@
         <div class="row align-items-center justify-content-lg-between">
           <div class="col-lg-6">
             <div class="copyright text-center  text-lg-left  text-muted">
-              &copy; 2021 <a href="dashboard.php" class="font-weight-bold ml-1" target="_blank">RUANG BERPROSES TEAM</a>
+              &copy; 2022 <a href="dashboard.php" class="font-weight-bold ml-1" target="_blank">RUANG BERPROSES TEAM</a>
             </div>
           </div>
           <div class="col-lg-6">
           <ul class="nav nav-footer justify-content-center justify-content-xl-end">
             <li class="nav-item">
-              <a href="dashboard.php" class="nav-link" target="_blank">Dashboard</a>
+              <a href="../dashboard.php" class="nav-link" target="_blank">Dashboard</a>
             </li>
            
-            <li class="nav-item">
-              <a href="logout.php" class="nav-link" target="_blank">Logout</a>
-            </li>
+          
           </ul>
           </div>
         </div>

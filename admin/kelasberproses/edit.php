@@ -111,8 +111,8 @@
                   <br>
                   <li class="breadcrumb-item"><a href="../dashboard.php"><i class="fas fa-home"></i></a></li>
                   <li class="breadcrumb-item"><a href="../dashboard.php">Dashboard</a></li>
-                  <li class="breadcrumb-item"><a href="../psytalk/tampil_data.php"><i class="fas fa-home"></i></a></li>
-                  <li class="breadcrumb-item"><a href="../psytalk/tampil_data.php">Kelola data Psytalk</a></li>
+                  <li class="breadcrumb-item"><a href="../kelasberproses/tampil_data.php"><i class="fas fa-home"></i></a></li>
+                  <li class="breadcrumb-item"><a href="../kelasberproses/tampil_data.php">Kelola data Kelas Berproses</a></li>
                 </ol>
               </nav>
             </div>
@@ -265,12 +265,9 @@
           <div class="col-lg-6">
           <ul class="nav nav-footer justify-content-center justify-content-xl-end">
             <li class="nav-item">
-              <a href="dashboard.php" class="nav-link" target="_blank">Dashboard</a>
+              <a href="../dashboard.php" class="nav-link" target="_blank">Dashboard</a>
             </li>
            
-            <li class="nav-item">
-              <a href="logout.php" class="nav-link" target="_blank">Logout</a>
-            </li>
           </ul>
           </div>
         </div>

@@ -20,7 +20,8 @@ if( isset($_POST["submit"])) {
 
             // query SQL untuk insert data
            
-            $sql = "INSERT INTO keloladata_artikel(judulartikel, summary, isi, referensi, foto_artikel) VALUES('".$judulartikel."', '".$summary."','".$isi."', '".$referensi."', '".$foto_artikel."')";
+            $sql = "INSERT INTO keloladata_artikel (judulartikel, summary, isi, referensi, foto_artikel) VALUES('".$judulartikel."', 
+            '".$summary."','".$isi."', '".$referensi."', '".$foto_artikel."')";
             if ($conn->query($sql) === TRUE) {
                 // redirect ke halaman tampil data
                 header("Location: tampil_data.php");

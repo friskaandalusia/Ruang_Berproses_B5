@@ -115,8 +115,8 @@
                   <br>
                   <li class="breadcrumb-item"><a href="../dashboard.php"><i class="fas fa-home"></i></a></li>
                   <li class="breadcrumb-item"><a href="../dashboard.php">Dashboard</a></li>
-                  <li class="breadcrumb-item"><a href="../psytalk/tampil_data.php"><i class="fas fa-home"></i></a></li>
-                  <li class="breadcrumb-item"><a href="../psytalk/tampil_data.php">Kelola data Artikel</a></li>
+                  <li class="breadcrumb-item"><a href="../dashboard/tampil_data.php"><i class="fas fa-home"></i></a></li>
+                  <li class="breadcrumb-item"><a href="../artikel/tampil_data.php">Kelola data Artikel</a></li>
                 </ol>
               </nav>
             </div>
@@ -221,18 +221,16 @@
         <div class="row align-items-center justify-content-lg-between">
           <div class="col-lg-6">
             <div class="copyright text-center  text-lg-left  text-muted">
-              &copy; 2021 <a href="dashboard.php" class="font-weight-bold ml-1" target="_blank">RUANG BERPROSES TEAM</a>
+              &copy; 2022 <a href="dashboard.php" class="font-weight-bold ml-1" target="_blank">RUANG BERPROSES TEAM</a>
             </div>
           </div>
           <div class="col-lg-6">
           <ul class="nav nav-footer justify-content-center justify-content-xl-end">
             <li class="nav-item">
-              <a href="dashboard.php" class="nav-link" target="_blank">Dashboard</a>
+              <a href="../dashboard.php" class="nav-link" target="_blank">Dashboard</a>
             </li>
            
-            <li class="nav-item">
-              <a href="logout.php" class="nav-link" target="_blank">Logout</a>
-            </li>
+          
           </ul>
           </div>
         </div>

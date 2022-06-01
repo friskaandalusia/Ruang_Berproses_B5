@@ -250,17 +250,9 @@
           <div class="col-lg-6">
           <ul class="nav nav-footer justify-content-center justify-content-xl-end">
             <li class="nav-item">
-              <a href="dashboard.php" class="nav-link" target="_blank">Dashboard</a>
+              <a href="../dashboard.php" class="nav-link" target="_blank">Dashboard</a>
             </li>
-            <li class="nav-item">
-              <a href="register.php" class="nav-link" target="_blank">Registrasi</a>
-            </li>
-            <li class="nav-item">
-              <a href="login.php" class="nav-link" target="_blank">Login</a>
-            </li>
-            <li class="nav-item">
-              <a href="logout.php" class="nav-link" target="_blank">Logout</a>
-            </li>
+         
           </ul>
           </div>
         </div>

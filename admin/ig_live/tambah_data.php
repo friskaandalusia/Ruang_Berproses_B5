@@ -1,5 +1,3 @@
-?>
-
 <!DOCTYPE html>
 <html>
 
@@ -28,7 +26,7 @@
     <div class="scrollbar-inner">
       <!-- Brand -->
       <div class="sidenav-header  align-items-center" >
-        <a class="navbar-brand" href="dashboard.php">
+        <a class="navbar-brand" href="../dashboard.php">
           <img src="../assets/img/brand/logo.png" class="navbar-brand-img">
         </a>
       </div>
@@ -38,13 +36,13 @@
           <!-- Nav items -->
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" href="dashboard.php">
+              <a class="nav-link active" href="../dashboard.php">
                 <i class="ni ni-tv-2 text-primary"></i>
                 <span class="nav-link-text">Dashboard</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="profile.php">
+              <a class="nav-link" href="../profile.php">
                 <i class="ni ni-single-02 text-primary"></i>
                 <span class="nav-link-text">Profile</span>
               </a>
@@ -115,8 +113,8 @@
                   <br>
                   <li class="breadcrumb-item"><a href="../dashboard.php"><i class="fas fa-home"></i></a></li>
                   <li class="breadcrumb-item"><a href="../dashboard.php">Dashboard</a></li>
-                  <li class="breadcrumb-item"><a href="../psytalk/tampil_data.php"><i class="fas fa-home"></i></a></li>
-                  <li class="breadcrumb-item"><a href="../psytalk/tampil_data.php">Kelola data IG LIVE</a></li>
+                  <li class="breadcrumb-item"><a href="../ig_live/tampil_data.php"><i class="fas fa-home"></i></a></li>
+                  <li class="breadcrumb-item"><a href="../ig_live/tampil_data.php">Kelola data IG LIVE</a></li>
                 </ol>
               </nav>
             </div>
@@ -124,7 +122,7 @@
           <!-- Navbar links -->
           <ul class="navbar-nav align-items-center  ml-auto ml-md-20 ">
             <li class="nav-item">
-              <a class="nav-link pr-0" href="profile.php">
+              <a class="nav-link pr-0" href="../profile.php">
                 <div class="media align-items-center">
                   
                  
@@ -132,7 +130,7 @@
               </a>
             </li>
             <li class="nav-item" style="margin-left: 50px">
-              <a class="nav-link pr-0" href="logout.php">
+              <a class="nav-link pr-0" href="../logout.php">
                 <div class="media align-items-center">
                   <span>
                     <i class="ni ni-button-power text-white"></i>
@@ -156,7 +154,7 @@
             <div class="card-header">
               <div class="row align-items-center">
                 <div class="col-8">
-                  <h3 class="mb-0">TAMBAH KONTEN IG LIVE/h3>
+                  <h3 class="mb-0">TAMBAH KONTEN IG LIVE</h3>
                 </div>
               </div>
             </div>
@@ -194,15 +192,7 @@
                     </div>
                   </div>
 
-                  <div class="row">
-                    <div class="col-lg-12">
-                      <div class="form-group">
-                        <label class="form-control-label" for="link">Link Pendaftaran</label>
-                        <input type="textarea" name="link" class="form-control" id="link" required placeholder="Link Pendaftaran yang dapat diakses">
-                      </div>
-                    </div>
-                  </div>
-
+               
                 <div class="row">
                   <div class="pl-lg-4">
                     <div class="form-group">
@@ -225,18 +215,16 @@
         <div class="row align-items-center justify-content-lg-between">
           <div class="col-lg-6">
             <div class="copyright text-center  text-lg-left  text-muted">
-              &copy; 2021 <a href="dashboard.php" class="font-weight-bold ml-1" target="_blank">RUANG BERPROSES TEAM</a>
+              &copy; 2022 <a href="dashboard.php" class="font-weight-bold ml-1" target="_blank">RUANG BERPROSES TEAM</a>
             </div>
           </div>
           <div class="col-lg-6">
           <ul class="nav nav-footer justify-content-center justify-content-xl-end">
             <li class="nav-item">
-              <a href="dashboard.php" class="nav-link" target="_blank">Dashboard</a>
+              <a href="../dashboard.php" class="nav-link" target="_blank">Dashboard</a>
             </li>
            
-            <li class="nav-item">
-              <a href="logout.php" class="nav-link" target="_blank">Logout</a>
-            </li>
+          
           </ul>
           </div>
         </div>

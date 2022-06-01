@@ -110,7 +110,7 @@
             <div class="col-lg-6 col-7">
               <nav aria-label="breadcrumb" class="d-none d-md-inline-block ml-md-0 mt-2">
                 <ol class="breadcrumb breadcrumb-links breadcrumb-dark">
-                  <li class="breadcrumb-item"><a href="dashboard.php"><i class="fas fa-home"></i></a></li>
+                  <li class="breadcrumb-item"><a href="../dashboard.php"><i class="fas fa-home"></i></a></li>
                   <li class="breadcrumb-item"><a href="tampil_data.php">Kelola Data Testimoni </a></li>
                 </ol>
               </nav>
@@ -244,17 +244,9 @@
           <div class="col-lg-6">
           <ul class="nav nav-footer justify-content-center justify-content-xl-end">
             <li class="nav-item">
-              <a href="dashboard.php" class="nav-link" target="_blank">Dashboard</a>
+              <a href="../dashboard.php" class="nav-link" target="_blank">Dashboard</a>
             </li>
-            <li class="nav-item">
-              <a href="register.php" class="nav-link" target="_blank">Registrasi</a>
-            </li>
-            <li class="nav-item">
-              <a href="login.php" class="nav-link" target="_blank">Login</a>
-            </li>
-            <li class="nav-item">
-              <a href="logout.php" class="nav-link" target="_blank">Logout</a>
-            </li>
+           
           </ul>
           </div>
         </div>
